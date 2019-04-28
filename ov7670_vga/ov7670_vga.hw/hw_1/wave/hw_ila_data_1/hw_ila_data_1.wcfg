@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<wave_config>
+	<wave_state>
+	</wave_state>
+	<db_ref_list>
+		<db_ref path="/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1" type="auto">
+			<top_modules>
+				<top_module name="top">
+				</top_module>
+			</top_modules>
+		</db_ref>
+	</db_ref_list>
+	<WVObjectSize size="11">
+	</WVObjectSize>
+	<wvobject fp_name="system_i/fifo_mm2s_M_AXIS_TREADY" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">system_i/fifo_mm2s_M_AXIS_TREADY</obj_property>
+		<obj_property name="ObjectShortName">system_i/fifo_mm2s_M_AXIS_TREADY</obj_property>
+	</wvobject>
+	<wvobject fp_name="system_i/fifo_mm2s_M_AXIS_TDATA" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">system_i/fifo_mm2s_M_AXIS_TDATA[15:0]</obj_property>
+		<obj_property name="ObjectShortName">system_i/fifo_mm2s_M_AXIS_TDATA[15:0]</obj_property>
+	</wvobject>
+	<wvobject fp_name="system_i/&lt;const0&gt;_1" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">system_i/&lt;const0&gt;_1</obj_property>
+		<obj_property name="ObjectShortName">system_i/&lt;const0&gt;_1</obj_property>
+	</wvobject>
+	<wvobject fp_name="system_i/&lt;const0&gt;_2" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">system_i/&lt;const0&gt;_2</obj_property>
+		<obj_property name="ObjectShortName">system_i/&lt;const0&gt;_2</obj_property>
+	</wvobject>
+	<wvobject fp_name="system_i/fifo_mm2s_M_AXIS_TVALID" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">system_i/fifo_mm2s_M_AXIS_TVALID</obj_property>
+		<obj_property name="ObjectShortName">system_i/fifo_mm2s_M_AXIS_TVALID</obj_property>
+	</wvobject>
+	<wvobject fp_name="system_i/&lt;const0&gt;_3" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">system_i/&lt;const0&gt;_3</obj_property>
+		<obj_property name="ObjectShortName">system_i/&lt;const0&gt;_3</obj_property>
+	</wvobject>
+	<wvobject fp_name="system_i/&lt;const0&gt;_4" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">system_i/&lt;const0&gt;_4</obj_property>
+		<obj_property name="ObjectShortName">system_i/&lt;const0&gt;_4</obj_property>
+	</wvobject>
+	<wvobject fp_name="system_i/&lt;const0&gt;_5" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">system_i/&lt;const0&gt;_5</obj_property>
+		<obj_property name="ObjectShortName">system_i/&lt;const0&gt;_5</obj_property>
+	</wvobject>
+	<wvobject fp_name="system_i/&lt;const0&gt;_6" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">system_i/&lt;const0&gt;_6</obj_property>
+		<obj_property name="ObjectShortName">system_i/&lt;const0&gt;_6</obj_property>
+	</wvobject>
+	<wvobject fp_name="system_i/&lt;const0&gt;_7" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">system_i/&lt;const0&gt;_7</obj_property>
+		<obj_property name="ObjectShortName">system_i/&lt;const0&gt;_7</obj_property>
+	</wvobject>
+	<wvobject fp_name="system_i/&lt;const0&gt;" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">system_i/&lt;const0&gt;</obj_property>
+		<obj_property name="ObjectShortName">system_i/&lt;const0&gt;</obj_property>
+	</wvobject>
+</wave_config>
+

@@ -1,0 +1,1434 @@
+06:54:33 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx1/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+06:54:37 INFO  : XSDB server has started successfully.
+06:54:37 INFO  : Processing command line option -hwspec /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper.hdf.
+06:54:37 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+06:55:57 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx1/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+06:55:58 INFO  : XSDB server has started successfully.
+06:55:58 INFO  : Processing command line option -hwspec /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper.hdf.
+06:55:58 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+07:00:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+07:00:13 INFO  : 'fpga -state' command is executed.
+07:00:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:00:14 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+07:00:14 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+07:00:14 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+07:00:15 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+07:00:15 INFO  : 'stop' command is executed.
+07:01:45 ERROR : 'ps7_init' is cancelled.
+07:01:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+07:01:54 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx1/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+07:01:55 INFO  : XSDB server has started successfully.
+07:01:55 INFO  : Processing command line option -hwspec /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper.hdf.
+07:01:56 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+07:02:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+07:02:09 INFO  : 'fpga -state' command is executed.
+07:02:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:02:09 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+07:02:10 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+07:02:11 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+07:02:12 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+07:02:13 INFO  : 'stop' command is executed.
+07:06:27 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx1/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+07:06:28 INFO  : XSDB server has started successfully.
+07:06:28 INFO  : Processing command line option -hwspec /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper.hdf.
+07:06:28 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+07:19:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+07:19:33 INFO  : 'fpga -state' command is executed.
+07:19:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:19:34 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+07:19:34 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+07:19:34 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+07:19:34 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+07:19:35 INFO  : 'stop' command is executed.
+07:19:54 ERROR : Cannot flush JTAG server queue. ftdi_write_data_submit failed: usb bulk read failed
+07:19:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+07:20:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+07:20:37 INFO  : 'fpga -state' command is executed.
+07:20:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:20:38 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+07:20:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+07:20:38 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+07:20:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+07:20:38 INFO  : 'stop' command is executed.
+07:20:39 INFO  : 'ps7_init' command is executed.
+07:20:39 INFO  : 'ps7_post_config' command is executed.
+07:20:39 INFO  : 'con' command is executed.
+07:20:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:20:39 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+07:20:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:20:40 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+07:20:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+07:20:40 INFO  : Memory regions updated for context APU
+07:20:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:20:40 INFO  : 'con' command is executed.
+07:20:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+07:39:52 INFO  : Disconnected from the channel tcfchan#1.
+07:39:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+07:39:53 INFO  : 'fpga -state' command is executed.
+07:39:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:39:53 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+07:39:54 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+07:39:54 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+07:39:54 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+07:39:54 INFO  : 'stop' command is executed.
+07:39:55 INFO  : 'ps7_init' command is executed.
+07:39:55 INFO  : 'ps7_post_config' command is executed.
+07:39:55 INFO  : 'con' command is executed.
+07:39:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:39:55 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+07:39:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:39:56 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+07:39:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+07:39:56 INFO  : Memory regions updated for context APU
+07:39:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:39:56 INFO  : 'con' command is executed.
+07:39:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+20:44:41 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx1/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+20:44:43 INFO  : XSDB server has started successfully.
+20:44:44 INFO  : Processing command line option -hwspec /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/wdz/system_wrapper.hdf.
+20:48:29 INFO  : Saving repository preferences.
+20:48:29 INFO  : Reading in cores from local repositories: 
+		 /opt/Xilinx1/SDK/2015.4/data/embeddedsw/device-tree-xlnx
+20:48:30 INFO  : Cleaning BSP projects in the workspace.
+20:48:33 INFO  : Saving repository preferences.
+20:51:09 ERROR : (XSDB Server)ERROR: [Hsi 55-1545] Problem running tcl command ::sw_axi_vdma::generate : ERROR: vdma_mm2s: mm2s_introut port is not connected
+    while executing
+"error "ERROR: ${drv_handle}: mm2s_introut port is not connected""
+    (procedure "::sw_axi_vdma::generate" line 56)
+    invoked from within
+"::sw_axi_vdma::generate vdma_mm2s"
+ERROR: [Hsi 55-1442] Error(s) while running TCL procedure generate()
+
+20:51:09 ERROR : (XSDB Server)ERROR: [Hsi 55-1450] Error: running generate_bsp.
+
+20:51:09 ERROR : Error generating bsp sources: Failed in generating sources
+20:51:09 ERROR : Failed to generate sources for BSP project device_tree_bsp_0
+org.eclipse.core.runtime.CoreException: Internal error occurred while generating bsp sources. Please check the SDK Log view for further details.
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.internalGenerateBsp(RegenBspSourcesHandler.java:178)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.access$2(RegenBspSourcesHandler.java:163)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1$1.run(RegenBspSourcesHandler.java:131)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1.run(RegenBspSourcesHandler.java:135)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+20:52:51 ERROR : (XSDB Server)ERROR: [Hsi 55-1545] Problem running tcl command ::sw_axi_vdma::generate : ERROR: vdma_mm2s: mm2s_introut port is not connected
+    while executing
+"error "ERROR: ${drv_handle}: mm2s_introut port is not connected""
+    (procedure "::sw_axi_vdma::generate" line 56)
+    invoked from within
+"::sw_axi_vdma::generate vdma_mm2s"
+ERROR: [Hsi 55-1442] Error(s) while running TCL procedure generate()
+
+20:52:51 ERROR : (XSDB Server)ERROR: [Hsi 55-1450] Error: running generate_bsp.
+
+20:52:51 ERROR : Error generating bsp sources: Failed in generating sources
+20:52:51 ERROR : Failed to generate sources for BSP project device_tree_bsp_0
+org.eclipse.core.runtime.CoreException: Internal error occurred while generating bsp sources. Please check the SDK Log view for further details.
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.internalGenerateBsp(RegenBspSourcesHandler.java:178)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.access$2(RegenBspSourcesHandler.java:163)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1$1.run(RegenBspSourcesHandler.java:131)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1.run(RegenBspSourcesHandler.java:135)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+20:58:53 INFO  : Saving repository preferences.
+20:58:53 INFO  : Reading in cores from local repositories: 
+		 /opt/Xilinx1/SDK/2015.4/data/embeddedsw/lib/bsp/device-tree-xlnx
+20:58:54 INFO  : Cleaning BSP projects in the workspace.
+20:59:03 INFO  : Saving repository preferences.
+20:59:05 INFO  : Saving repository preferences.
+03:35:32 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx1/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+03:35:34 INFO  : XSDB server has started successfully.
+03:35:34 INFO  : Restoring local repository preferences: 
+		 /opt/Xilinx1/SDK/2015.4/data/embeddedsw/lib/bsp/device-tree-xlnx
+03:35:34 INFO  : Processing command line option -hwspec /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/wdz/system_wrapper.hdf.
+03:35:34 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_1.
+03:35:40 INFO  : BSP Project P/device_tree_bsp_0 has been successfully migrated.
+03:35:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+03:35:52 INFO  : 'fpga -state' command is executed.
+03:35:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:35:52 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:35:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:35:52 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+03:35:53 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:35:53 INFO  : 'stop' command is executed.
+03:35:53 INFO  : 'ps7_init' command is executed.
+03:35:53 INFO  : 'ps7_post_config' command is executed.
+03:35:54 INFO  : 'con' command is executed.
+03:35:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:35:54 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+03:35:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:35:54 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:35:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+03:35:54 INFO  : Memory regions updated for context APU
+03:35:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:35:55 INFO  : 'con' command is executed.
+03:35:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+03:40:52 INFO  : Disconnected from the channel tcfchan#1.
+03:40:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+03:40:53 INFO  : 'fpga -state' command is executed.
+03:40:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:40:53 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:40:53 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:40:54 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+03:40:54 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:40:54 INFO  : 'stop' command is executed.
+03:40:54 INFO  : 'ps7_init' command is executed.
+03:40:55 INFO  : 'ps7_post_config' command is executed.
+03:40:55 INFO  : 'con' command is executed.
+03:40:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:40:55 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+03:40:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:40:55 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:40:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+03:40:55 INFO  : Memory regions updated for context APU
+03:40:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:40:56 INFO  : 'con' command is executed.
+03:40:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+03:41:18 INFO  : Disconnected from the channel tcfchan#2.
+03:41:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+03:41:19 INFO  : 'fpga -state' command is executed.
+03:41:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:41:19 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:41:19 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:41:19 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+03:41:20 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:41:20 INFO  : 'stop' command is executed.
+03:41:20 INFO  : 'ps7_init' command is executed.
+03:41:20 INFO  : 'ps7_post_config' command is executed.
+03:41:20 INFO  : 'con' command is executed.
+03:41:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:41:21 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+03:41:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:41:21 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:41:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+03:41:21 INFO  : Memory regions updated for context APU
+03:41:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:41:21 INFO  : 'con' command is executed.
+03:41:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+03:42:24 INFO  : Disconnected from the channel tcfchan#3.
+03:42:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+03:42:25 INFO  : 'fpga -state' command is executed.
+03:42:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:42:25 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:42:26 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:42:26 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+03:42:26 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:42:26 INFO  : 'stop' command is executed.
+03:42:26 INFO  : 'ps7_init' command is executed.
+03:42:27 INFO  : 'ps7_post_config' command is executed.
+03:42:27 INFO  : 'con' command is executed.
+03:42:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:42:27 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+03:42:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:42:27 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:42:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+03:42:27 INFO  : Memory regions updated for context APU
+03:42:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:42:28 INFO  : 'con' command is executed.
+03:42:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+03:43:20 INFO  : Disconnected from the channel tcfchan#4.
+03:43:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+03:43:21 INFO  : 'fpga -state' command is executed.
+03:43:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:43:21 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:43:21 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:43:22 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+03:43:22 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:43:22 INFO  : 'stop' command is executed.
+03:43:22 INFO  : 'ps7_init' command is executed.
+03:43:23 INFO  : 'ps7_post_config' command is executed.
+03:43:23 INFO  : 'con' command is executed.
+03:43:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:43:23 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+03:43:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:43:23 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:43:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+03:43:23 INFO  : Memory regions updated for context APU
+03:43:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:43:24 INFO  : 'con' command is executed.
+03:43:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+03:44:09 INFO  : Disconnected from the channel tcfchan#5.
+03:44:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+03:44:09 INFO  : 'fpga -state' command is executed.
+03:44:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:44:10 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:44:10 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:44:10 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+03:44:10 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:44:10 INFO  : 'stop' command is executed.
+03:44:11 INFO  : 'ps7_init' command is executed.
+03:44:11 INFO  : 'ps7_post_config' command is executed.
+03:44:11 INFO  : 'con' command is executed.
+03:44:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:44:11 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+03:44:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:44:12 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:44:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+03:44:12 INFO  : Memory regions updated for context APU
+03:44:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:44:12 INFO  : 'con' command is executed.
+03:44:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+03:44:34 INFO  : Disconnected from the channel tcfchan#6.
+03:44:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+03:44:34 INFO  : 'fpga -state' command is executed.
+03:44:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:44:34 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:44:35 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:44:35 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+03:44:35 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:44:35 INFO  : 'stop' command is executed.
+03:44:36 INFO  : 'ps7_init' command is executed.
+03:44:36 INFO  : 'ps7_post_config' command is executed.
+03:44:36 INFO  : 'con' command is executed.
+03:44:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:44:36 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+03:44:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:44:37 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:44:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+03:44:37 INFO  : Memory regions updated for context APU
+03:44:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:44:37 INFO  : 'con' command is executed.
+03:44:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+03:47:36 INFO  : Disconnected from the channel tcfchan#7.
+03:47:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+03:47:37 INFO  : 'fpga -state' command is executed.
+03:47:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:47:37 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:47:37 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:47:37 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+03:47:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:47:38 INFO  : 'stop' command is executed.
+03:47:38 INFO  : 'ps7_init' command is executed.
+03:47:38 INFO  : 'ps7_post_config' command is executed.
+03:47:39 INFO  : 'con' command is executed.
+03:47:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:47:39 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+03:47:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:47:39 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:47:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+03:47:39 INFO  : Memory regions updated for context APU
+03:47:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:47:40 INFO  : 'con' command is executed.
+03:47:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+03:50:36 INFO  : Disconnected from the channel tcfchan#8.
+03:50:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+03:50:37 INFO  : 'fpga -state' command is executed.
+03:50:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:50:37 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:50:37 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:50:37 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+03:50:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:50:38 INFO  : 'stop' command is executed.
+03:50:38 INFO  : 'ps7_init' command is executed.
+03:50:38 INFO  : 'ps7_post_config' command is executed.
+03:50:39 INFO  : 'con' command is executed.
+03:50:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:50:39 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+03:50:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:50:39 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:50:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+03:50:39 INFO  : Memory regions updated for context APU
+03:50:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:50:40 INFO  : 'con' command is executed.
+03:50:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+03:56:28 INFO  : Disconnected from the channel tcfchan#9.
+03:56:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+03:56:29 INFO  : 'fpga -state' command is executed.
+03:56:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:56:29 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:56:29 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:56:29 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+03:56:30 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:56:30 INFO  : 'stop' command is executed.
+03:56:30 INFO  : 'ps7_init' command is executed.
+03:56:30 INFO  : 'ps7_post_config' command is executed.
+03:56:30 INFO  : 'con' command is executed.
+03:56:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:56:31 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+03:56:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:56:31 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:56:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+03:56:31 INFO  : Memory regions updated for context APU
+03:56:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:56:31 INFO  : 'con' command is executed.
+03:56:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+03:58:27 INFO  : Disconnected from the channel tcfchan#10.
+03:58:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+03:58:28 INFO  : 'fpga -state' command is executed.
+03:58:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:58:28 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:58:28 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:58:28 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+03:58:29 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:58:29 INFO  : 'stop' command is executed.
+03:58:29 INFO  : 'ps7_init' command is executed.
+03:58:29 INFO  : 'ps7_post_config' command is executed.
+03:58:30 INFO  : 'con' command is executed.
+03:58:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:58:30 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+03:58:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:58:30 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:58:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+03:58:30 INFO  : Memory regions updated for context APU
+03:58:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:58:31 INFO  : 'con' command is executed.
+03:58:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+03:59:50 INFO  : Disconnected from the channel tcfchan#11.
+03:59:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+03:59:51 INFO  : 'fpga -state' command is executed.
+03:59:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:59:51 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:59:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:59:52 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+03:59:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:59:52 INFO  : 'stop' command is executed.
+03:59:53 INFO  : 'ps7_init' command is executed.
+03:59:53 INFO  : 'ps7_post_config' command is executed.
+03:59:53 INFO  : 'con' command is executed.
+03:59:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:59:53 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+03:59:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:59:54 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:59:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+03:59:54 INFO  : Memory regions updated for context APU
+03:59:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:59:54 INFO  : 'con' command is executed.
+03:59:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+04:05:37 INFO  : Disconnected from the channel tcfchan#12.
+04:05:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+04:05:37 INFO  : 'fpga -state' command is executed.
+04:05:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:05:38 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:05:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+04:05:38 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+04:05:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+04:05:38 INFO  : 'stop' command is executed.
+04:05:39 INFO  : 'ps7_init' command is executed.
+04:05:39 INFO  : 'ps7_post_config' command is executed.
+04:05:39 INFO  : 'con' command is executed.
+04:05:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:05:40 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:05:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:05:40 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:05:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+04:05:40 INFO  : Memory regions updated for context APU
+04:05:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:05:40 INFO  : 'con' command is executed.
+04:05:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+04:32:33 INFO  : Disconnected from the channel tcfchan#13.
+04:32:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+04:32:34 INFO  : 'fpga -state' command is executed.
+04:32:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:32:34 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:32:34 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+04:32:34 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+04:32:35 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+04:32:35 INFO  : 'stop' command is executed.
+04:32:35 INFO  : 'ps7_init' command is executed.
+04:32:35 INFO  : 'ps7_post_config' command is executed.
+04:32:35 INFO  : 'con' command is executed.
+04:32:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:32:36 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:32:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:32:36 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:32:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+04:32:36 INFO  : Memory regions updated for context APU
+04:32:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:32:36 INFO  : 'con' command is executed.
+04:32:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+04:33:23 INFO  : Disconnected from the channel tcfchan#14.
+04:33:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+04:33:23 INFO  : 'fpga -state' command is executed.
+04:33:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:33:23 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:33:24 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+04:33:24 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+04:33:24 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+04:33:24 INFO  : 'stop' command is executed.
+04:33:25 INFO  : 'ps7_init' command is executed.
+04:33:25 INFO  : 'ps7_post_config' command is executed.
+04:33:25 INFO  : 'con' command is executed.
+04:33:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:33:25 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:33:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:33:26 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:33:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+04:33:26 INFO  : Memory regions updated for context APU
+04:33:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:33:26 INFO  : 'con' command is executed.
+04:33:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+04:40:00 INFO  : Disconnected from the channel tcfchan#15.
+04:40:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+04:40:01 INFO  : 'fpga -state' command is executed.
+04:40:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:40:01 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:40:01 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+04:40:01 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+04:40:02 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+04:40:02 INFO  : 'stop' command is executed.
+04:40:02 INFO  : 'ps7_init' command is executed.
+04:40:02 INFO  : 'ps7_post_config' command is executed.
+04:40:03 INFO  : 'con' command is executed.
+04:40:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:40:03 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:40:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:40:03 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:40:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+04:40:03 INFO  : Memory regions updated for context APU
+04:40:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:40:04 INFO  : 'con' command is executed.
+04:40:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+04:41:19 INFO  : Disconnected from the channel tcfchan#16.
+04:41:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+04:41:19 INFO  : 'fpga -state' command is executed.
+04:41:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:41:19 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:41:20 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+04:41:20 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+04:41:20 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+04:41:20 INFO  : 'stop' command is executed.
+04:41:21 INFO  : 'ps7_init' command is executed.
+04:41:21 INFO  : 'ps7_post_config' command is executed.
+04:41:21 INFO  : 'con' command is executed.
+04:41:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:41:21 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:41:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:41:22 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:41:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+04:41:22 INFO  : Memory regions updated for context APU
+04:41:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:41:22 INFO  : 'con' command is executed.
+04:41:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+04:48:02 INFO  : Disconnected from the channel tcfchan#17.
+04:48:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+04:48:02 INFO  : 'fpga -state' command is executed.
+04:48:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:48:03 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:48:03 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+04:48:03 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+04:48:03 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+04:48:04 INFO  : 'stop' command is executed.
+04:48:04 INFO  : 'ps7_init' command is executed.
+04:48:04 INFO  : 'ps7_post_config' command is executed.
+04:48:04 INFO  : 'con' command is executed.
+04:48:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:48:05 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:48:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:48:05 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:48:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+04:48:05 INFO  : Memory regions updated for context APU
+04:48:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:48:05 INFO  : 'con' command is executed.
+04:48:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+04:51:11 INFO  : Disconnected from the channel tcfchan#18.
+04:51:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+04:51:12 INFO  : 'fpga -state' command is executed.
+04:51:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:51:12 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:51:12 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+04:51:12 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+04:51:13 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+04:51:13 INFO  : 'stop' command is executed.
+04:51:13 INFO  : 'ps7_init' command is executed.
+04:51:13 INFO  : 'ps7_post_config' command is executed.
+04:51:13 INFO  : 'con' command is executed.
+04:51:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:51:14 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:51:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:51:14 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:51:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+04:51:14 INFO  : Memory regions updated for context APU
+04:51:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:51:14 INFO  : 'con' command is executed.
+04:51:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+04:52:00 INFO  : Disconnected from the channel tcfchan#19.
+04:52:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+04:52:00 INFO  : 'fpga -state' command is executed.
+04:52:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:52:01 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:52:01 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+04:52:01 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+04:52:01 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+04:52:01 INFO  : 'stop' command is executed.
+04:52:02 INFO  : 'ps7_init' command is executed.
+04:52:02 INFO  : 'ps7_post_config' command is executed.
+04:52:02 INFO  : 'con' command is executed.
+04:52:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:52:02 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:52:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:52:03 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:52:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+04:52:03 INFO  : Memory regions updated for context APU
+04:52:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:52:03 INFO  : 'con' command is executed.
+04:52:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+04:55:36 INFO  : Disconnected from the channel tcfchan#20.
+04:55:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+04:55:37 INFO  : 'fpga -state' command is executed.
+04:55:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:55:37 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:55:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+04:55:38 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+04:55:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+04:55:38 INFO  : 'stop' command is executed.
+04:55:39 INFO  : 'ps7_init' command is executed.
+04:55:39 INFO  : 'ps7_post_config' command is executed.
+04:55:39 INFO  : 'con' command is executed.
+04:55:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:55:39 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:55:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:55:40 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:55:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+04:55:40 INFO  : Memory regions updated for context APU
+04:55:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:55:40 INFO  : 'con' command is executed.
+04:55:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+04:56:38 INFO  : Disconnected from the channel tcfchan#21.
+04:56:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+04:56:38 INFO  : 'fpga -state' command is executed.
+04:56:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:56:38 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:56:39 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+04:56:39 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+04:56:39 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+04:56:39 INFO  : 'stop' command is executed.
+04:56:40 INFO  : 'ps7_init' command is executed.
+04:56:40 INFO  : 'ps7_post_config' command is executed.
+04:56:40 INFO  : 'con' command is executed.
+04:56:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:56:40 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:56:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:56:41 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:56:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+04:56:41 INFO  : Memory regions updated for context APU
+04:56:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:56:41 INFO  : 'con' command is executed.
+04:56:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+04:58:01 INFO  : Disconnected from the channel tcfchan#22.
+04:58:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+04:58:02 INFO  : 'fpga -state' command is executed.
+04:58:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:58:02 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:58:02 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+04:58:03 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+04:58:03 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+04:58:03 INFO  : 'stop' command is executed.
+04:58:03 INFO  : 'ps7_init' command is executed.
+04:58:04 INFO  : 'ps7_post_config' command is executed.
+04:58:04 INFO  : 'con' command is executed.
+04:58:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:58:04 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:58:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:58:04 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:58:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+04:58:04 INFO  : Memory regions updated for context APU
+04:58:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:58:05 INFO  : 'con' command is executed.
+04:58:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+07:08:46 INFO  : Disconnected from the channel tcfchan#23.
+07:08:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+07:08:46 INFO  : 'fpga -state' command is executed.
+07:08:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:08:47 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+07:08:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+07:08:47 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+07:08:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+07:08:47 INFO  : 'stop' command is executed.
+07:08:48 INFO  : 'ps7_init' command is executed.
+07:08:48 INFO  : 'ps7_post_config' command is executed.
+07:08:48 INFO  : 'con' command is executed.
+07:08:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:08:49 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+07:08:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:08:49 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+07:08:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+07:08:49 INFO  : Memory regions updated for context APU
+07:08:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:08:49 INFO  : 'con' command is executed.
+07:08:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+18:04:11 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1556204031000,  Project:1556163627000
+18:04:11 INFO  : Project system_wrapper_hw_platform_1's source hardware specification located at /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/wdz/system_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+18:04:22 INFO  : Project system_wrapper_hw_platform_1's source hardware specification location will not be monitored anymore.
+18:36:45 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx1/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+18:39:45 ERROR : Timed out. 180 seconds have elapsed while waiting for XSDB server to launch.
+18:39:45 WARN  : Unexpected exception occurred.
+java.lang.Exception: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.Command.<init>(Command.java:83)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$8.<init>(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueTcfCmd(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.access$4(XSDBCommandManager.java:381)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$7.run(XSDBCommandManager.java:376)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:874)
+	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
+	... 6 more
+19:14:47 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx1/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+19:14:48 INFO  : XSDB server has started successfully.
+19:14:48 INFO  : Restoring local repository preferences: 
+		 /opt/Xilinx1/SDK/2015.4/data/embeddedsw/lib/bsp/device-tree-xlnx
+19:14:48 INFO  : Processing command line option -hwspec /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper.hdf.
+19:14:48 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+19:14:50 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1556244879000,  Project:1555939427000
+19:14:50 INFO  : The hardware specification for project 'system_wrapper_hw_platform_0' is different from /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper.hdf.
+19:14:50 INFO  : Copied contents of /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper.hdf into /system_wrapper_hw_platform_0/system.hdf.
+19:14:54 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+19:14:57 INFO  : 
+19:15:01 INFO  : 
+19:15:02 INFO  : 
+19:15:05 INFO  : BSP Project P/device_tree_bsp_0 has been successfully migrated.
+19:15:06 INFO  : Updating hardware inferred compiler options for fsbl.
+19:15:07 INFO  : Updating hardware inferred compiler options for sysconfig.
+19:15:07 INFO  : Clearing existing target manager status.
+19:15:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+19:15:36 INFO  : 'fpga -state' command is executed.
+19:15:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:15:37 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+19:15:37 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+19:15:37 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+19:15:37 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+19:15:38 INFO  : 'stop' command is executed.
+19:15:38 INFO  : 'ps7_init' command is executed.
+19:15:38 INFO  : 'ps7_post_config' command is executed.
+19:15:38 INFO  : 'con' command is executed.
+19:15:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:15:39 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+19:15:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:15:39 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:15:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+19:15:39 INFO  : Memory regions updated for context APU
+19:15:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:15:39 INFO  : 'con' command is executed.
+19:15:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+19:28:59 INFO  : Disconnected from the channel tcfchan#1.
+19:28:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+19:28:59 INFO  : 'fpga -state' command is executed.
+19:29:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:29:00 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+19:29:00 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+19:29:00 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+19:29:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:29:01 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:29:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+19:29:01 INFO  : Memory regions updated for context APU
+19:29:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:29:01 INFO  : 'con' command is executed.
+19:29:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+19:35:08 INFO  : Disconnected from the channel tcfchan#2.
+19:35:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+19:35:09 INFO  : 'fpga -state' command is executed.
+19:35:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:35:09 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+19:35:09 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+19:35:10 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+19:35:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:35:10 ERROR : MMU section translation fault
+19:35:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+03:37:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+03:37:57 INFO  : 'fpga -state' command is executed.
+03:37:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:37:57 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:37:58 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:37:58 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+03:37:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:37:58 ERROR : MMU section translation fault
+03:37:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+03:38:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+03:38:21 INFO  : 'fpga -state' command is executed.
+03:38:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:38:21 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:38:21 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+03:38:21 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+03:38:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:38:22 ERROR : MMU section translation fault
+03:38:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+07:24:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+07:24:46 INFO  : 'fpga -state' command is executed.
+07:24:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:24:46 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+07:24:46 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+07:24:46 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+07:24:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:24:47 ERROR : Cannot access DDR: the controller is held in reset
+07:24:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+07:25:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+07:25:08 INFO  : 'fpga -state' command is executed.
+07:25:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:25:09 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+07:25:09 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+07:25:09 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+07:25:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:25:10 ERROR : Cannot access DDR: the controller is held in reset
+07:25:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+07:25:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+07:25:40 INFO  : 'fpga -state' command is executed.
+07:25:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:25:40 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+07:25:41 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+07:25:41 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+07:25:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:25:41 ERROR : Cannot access DDR: the controller is held in reset
+07:25:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+07:26:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+07:26:26 INFO  : 'fpga -state' command is executed.
+07:26:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:26:27 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+07:26:27 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+07:26:27 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+07:26:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:26:27 ERROR : Cannot access DDR: the controller is held in reset
+07:26:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+07:27:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+07:27:22 INFO  : 'fpga -state' command is executed.
+07:27:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:27:22 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+07:27:23 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+07:27:23 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+07:27:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:27:23 ERROR : Cannot access DDR: the controller is held in reset
+07:27:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+07:27:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:27:59 INFO  : Sourcing of '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+07:27:59 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+07:27:59 INFO  : System reset is completed.
+07:28:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1' command is executed.
+07:28:05 INFO  : FPGA configured successfully with bitstream "/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+07:28:05 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0' command is executed.
+07:28:05 INFO  : Hardware design information is loaded from '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf'.
+07:28:06 INFO  : 'ps7_init' command is executed.
+07:28:06 INFO  : 'ps7_post_config' command is executed.
+07:28:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:28:06 INFO  : The application '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf' is downloaded to processor 'ps7_cortexa9_0'.
+07:28:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585104" && level==0} -index 1
+fpga -file /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+loadhw /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+dow /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+----------------End of Script----------------
+
+07:28:06 INFO  : Memory regions updated for context APU
+07:28:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:28:06 INFO  : 'con' command is executed.
+07:28:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585104"} -index 0
+con
+----------------End of Script----------------
+
+17:53:19 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx1/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+17:53:38 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

@@ -1,0 +1,6 @@
+07:27:57 **** Incremental Build of configuration Debug for project sysconfig ****
+make all 
+make: Nothing to be done for 'all'.
+
+07:27:58 Build Finished (took 268ms)
+

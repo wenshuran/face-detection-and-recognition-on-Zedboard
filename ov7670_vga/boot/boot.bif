@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+     [bootloader]/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/fsbl/Debug/fsbl.elf
+     /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.runs/impl_1/system_wrapper.bit
+     /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.sdk/sysconfig/Debug/sysconfig.elf
+}

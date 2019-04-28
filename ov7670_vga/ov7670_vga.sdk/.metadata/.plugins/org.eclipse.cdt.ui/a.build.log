@@ -1,0 +1,21 @@
+04:20:02 **** Build of configuration Release for project a ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM Linux gcc compiler
+arm-xilinx-linux-gnueabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: a.elf
+Invoking: ARM Linux gcc linker
+arm-xilinx-linux-gnueabi-gcc  -o "a.elf"  ./src/helloworld.o   
+Finished building target: a.elf
+ 
+Invoking: ARM Linux Print Size
+arm-xilinx-linux-gnueabi-size a.elf  |tee "a.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1218	    292	      4	   1514	    5ea	a.elf
+Finished building: a.elf.size
+ 
+
+04:20:02 Build Finished (took 377ms)
+

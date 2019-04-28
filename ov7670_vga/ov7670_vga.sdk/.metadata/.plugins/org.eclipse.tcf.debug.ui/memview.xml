@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Memory>
+<Block Addr="0x10000000" Context="JTAG-jsn-Zed-210248585104-4ba00477-0.0" Size="-1"/>
+<Block Addr="0x10000999" Context="JTAG-jsn-Zed-210248585104-4ba00477-0.0" Size="-1"/>
+</Memory>

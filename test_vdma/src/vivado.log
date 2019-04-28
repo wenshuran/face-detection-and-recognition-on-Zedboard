@@ -1,0 +1,73 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sat Apr 27 22:42:15 2019
+# Process ID: 80907
+# Current directory: /home/wenshuran/test_vdma/src
+# Command line: vivado
+# Log file: /home/wenshuran/test_vdma/src/vivado.log
+# Journal file: /home/wenshuran/test_vdma/src/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_no_input'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_decode_v3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_decode_v2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_decode_stream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_debounce'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/stream_to_vga'.
+WARNING: [IP_Flow 19-2207] Repository '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_controller' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_controller'.
+WARNING: [IP_Flow 19-2207] Repository '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_debounce' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_debounce'.
+WARNING: [IP_Flow 19-2207] Repository '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_decode_stream' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_decode_stream'.
+WARNING: [IP_Flow 19-2207] Repository '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/stream_to_vga' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/stream_to_vga'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.4/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:ov7670_stream_v1_0:1.0'. The one found in IP location '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_decode_v3' will take precedence over the same IP in location /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_decode_v2
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 5935.625 ; gain = 209.059 ; free physical = 1998 ; free virtual = 13288
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.4
+  **** Build date : Nov 18 2015-09:53:32
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248585104
+set_property PROGRAM.FILE {/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.runs/impl_1/test.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7z020_1 and the probes file /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.runs/impl_1/debug_nets.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file has 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file OR
+2. Goto device properties and associate the correct probes file with the programming file already programmed in the device.
+set_property PROBES.FILE {/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.runs/impl_1/test.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"system_i/ila_0"}]]
+WARNING: Simulation object system_i/fifo_mm2s_M_AXIS_TREADY was not found in the design.
+WARNING: Simulation object system_i/fifo_mm2s_M_AXIS_TDATA was not found in the design.
+WARNING: Simulation object system_i/fifo_mm2s_M_AXIS_TVALID was not found in the design.
+WARNING: Simulation object system_i/<const0>_6 was not found in the design.
+WARNING: Simulation object system_i/<const0>_7 was not found in the design.
