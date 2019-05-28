@@ -10,6 +10,7 @@
 #include <opencv2/opencv.hpp>  
 #include <string>
 #include <stdlib.h>
+#include <pthread.h>
 
 #define RED_MASK 0xF800
 #define GREEN_MASK 0x07E0
@@ -33,6 +34,11 @@ typedef struct {
 } vdma_handle;
 
 CascadeClassifier cascade; 
+vector<pair<int, Mat>> inputFb;
+vector<pair<int, Mat>> outputFb;
+int inIndex = 0, outIndex = 0;
+pthread_mutex_t mutex_in, mutex_out;
+vdma_handle handle_s2mm, handle_mm2s;
 
 unsigned int vdma_get(vdma_handle *handle, int num) {
     return handle->vdmaVirtualAddress[num>>2];
@@ -204,146 +210,136 @@ void vdma_start_mm2s(vdma_handle *handle) {
     vdma_set(handle, OFFSET_VDMA_MM2S_VSIZE, handle->height);
 }
 
-Mat cvt565to888(unsigned char* srcAddr){    
-    Mat image888(480, 640, CV_8UC3); 
-    unsigned short* rgb565Data[640*480];
-
+void* cvt565to888(void* arg){ 
+    unsigned char* srcAddr = handle_s2mm.fb1VirtualAddress;   
     float factor5Bit = 255.0 / 31.0;
     float factor6Bit = 255.0 / 63.0;
 
-    for(int i = 0; i < 480; i++)
-    {
-        for(int j = 0; j < 640; j++)
-        {
-            unsigned short rgb565 = (srcAddr[i*640*2 + (2*j + 1)] << 8) | (srcAddr[i*640*2 + (2*j + 0)]);;
-//	    printf("rgb565[i,j]: %x\n", rgb565);
-            unsigned char r5 = (rgb565 & RED_MASK)   >> 11;
-            unsigned char g6 = (rgb565 & GREEN_MASK) >> 5;
-            unsigned char b5 = (rgb565 & BLUE_MASK);
+    while(1){
+	int done = vdma_get(&handle_s2mm, OFFSET_VDMA_S2MM_STATUS_REGISTER) & VDMA_STATUS_REGISTER_HALTED;
+	if(((inIndex-outIndex) < 4) && (done == 1)){ 
+	    Mat image888(480, 640, CV_8UC3); 
+	    uchar* pxvec;
 
-            // round answer to closest intensity in 8-bit space...
-            unsigned char r8 = floor((r5 * factor5Bit) + 0.5);
-            unsigned char g8 = floor((g6 * factor6Bit) + 0.5);
-            unsigned char b8 = floor((b5 * factor5Bit) + 0.5);
+	    for(int i = 0; i < image888.rows; i++){
+		pxvec = image888.ptr<uchar>(i);
+        	for(int j = 0; j < image888.cols; j++){
+	            unsigned short rgb565 = (srcAddr[i*640*2 + (2*j + 1)] << 8) | (srcAddr[i*640*2 + (2*j + 0)]);;
+            	    unsigned char r5 = (rgb565 & RED_MASK)   >> 11;
+            	    unsigned char g6 = (rgb565 & GREEN_MASK) >> 5;
+            	    unsigned char b5 = (rgb565 & BLUE_MASK);
 
-            image888.at<Vec3b>(i,j)[0] = r8;
-            image888.at<Vec3b>(i,j)[1] = g8;
-	    image888.at<Vec3b>(i,j)[2] = b8;
-            //rgb888Data[i*rgb888Image->widthStep + (j + 2)] = r8;
-        }
+	            // round answer to closest intensity in 8-bit space...
+            	    unsigned char r8 = floor((r5 * factor5Bit) + 0.5);
+                    unsigned char g8 = floor((g6 * factor6Bit) + 0.5);
+            	    unsigned char b8 = floor((b5 * factor5Bit) + 0.5);
+
+	    	    pxvec[3 * j + 0] = b8;
+	    	    pxvec[3 * j + 1] = g8;
+	    	    pxvec[3 * j + 2] = r8;
+
+
+            //image888.at<Vec3b>(i,j)[0] = b8;
+            //image888.at<Vec3b>(i,j)[1] = g8;
+	    //image888.at<Vec3b>(i,j)[2] = r8;
+
+        	}
+	    }
+	    vdma_start_s2mm(&handle_s2mm);
+	    pthread_mutex_lock(&mutex_in);
+	    inputFb.push_back(make_pair(inIndex++, image888));
+	    pthread_mutex_unlock(&mutex_in);
+    	}
     }
-    //cvReleaseImage(&rgb888Image);
-    return image888;
 }
 
-void cvt888to565(Mat mat, unsigned char* dstAddr){
-    float factor5Bit = 255.0 / 31.0;
-    float factor6Bit = 255.0 / 63.0;
-    for(int i = 0; i < 480; i++)
-    {
-        for(int j = 0; j < 640; j++)
-        {
-            uchar r8 =  mat.at<Vec3b>(i, j)[0];
-            uchar g8 =  mat.at<Vec3b>(i, j)[1];
-            uchar b8 =  mat.at<Vec3b>(i, j)[2];
-
-            // round answer to closest intensity in 8-bit space...
-            uchar r5 = (r8 & 0xF8) >> 3;
-            uchar g6 = (g8 & 0xFC) >> 2;
-            uchar b5 = (b8 & 0xF8) >> 3;
-
-            unsigned char r5g3 = (r5 << 3) | ((g6 & 0x38) >> 3);
-            unsigned char g3b5 = ((g6 & 0x7) << 5) | b5;
-
-            dstAddr[i*640*2 + (2*j + 0)] = g3b5;
-            dstAddr[i*640*2 + (2*j + 1)] = r5g3;
-        }
-    }
-
-/*
-    for(int i = 0; i < 480; i++)
-    {
-        for(int j = 0; j < 640; j++)
-        {
-            uchar b8 =  mat.at<Vec3b>(i, j)[0];
-            uchar g8 =  mat.at<Vec3b>(i, j)[1];
-            uchar r8 =  mat.at<Vec3b>(i, j)[2];
-
-            // round answer to closest intensity in 8-bit space...
-            uchar r5 = (r8 & 0xF8) >> 3;
-            uchar g6 = (g8 & 0xFC) >> 2;
-            uchar b5 = (b8 & 0xF8) >> 3;
-
-	    unsigned char r5g3 = (r5 << 3) | ((g6 & 0x38) >> 3);
-	    unsigned char g3b5 = ((g6 & 0x7) << 5) | b5;
-
-            dstAddr[j*640*2 + (2*i + 0)] = g3b5;
-            dstAddr[j*640*2 + (2*i + 1)] = r5g3;
-        }
-    }
-
-    printf("fill dstAddr ok\n");
-
-    uchar* pimage = mat.data;
-    for(int i = 0; i < 480; i++)
-    {
-        for(int j = 0; j < 640; j++)
-        {
-	    unsigned char b8 = pimage[i*640*3 + (3*j + 0)];
-            unsigned char g8 = pimage[i*640*3 + (3*j + 1)];
-            unsigned char r8 = pimage[i*640*3 + (3*j + 2)];
-
-	    unsigned char r5 = (r8 & 0xF8) >> 3;
-            unsigned char g6 = (g8 & 0xFC) >> 2;
-            unsigned char b5 = (b8 & 0xF8) >> 3;
-
-            unsigned short rgb565 = (r5 << 11) + (g6 << 5) + b5;
-	    
-            dstAddr[i*640*2 + (2*j + 1)] = (rgb565 & 0xFF00) >> 8;
-	    dstAddr[i*640*2 + (2*j + 0)] = (rgb565 & 0xFF);
+void* cvtImage(void* arg){
+    while(1){
+	if(inputFb.size() == 0){
+	    usleep(10);
+	    continue;
 	}
-    }
-    printf("convert 888 to 565 over!\n");
-    return;*/
-}
+	pair<int, Mat> inImage;
 
-int cvtImage(unsigned char* srcAddr, unsigned char* dstAddr){
-    Mat image = cvt565to888(srcAddr);
-    //printf("convert 565 888 over!\n");
-    if (!image.data){
-      memcpy(dstAddr, srcAddr, 640*480*2);
-      printf("no image\n");  
-      return 1;
-    }
- 
-    Mat dstImage = image;  
-    Mat grayImage(480, 640, CV_8UC1);  
-    cvtColor(image, grayImage, CV_BGR2GRAY); // 生成灰度图，提高检测效率  
-    //printf("generate gray image\n");  
+	pthread_mutex_lock(&mutex_in);
+	inImage = inputFb.front();
+	inputFb.erase(inputFb.begin());
+	pthread_mutex_unlock(&mutex_in);
 
-    Scalar color = CV_RGB(0, 255, 0);
-    vector<Rect> rect;  
-    cascade.detectMultiScale(grayImage, rect, 1.1, 3, 0);  // 分类器对象调用  
-    printf("face number: %d\n", rect.size());  
+	Mat image = inImage.second;
+	std::vector<Mat>splitBGR(image.channels());
+	split(image, splitBGR);
+	for (int i = 0; i < image.channels(); i++)
+	{
+		equalizeHist(splitBGR[i], splitBGR[i]);//图像灰度均衡化
+	}
+	Mat dst;
+	merge(splitBGR, dst);
+        Mat dstImage = dst;  
+        Mat grayImage(480, 640, CV_8UC1);  
+        cvtColor(dst, grayImage, CV_BGR2GRAY); // 生成灰度图，提高检测效率  
+        //printf("generate gray image\n");  
+        Scalar color = CV_RGB(0, 255, 0);
+        vector<Rect> rect;  
+        cascade.detectMultiScale(grayImage, rect, 1.1, 1, 0);  // 分类器对象调用  
+        printf("face number: %d\n", rect.size());  
   
-    if(rect.size()!=0){
-        for (int i = 0; i < rect.size();i++){  
-            rectangle(dstImage, rect[i].tl(), rect[i].br(), color, 3, 4, 0);  
-        }  
+        if(rect.size()!=0){
+            for (int i = 0; i < rect.size();i++){  
+                rectangle(dstImage, rect[i].tl(), rect[i].br(), color, 3, 4, 0);  
+            }  
+        }
+	pthread_mutex_lock(&mutex_out);
+	outputFb.push_back(make_pair(outIndex++, dstImage));
+        pthread_mutex_unlock(&mutex_out);
+
     }
-
-    cvt888to565(dstImage, dstAddr);
-    //printf("convert 888 565 over\n");
-    //memcpy(dstAddr, srcAddr, 640*480*2);
-
-    //memcpy(dstAddr, dstImage.ptr<double>(0), 640*480*2);
-    
-    //cvReleaseImage(&IpImg);
-    return 0;
 }
- 
+
+void* cvt888to565(void* arg){
+    unsigned char* dstAddr = handle_mm2s.fb1VirtualAddress;
+    uchar* pxvec;
+    while(1){
+	if(outputFb.size() == 0){
+	    usleep(10);
+	    continue;
+        }
+
+        pair<int, Mat> outImage;
+        pthread_mutex_lock(&mutex_out);
+        outImage = outputFb.front();
+        outputFb.erase(outputFb.begin());
+        pthread_mutex_unlock(&mutex_out);
+
+        Mat mat = outImage.second;
+        for(int i = 0; i < mat.rows; i++){
+            pxvec = mat.ptr<uchar>(i);
+            for(int j = 0; j < mat.cols; j++){
+                uchar b8 = pxvec[3 * j + 0];
+                uchar g8 = pxvec[3 * j + 1];
+                uchar r8 = pxvec[3 * j + 2];
+
+
+//            uchar b8 =  mat.at<Vec3b>(i, j)[0];
+//            uchar g8 =  mat.at<Vec3b>(i, j)[1];
+//            uchar r8 =  mat.at<Vec3b>(i, j)[2];
+
+            // round answer to closest intensity in 8-bit space...
+                uchar r5 = (r8 & 0xF8) >> 3;
+                uchar g6 = (g8 & 0xFC) >> 2;
+                uchar b5 = (b8 & 0xF8) >> 3;
+
+                unsigned char r5g3 = (r5 << 3) | ((g6 & 0x38) >> 3);
+                unsigned char g3b5 = ((g6 & 0x7) << 5) | b5;
+
+                dstAddr[i*640*2 + (2*j + 0)] = g3b5;
+                dstAddr[i*640*2 + (2*j + 1)] = r5g3;
+            }
+        }
+    }
+}
+
 int main() {
-    vdma_handle handle_s2mm, handle_mm2s;
     cascade.load("haarcascade_frontalface_alt2.xml");
 
     int Handler = open("/dev/mem", O_RDWR | O_SYNC);
@@ -361,32 +357,21 @@ int main() {
 
     printf("s2mm: %d\n", vdma_get(&handle_s2mm, OFFSET_VDMA_S2MM_STATUS_REGISTER));
     printf("mm2s: %d\n", vdma_get(&handle_mm2s, OFFSET_VDMA_MM2S_STATUS_REGISTER));
-//    int i = 100; 
-//    unsigned char* a = (unsigned char*)malloc(640*480*2*sizeof(unsigned char));
-//    unsigned char* b = (unsigned char*)malloc(640*480*2*sizeof(unsigned char));
-//    printf("Address: %x, %x\n", &a, &b);
 
-    while(1){
-    	if(vdma_get(&handle_s2mm, OFFSET_VDMA_S2MM_STATUS_REGISTER) & VDMA_STATUS_REGISTER_HALTED == 1){
-            cvtImage(handle_s2mm.fb1VirtualAddress, handle_mm2s.fb1VirtualAddress);
-	//  if(flag = 0){
-//	      memcpy(a, handle_s2mm.fb1VirtualAddress, 640*480*2);
-	//      flag = 1;
-	//  }
-	//  else{
-	//      memcpy(a, handle_s2mm.fb2VirtualAddress, 640*480*2);
-        //      flag = 0;
-	//  }
-//	  cvtImage(a, b);
-	  //memcpy(b, a, 640*480*2);
-//	  memcpy(handle_mm2s.fb1VirtualAddress, b, 640*480*2);
-//	  memcpy(handle_mm2s.fb1VirtualAddress, handle_s2mm.fb1VirtualAddress, 640*480*2);
-          vdma_start_s2mm(&handle_s2mm);
-//	  i--;
-       }
-    }
+    pthread_mutex_init(&mutex_in,NULL); 
+    pthread_mutex_init(&mutex_out,NULL); 
+
+    pthread_t threadId[3];
+    int ret0 = pthread_create(&threadId[0], NULL, cvt565to888, NULL);
+    int ret1 = pthread_create(&threadId[1], NULL, cvtImage, NULL);
+    int ret2 = pthread_create(&threadId[2], NULL, cvtImage, NULL);
+    int ret3 = pthread_create(&threadId[3], NULL, cvt888to565, NULL);
+
+    for(int i = 0; i < 4; i++){
+        pthread_join(threadId[i],NULL);
+    }    
+
 //    free(a); 
-    //sleep(100);
     // Halt VDMA and unmap memory ranges
     vdma_halt(&handle_s2mm, &handle_mm2s);
     printf("Halt over\n");
