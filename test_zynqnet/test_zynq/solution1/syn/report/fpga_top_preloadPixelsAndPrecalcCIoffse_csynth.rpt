@@ -1,0 +1,306 @@
+
+
+================================================================
+== Vivado HLS Report for 'fpga_top_preloadPixelsAndPrecalcCIoffse'
+================================================================
+* Date:           Tue May 28 07:43:53 2019
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        test_zynq
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.86|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |   13|   13|    9|    9| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------+----------------------+-----+-----+-----+-----+----------+
+        |                                 |                      |  Latency  |  Interval | Pipeline |
+        |             Instance            |        Module        | min | max | min | max |   Type   |
+        +---------------------------------+----------------------+-----+-----+-----+-----+----------+
+        |grp_fpga_top_reg_float_s_fu_212  |fpga_top_reg_float_s  |    1|    1|    1|    1| function |
+        +---------------------------------+----------------------+-----+-----+-----+-----+----------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      3|       0|    617|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      4|     106|      0|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|    407|
+|Register         |        -|      -|     865|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      7|     971|   1024|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      3|   ~0   |      1|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------+-----------------------------+---------+-------+----+----+
+    |             Instance            |            Module           | BRAM_18K| DSP48E| FF | LUT|
+    +---------------------------------+-----------------------------+---------+-------+----+----+
+    |fpga_top_mul_10ns_10ns_19_3_U5   |fpga_top_mul_10ns_10ns_19_3  |        0|      1|  20|   0|
+    |fpga_top_mul_16s_2ns_16_3_U2     |fpga_top_mul_16s_2ns_16_3    |        0|      1|  18|   0|
+    |fpga_top_mul_16s_2ns_16_3_U3     |fpga_top_mul_16s_2ns_16_3    |        0|      1|  18|   0|
+    |fpga_top_mul_16s_2ns_16_3_U4     |fpga_top_mul_16s_2ns_16_3    |        0|      1|  18|   0|
+    |grp_fpga_top_reg_float_s_fu_212  |fpga_top_reg_float_s         |        0|      0|  32|   0|
+    +---------------------------------+-----------------------------+---------+-------+----+----+
+    |Total                            |                             |        0|      4| 106|   0|
+    +---------------------------------+-----------------------------+---------+-------+----+----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------------+----------+-------+---+----+------------+------------+
+    |             Variable Name             | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------------+----------+-------+---+----+------------+------------+
+    |addr_pixel_offset_V_0_1_i_i_fu_378_p2  |     *    |      1|  0|   0|           9|          10|
+    |addr_pixel_offset_V_0_2_i_i_fu_394_p2  |     *    |      1|  0|   0|          10|          10|
+    |addr_pixel_offset_V_0_i_i_fu_267_p2    |     *    |      1|  0|   0|          10|          10|
+    |addr_V_0_1_i_i_fu_488_p2               |     +    |      0|  0|  16|          16|          16|
+    |addr_V_0_2_i_i_fu_544_p2               |     +    |      0|  0|  16|          16|          16|
+    |addr_V_0_i_i_fu_416_p2                 |     +    |      0|  0|  16|          16|          16|
+    |addr_V_1_1_i_i_fu_637_p2               |     +    |      0|  0|  16|          16|          16|
+    |addr_V_1_2_i_i_fu_646_p2               |     +    |      0|  0|  16|          16|          16|
+    |addr_V_1_i_i_fu_590_p2                 |     +    |      0|  0|  16|          16|          16|
+    |addr_V_2_1_i_i_fu_669_p2               |     +    |      0|  0|  16|          16|          16|
+    |addr_V_2_2_i_i_fu_673_p2               |     +    |      0|  0|  16|          16|          16|
+    |addr_V_2_i_i_fu_650_p2                 |     +    |      0|  0|  16|          16|          16|
+    |tmp_184_0_i_i_fu_411_p2                |     +    |      0|  0|  16|          16|          16|
+    |tmp_184_1_i_i_fu_497_p2                |     +    |      0|  0|  16|          16|          16|
+    |tmp_184_2_i_i_fu_501_p2                |     +    |      0|  0|  16|          16|          16|
+    |x_V_0_2_i_i_fu_329_p2                  |     +    |      0|  0|  10|           1|          10|
+    |x_V_0_i_i_fu_249_p2                    |     +    |      0|  0|  10|           2|          10|
+    |y_V_i_i_43_fu_359_p2                   |     +    |      0|  0|  10|           1|          10|
+    |y_V_i_i_fu_221_p2                      |     +    |      0|  0|  10|           2|          10|
+    |px_0_1_i_i_fu_535_p3                   |  Select  |      0|  0|  32|           1|          32|
+    |px_0_2_i_i_fu_581_p3                   |  Select  |      0|  0|  32|           1|          32|
+    |px_0_i_i_fu_479_p3                     |  Select  |      0|  0|  32|           1|          32|
+    |px_1_1_i_i_fu_695_p3                   |  Select  |      0|  0|  32|           1|          32|
+    |px_1_2_i_i_fu_733_p3                   |  Select  |      0|  0|  32|           1|          32|
+    |px_1_i_i_fu_628_p3                     |  Select  |      0|  0|  32|           1|          32|
+    |px_2_1_i_i_fu_785_p3                   |  Select  |      0|  0|  32|           1|          32|
+    |px_2_2_i_i_fu_811_p3                   |  Select  |      0|  0|  32|           1|          32|
+    |px_2_i_i_fu_759_p3                     |  Select  |      0|  0|  32|           1|          32|
+    |is_padding_pixel_0_1_i_i_fu_529_p2     |   icmp   |      0|  0|   4|          11|           1|
+    |is_padding_pixel_0_2_i_i_fu_575_p2     |   icmp   |      0|  0|   4|          11|           1|
+    |is_padding_pixel_0_i_i_fu_473_p2       |   icmp   |      0|  0|   4|          11|           1|
+    |is_padding_pixel_1_1_i_i_fu_689_p2     |   icmp   |      0|  0|   4|          11|           1|
+    |is_padding_pixel_1_2_i_i_fu_727_p2     |   icmp   |      0|  0|   4|          11|           1|
+    |is_padding_pixel_1_i_i_fu_622_p2       |   icmp   |      0|  0|   4|          11|           1|
+    |is_padding_pixel_2_1_i_i_fu_779_p2     |   icmp   |      0|  0|   4|          11|           1|
+    |is_padding_pixel_2_2_i_i_fu_805_p2     |   icmp   |      0|  0|   4|          11|           1|
+    |is_padding_pixel_2_i_i_fu_753_p2       |   icmp   |      0|  0|   4|          11|           1|
+    |slt1_fu_295_p2                         |   icmp   |      0|  0|   4|          10|          10|
+    |slt_fu_281_p2                          |   icmp   |      0|  0|   4|          10|          10|
+    |ult1_fu_335_p2                         |   icmp   |      0|  0|   4|          10|          10|
+    |ult2_fu_345_p2                         |   icmp   |      0|  0|   3|           9|           9|
+    |ult3_fu_369_p2                         |   icmp   |      0|  0|   4|          10|          10|
+    |ult_fu_315_p2                          |   icmp   |      0|  0|   3|           9|           9|
+    |ap_sig_bdd_162                         |    or    |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_89                          |    or    |      0|  0|   1|           1|           1|
+    |p_lobit_i_i2_0_i_i_fu_301_p2           |    or    |      0|  0|  11|          10|          10|
+    |tmp10_fu_659_p2                        |    or    |      0|  0|   1|           1|           1|
+    |tmp4_fu_511_p2                         |    or    |      0|  0|   1|           1|           1|
+    |tmp5_fu_553_p2                         |    or    |      0|  0|   1|           1|           1|
+    |tmp8_fu_604_p2                         |    or    |      0|  0|   1|           1|           1|
+    |tmp_748_i_i_fu_460_p2                  |    or    |      0|  0|   1|           1|           1|
+    |tmp_753_i_i_fu_516_p2                  |    or    |      0|  0|   1|           1|           1|
+    |tmp_758_i_i_fu_558_p2                  |    or    |      0|  0|   1|           1|           1|
+    |tmp_764_i_i_fu_609_p2                  |    or    |      0|  0|   1|           1|           1|
+    |tmp_769_i_i_fu_677_p2                  |    or    |      0|  0|   1|           1|           1|
+    |tmp_774_i_i_fu_704_p2                  |    or    |      0|  0|   1|           1|           1|
+    |tmp_780_i_i_fu_664_p2                  |    or    |      0|  0|   1|           1|           1|
+    |tmp_785_i_i_fu_712_p2                  |    or    |      0|  0|   1|           1|           1|
+    |tmp_790_i_i_fu_716_p2                  |    or    |      0|  0|   1|           1|           1|
+    |tmp_fu_454_p2                          |    or    |      0|  0|   1|           1|           1|
+    |rev1_fu_449_p2                         |    xor   |      0|  0|   2|           1|           2|
+    |rev2_fu_506_p2                         |    xor   |      0|  0|   2|           1|           2|
+    |rev3_fu_548_p2                         |    xor   |      0|  0|   2|           1|           2|
+    |rev4_fu_599_p2                         |    xor   |      0|  0|   2|           1|           2|
+    |rev5_fu_654_p2                         |    xor   |      0|  0|   2|           1|           2|
+    |rev_fu_444_p2                          |    xor   |      0|  0|   2|           1|           2|
+    +---------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                  |          |      3|  0| 617|         425|         655|
+    +---------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------+----+-----------+-----+-----------+
+    |                 Name                 | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |ImageCache_IBRAM_address0             |  30|         10|   15|        150|
+    |ap_NS_fsm                             |   4|         10|    1|         10|
+    |ap_reg_ppiten_pp0_it0                 |   1|          2|    1|          2|
+    |ap_reg_ppiten_pp0_it1                 |   1|          2|    1|          2|
+    |ap_return_0                           |  19|          2|   19|         38|
+    |ap_return_1                           |  32|          2|   32|         64|
+    |ap_return_2                           |  32|          2|   32|         64|
+    |ap_return_3                           |  32|          2|   32|         64|
+    |ap_return_4                           |  32|          2|   32|         64|
+    |ap_return_5                           |  32|          2|   32|         64|
+    |ap_return_6                           |  32|          2|   32|         64|
+    |ap_return_7                           |  32|          2|   32|         64|
+    |ap_return_8                           |  32|          2|   32|         64|
+    |ap_return_9                           |  32|          2|   32|         64|
+    |grp_fpga_top_reg_float_s_fu_212_in_r  |  64|         10|   32|        320|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |Total                                 | 407|         54|  357|       1098|
+    +--------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------+----+----+-----+-----------+
+    |                 Name                | FF | LUT| Bits| Const Bits|
+    +-------------------------------------+----+----+-----+-----------+
+    |addr_V_1_2_i_i_reg_1113              |  16|   0|   16|          0|
+    |addr_V_2_1_i_i_reg_1134              |  16|   0|   16|          0|
+    |addr_V_2_2_i_i_reg_1139              |  16|   0|   16|          0|
+    |addr_V_2_i_i_reg_1118                |  16|   0|   16|          0|
+    |addr_line_offset_V_0_1_i_i_reg_1009  |  16|   0|   16|          0|
+    |addr_line_offset_V_0_i_i_reg_975     |  16|   0|   16|          0|
+    |addr_pixel_offset_V_0_1_i_i_reg_963  |  16|   0|   16|          0|
+    |addr_pixel_offset_V_0_2_i_i_reg_980  |  16|   0|   16|          0|
+    |addr_pixel_offset_V_0_i_i_reg_894    |  16|   0|   16|          0|
+    |ap_CS_fsm                            |   9|   0|    9|          0|
+    |ap_done_reg                          |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it0_preg           |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it1                |   1|   0|    1|          0|
+    |ap_return_0_preg                     |  19|   0|   19|          0|
+    |ap_return_1_preg                     |  32|   0|   32|          0|
+    |ap_return_2_preg                     |  32|   0|   32|          0|
+    |ap_return_3_preg                     |  32|   0|   32|          0|
+    |ap_return_4_preg                     |  32|   0|   32|          0|
+    |ap_return_5_preg                     |  32|   0|   32|          0|
+    |ap_return_6_preg                     |  32|   0|   32|          0|
+    |ap_return_7_preg                     |  32|   0|   32|          0|
+    |ap_return_8_preg                     |  32|   0|   32|          0|
+    |ap_return_9_preg                     |  32|   0|   32|          0|
+    |buffer_0_write_assign_reg_1055       |  32|   0|   32|          0|
+    |buffer_1_write_assign_reg_1087       |  32|   0|   32|          0|
+    |buffer_2_write_assign_reg_1097       |  32|   0|   32|          0|
+    |buffer_3_write_assign_reg_1144       |  32|   0|   32|          0|
+    |buffer_4_write_assign_reg_1169       |  32|   0|   32|          0|
+    |buffer_5_write_assign_reg_1179       |  32|   0|   32|          0|
+    |buffer_6_write_assign_reg_1189       |  32|   0|   32|          0|
+    |buffer_7_write_assign_reg_1199       |  32|   0|   32|          0|
+    |ci_times_ch_out_V_reg_1082           |  19|   0|   19|          0|
+    |line_width_load_reg_881              |  16|   0|   16|          0|
+    |rev1_reg_1030                        |   1|   0|    1|          0|
+    |rev2_reg_1060                        |   1|   0|    1|          0|
+    |rev3_reg_1066                        |   1|   0|    1|          0|
+    |rev4_reg_1102                        |   1|   0|    1|          0|
+    |rev5_reg_1123                        |   1|   0|    1|          0|
+    |rev_reg_1024                         |   1|   0|    1|          0|
+    |slt1_reg_906                         |   1|   0|    1|          0|
+    |slt_reg_901                          |   1|   0|    1|          0|
+    |tmp_182_0_i_i_reg_888                |  10|   0|   16|          6|
+    |tmp_183_0_i_i_reg_992                |  10|   0|   16|          6|
+    |tmp_184_0_i_i_reg_998                |  16|   0|   16|          0|
+    |tmp_184_1_i_i_reg_1041               |  16|   0|   16|          0|
+    |tmp_184_2_i_i_reg_1048               |  16|   0|   16|          0|
+    |tmp_2_reg_911                        |   1|   0|    1|          0|
+    |tmp_3_reg_921                        |   1|   0|    1|          0|
+    |tmp_6_reg_937                        |   2|   0|    2|          0|
+    |tmp_758_i_i_reg_1072                 |   1|   0|    1|          0|
+    |tmp_774_i_i_reg_1149                 |   1|   0|    1|          0|
+    |tmp_780_i_i_reg_1129                 |   1|   0|    1|          0|
+    |tmp_785_i_i_reg_1159                 |   1|   0|    1|          0|
+    |tmp_790_i_i_reg_1164                 |   1|   0|    1|          0|
+    |tmp_7_reg_947                        |   1|   0|    1|          0|
+    |tmp_9_reg_953                        |   2|   0|    2|          0|
+    |ult1_reg_932                         |   1|   0|    1|          0|
+    |ult2_reg_942                         |   1|   0|    1|          0|
+    |ult3_reg_958                         |   1|   0|    1|          0|
+    |ult_reg_916                          |   1|   0|    1|          0|
+    |x_V_0_2_i_i_reg_927                  |  10|   0|   10|          0|
+    |x_V_3_read_reg_871                   |   9|   0|    9|          0|
+    +-------------------------------------+----+----+-----+-----------+
+    |Total                                | 865|   0|  877|         12|
+    +-------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------+-----+-----+------------+-----------------------------------------+--------------+
+|         RTL Ports         | Dir | Bits|  Protocol  |              Source Object              |    C Type    |
++---------------------------+-----+-----+------------+-----------------------------------------+--------------+
+|ap_clk                     |  in |    1| ap_ctrl_hs | fpga_top_preloadPixelsAndPrecalcCIoffse | return value |
+|ap_rst                     |  in |    1| ap_ctrl_hs | fpga_top_preloadPixelsAndPrecalcCIoffse | return value |
+|ap_start                   |  in |    1| ap_ctrl_hs | fpga_top_preloadPixelsAndPrecalcCIoffse | return value |
+|ap_done                    | out |    1| ap_ctrl_hs | fpga_top_preloadPixelsAndPrecalcCIoffse | return value |
+|ap_continue                |  in |    1| ap_ctrl_hs | fpga_top_preloadPixelsAndPrecalcCIoffse | return value |
+|ap_idle                    | out |    1| ap_ctrl_hs | fpga_top_preloadPixelsAndPrecalcCIoffse | return value |
+|ap_ready                   | out |    1| ap_ctrl_hs | fpga_top_preloadPixelsAndPrecalcCIoffse | return value |
+|ap_return_0                | out |   19| ap_ctrl_hs | fpga_top_preloadPixelsAndPrecalcCIoffse | return value |
+|ap_return_1                | out |   32| ap_ctrl_hs | fpga_top_preloadPixelsAndPrecalcCIoffse | return value |
+|ap_return_2                | out |   32| ap_ctrl_hs | fpga_top_preloadPixelsAndPrecalcCIoffse | return value |
+|ap_return_3                | out |   32| ap_ctrl_hs | fpga_top_preloadPixelsAndPrecalcCIoffse | return value |
+|ap_return_4                | out |   32| ap_ctrl_hs | fpga_top_preloadPixelsAndPrecalcCIoffse | return value |
+|ap_return_5                | out |   32| ap_ctrl_hs | fpga_top_preloadPixelsAndPrecalcCIoffse | return value |
+|ap_return_6                | out |   32| ap_ctrl_hs | fpga_top_preloadPixelsAndPrecalcCIoffse | return value |
+|ap_return_7                | out |   32| ap_ctrl_hs | fpga_top_preloadPixelsAndPrecalcCIoffse | return value |
+|ap_return_8                | out |   32| ap_ctrl_hs | fpga_top_preloadPixelsAndPrecalcCIoffse | return value |
+|ap_return_9                | out |   32| ap_ctrl_hs | fpga_top_preloadPixelsAndPrecalcCIoffse | return value |
+|y_V_2                      |  in |    9|   ap_none  |                  y_V_2                  |    scalar    |
+|x_V_3                      |  in |    9|   ap_none  |                  x_V_3                  |    scalar    |
+|ci_V                       |  in |   10|   ap_none  |                   ci_V                  |    scalar    |
+|ch_out_V                   |  in |   10|   ap_none  |                 ch_out_V                |    scalar    |
+|ci_V_out_din               | out |   10|   ap_fifo  |                 ci_V_out                |    pointer   |
+|ci_V_out_full_n            |  in |    1|   ap_fifo  |                 ci_V_out                |    pointer   |
+|ci_V_out_write             | out |    1|   ap_fifo  |                 ci_V_out                |    pointer   |
+|ch_out_V_out_din           | out |   10|   ap_fifo  |               ch_out_V_out              |    pointer   |
+|ch_out_V_out_full_n        |  in |    1|   ap_fifo  |               ch_out_V_out              |    pointer   |
+|ch_out_V_out_write         | out |    1|   ap_fifo  |               ch_out_V_out              |    pointer   |
+|line_width                 |  in |   16|   ap_none  |                line_width               |    pointer   |
+|ImageCache_ch_in_V         |  in |   10|   ap_none  |            ImageCache_ch_in_V           |    pointer   |
+|ImageCache_width_in_V      |  in |    9|   ap_none  |          ImageCache_width_in_V          |    pointer   |
+|ImageCache_height_in_V     |  in |    9|   ap_none  |          ImageCache_height_in_V         |    pointer   |
+|ImageCache_IBRAM_address0  | out |   15|  ap_memory |             ImageCache_IBRAM            |     array    |
+|ImageCache_IBRAM_ce0       | out |    1|  ap_memory |             ImageCache_IBRAM            |     array    |
+|ImageCache_IBRAM_q0        |  in |   32|  ap_memory |             ImageCache_IBRAM            |     array    |
+|WeightsCache_ch_out_V      |  in |   10|   ap_none  |          WeightsCache_ch_out_V          |    pointer   |
++---------------------------+-----+-----+------------+-----------------------------------------+--------------+
+

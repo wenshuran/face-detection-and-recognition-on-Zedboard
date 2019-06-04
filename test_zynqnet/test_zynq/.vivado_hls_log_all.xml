@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [RTGEN-101] Global array 'GBRAM_15' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:45:05.054-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'GBRAM_14' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.929-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'GBRAM_13' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.912-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'GBRAM_12' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.894-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'GBRAM_11' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.872-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'GBRAM_10' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.856-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'GBRAM_9' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.836-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'GBRAM_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.816-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'GBRAM_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.797-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'GBRAM_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.781-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'GBRAM_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.763-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'GBRAM_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.744-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'GBRAM_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.724-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'GBRAM_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.707-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'GBRAM_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.689-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'GBRAM_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.669-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'MemoryController_pixel_output' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.660-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'MemoryController_pixel_output' is power-on initialization." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.651-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_2_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.643-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_1_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.620-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_0_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.600-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_2_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.580-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_1_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.561-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_0_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.541-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_2_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.518-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_1_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.498-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_0_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.477-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_2_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.457-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_1_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.436-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_0_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.410-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_2_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.385-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_1_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.363-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_0_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.342-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_2_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.319-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_1_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.298-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_0_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.277-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_2_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.257-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_1_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.234-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_0_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.219-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_2_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.202-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_1_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.184-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_0_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.169-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_2_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.154-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_1_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.137-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_15_0_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.119-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'OBRAM_15' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.099-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_2_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.086-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_1_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.066-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_0_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.041-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_2_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.018-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_1_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:37.001-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_0_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.983-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_2_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.966-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_1_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.951-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_0_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.935-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_2_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.917-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_1_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.896-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_0_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.882-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_2_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.866-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_1_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.852-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_0_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.832-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_2_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.816-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_1_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.796-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_0_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.782-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_2_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.765-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_1_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.749-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_0_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.731-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_2_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.712-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_1_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.695-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_0_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.678-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_2_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.658-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_1_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.632-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_14_0_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.612-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'OBRAM_14' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.594-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_2_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.582-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_1_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.565-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_0_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.550-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_2_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.534-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_1_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.516-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_0_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.496-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_2_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.481-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_1_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.467-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_0_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.449-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_2_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.429-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_1_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.413-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_0_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.395-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_2_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.378-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_1_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.362-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_0_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.347-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_2_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.331-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_1_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.313-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_0_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.297-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_2_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.284-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_1_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.269-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_0_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.251-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_2_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.232-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_1_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.217-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_0_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.201-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_2_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.186-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_1_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.170-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_13_0_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.150-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'OBRAM_13' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.134-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_2_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.118-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_1_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.100-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_0_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.085-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_2_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.068-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_1_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.047-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_0_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.024-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_2_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:36.006-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_1_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.990-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_0_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.963-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_2_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.942-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_1_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.924-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_0_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.904-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_2_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.890-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_1_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.875-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_0_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.858-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_2_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.840-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_1_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.822-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_0_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.804-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_2_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.790-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_1_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.772-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_0_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.756-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_2_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.739-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_1_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.720-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_0_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.702-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_2_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.685-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_1_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.669-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_12_0_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.654-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'OBRAM_12' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.635-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_2_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.621-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_1_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.601-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_0_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.585-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_2_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.565-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_1_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.549-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_0_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.531-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_2_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.515-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_1_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.494-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_0_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.479-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_2_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.465-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_1_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.447-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_0_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.425-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_2_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.408-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_1_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.387-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_0_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.366-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_2_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.349-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_1_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.330-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_0_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.312-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_2_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.297-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_1_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.282-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_0_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.267-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_2_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.250-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_1_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.232-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_0_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.216-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_2_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.198-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_1_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.184-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_11_0_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.167-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'OBRAM_11' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.132-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_2_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.067-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_1_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.043-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_0_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.018-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_2_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:35.002-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_1_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.983-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_0_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.970-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_2_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.945-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_1_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.928-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_0_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.911-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_2_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.895-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_1_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.878-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_0_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.859-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_2_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.842-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_1_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.822-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_0_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.806-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_2_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.788-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_1_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.770-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_0_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.753-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_2_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.736-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_1_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.717-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_0_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.703-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_2_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.688-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_1_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.671-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_0_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.654-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_2_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.637-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_1_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.619-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_10_0_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.600-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'OBRAM_10' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.587-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_2_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.574-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_1_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.558-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_0_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.541-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_2_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.523-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_1_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.508-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_0_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.493-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_2_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.475-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_1_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.456-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_0_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.441-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_2_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.423-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_1_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.406-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_0_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.390-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_2_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.373-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_1_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.357-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_0_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.337-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_2_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.317-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_1_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.302-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_0_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.288-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_2_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.271-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_1_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.255-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_0_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.238-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_2_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.222-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_1_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.206-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_0_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.188-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_2_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.171-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_1_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.153-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_9_0_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.131-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'OBRAM_9' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.112-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_2_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.096-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_1_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.077-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_0_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.054-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_2_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.035-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_1_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:34.010-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_0_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.990-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_2_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.969-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_1_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.947-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_0_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.928-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_2_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.911-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_1_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.887-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_0_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.865-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_2_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.843-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_1_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.822-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_0_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.801-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_2_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.778-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_1_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.754-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_0_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.729-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_2_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.709-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_1_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.688-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_0_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.668-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_2_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.647-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_1_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.621-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_0_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.600-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_2_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.579-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_1_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.559-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_8_0_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.538-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'OBRAM_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.518-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_2_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.499-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_1_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.461-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_0_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.440-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_2_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.420-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_1_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.401-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_0_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.379-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_2_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.356-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_1_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.334-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_0_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.309-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_2_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.291-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_1_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.270-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_0_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.247-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_2_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.226-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_1_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.206-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_0_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.183-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_2_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.163-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_1_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.137-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_0_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.107-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_2_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.070-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_1_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:33.031-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_0_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.999-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_2_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.979-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_1_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.957-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_0_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.934-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_2_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.909-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_1_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.886-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_7_0_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.863-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'OBRAM_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.842-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_2_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.823-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_1_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.801-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_0_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.783-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_2_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.771-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_1_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.766-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_0_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.759-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_2_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.683-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_1_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.664-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_0_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.645-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_2_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.627-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_1_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.607-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_0_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.587-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_2_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.564-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_1_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.542-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_0_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.524-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_2_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.504-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_1_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.481-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_0_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.463-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_2_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.442-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_1_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.419-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_0_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.398-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_2_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.378-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_1_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.340-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_0_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.315-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_2_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.296-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_1_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.273-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_6_0_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.252-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'OBRAM_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.232-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_2_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.213-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_1_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.189-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_0_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.172-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_2_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.136-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_1_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.115-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_0_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.089-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_2_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.071-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_1_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.051-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_0_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.029-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_2_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:32.005-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_1_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.983-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_0_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.962-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_2_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.943-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_1_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.921-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_0_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.899-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_2_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.879-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_1_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.858-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_0_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.835-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_2_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.815-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_1_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.794-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_0_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.774-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_2_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.747-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_1_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.727-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_0_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.709-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_2_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.684-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_1_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.662-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_5_0_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.638-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'OBRAM_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.613-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_2_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.596-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_1_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.577-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_0_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.554-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_2_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.538-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_1_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.517-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_0_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.495-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_2_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.476-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_1_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.458-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_0_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.435-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_2_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.411-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_1_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.391-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_0_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.371-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_2_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.347-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_1_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.327-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_0_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.305-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_2_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.284-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_1_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.260-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_0_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.240-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_2_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.219-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_1_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.200-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_0_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.181-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_2_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.165-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_1_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.159-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_0_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.081-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_2_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.060-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_1_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.035-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_4_0_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:31.014-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'OBRAM_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.995-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_2_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.975-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_1_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.953-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_0_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.933-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_2_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.911-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_1_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.890-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_0_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.872-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_2_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.847-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_1_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.827-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_0_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.806-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_2_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.783-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_1_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.766-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_0_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.746-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_2_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.722-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_1_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.702-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_0_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.682-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_2_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.658-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_1_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.635-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_0_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.615-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_2_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.595-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_1_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.576-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_0_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.557-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_2_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.535-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_1_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.513-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_0_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.493-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_2_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.471-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_1_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.451-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_3_0_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.429-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'OBRAM_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.407-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_2_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.386-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_1_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.367-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_0_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.347-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_2_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.326-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_1_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.306-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_0_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.287-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_2_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.261-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_1_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.239-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_0_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.218-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_2_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.197-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_1_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.176-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_0_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.155-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_2_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.130-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_1_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.112-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_0_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.087-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_2_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.065-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_1_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:30.020-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_0_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.998-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_2_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.976-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_1_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.954-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_0_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.936-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_2_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.919-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_1_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.896-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_0_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.877-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_2_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.857-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_1_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.837-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_2_0_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.812-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'OBRAM_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.792-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_2_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.770-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_1_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.749-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_0_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.729-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_2_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.708-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_1_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.684-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_0_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.664-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_2_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.643-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_1_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.619-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_0_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.600-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_2_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.581-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_1_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.560-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_0_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.536-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_2_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.511-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_1_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.489-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_0_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.458-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_2_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.431-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_1_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.399-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_0_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.369-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_2_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.332-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_1_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.303-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_0_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.270-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_2_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.244-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_1_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.217-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_0_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.194-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_2_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.158-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_1_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.124-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_1_0_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.096-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'OBRAM_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.061-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_2_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.030-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_1_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:29.003-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_0_8' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.971-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_2_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.944-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_1_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.911-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_0_7' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.906-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_2_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.901-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_1_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.895-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_0_6' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.891-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_2_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.886-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_1_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.881-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_0_5' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.877-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_2_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.868-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_1_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.684-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_0_4' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.653-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_2_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.622-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_1_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.593-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_0_3' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.566-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_2_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.538-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_1_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.504-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_0_2' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.472-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_2_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.433-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_1_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.405-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_0_1' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.377-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_2_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.350-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_1_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.318-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'WBRAM_0_0_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.283-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'OBRAM_0' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.260-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'ImageCache_IBRAM' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.244-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'MemoryController_layer_pixel_s' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.232-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'MemoryController_layer_pixel_s' is power-on initialization." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.224-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'ProcessingElement_relu' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.219-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'ProcessingElement_relu' is power-on initialization." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.204-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'ProcessingElement_kernel_V' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.199-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'MemoryController_is_second_sp' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.188-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'MemoryController_is_second_sp' is power-on initialization." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.178-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'MemoryController_is_first_spl' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.172-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'MemoryController_is_first_spl' is power-on initialization." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.161-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'MemoryController_width_out_V' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.156-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'MemoryController_width_out_V' is power-on initialization." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.146-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'MemoryController_ch_out_V' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.140-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'MemoryController_ch_out_V' is power-on initialization." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.128-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'pixels_per_row' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.123-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'MemoryController_layer_output' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.114-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'MemoryController_layer_output' is power-on initialization." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.106-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'MemoryController_layer_input_s' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.100-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'MemoryController_layer_weight' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.088-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'MemoryController_layer_weight' is power-on initialization." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.075-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'WeightsCache_write_addr_V' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.072-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'WeightsCache_num_weights_V' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.056-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'WeightsCache_ch_out_V' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.044-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'WeightsCache_ch_out_V' is power-on initialization." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.037-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'WeightsCache_ch_in_V' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.028-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'WeightsCache_kernel_V' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:28.011-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'WeightsCache_kernel_V' is power-on initialization." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:27.999-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'curr_img_cache_addr' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:27.994-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'curr_img_cache_addr' is power-on initialization." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:27.983-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'ImageCache_curr_img_cache_lin' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:27.979-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'loads_left' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:27.974-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'loads_left' is power-on initialization." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:27.969-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'line_width' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:27.955-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'line_width' is power-on initialization." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:27.942-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'ImageCache_ch_in_V' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:27.936-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'ImageCache_ch_in_V' is power-on initialization." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:27.923-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'ImageCache_height_in_V' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:27.917-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'ImageCache_height_in_V' is power-on initialization." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:27.906-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'ImageCache_width_in_V' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:27.900-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'ImageCache_width_in_V' is power-on initialization." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:27.883-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'MemoryController_dram_data_of' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:27.878-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'MemoryController_dram_data_of' is power-on initialization." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:27.867-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'MemoryController_dram_weights' will not be exposed as RTL port." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:27.862-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'MemoryController_dram_weights' is power-on initialization." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:44:27.851-0700" type="Warning"/>
+        <logs message="@W [SCHED-21] The critical path consists of the following:&#xA;&#x9;bus read on port 'memorybus' (../zynqnet-master/_HLS_CODE/memory_controller.cpp:123->../zynqnet-master/_HLS_CODE/weights_cache.cpp:103->../zynqnet-master/_HLS_CODE/fpga_top.cpp:79) (8.75 ns)&#xA;&#x9;'call' operation ('read', ../zynqnet-master/_HLS_CODE/memory_controller.cpp:123->../zynqnet-master/_HLS_CODE/weights_cache.cpp:103->../zynqnet-master/_HLS_CODE/fpga_top.cpp:79) to 'fpga_top_reg&lt;float>' (1.28 ns)" projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:42:29.157-0700" type="Warning"/>
+        <logs message="@W [SCHED-21] Estimated clock period (10ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:42:29.144-0700" type="Warning"/>
+        <logs message="@W [SCHED-69] Unable to schedule 'load' operation ('ImageCache_IBRAM_load_7', ../zynqnet-master/_HLS_CODE/image_cache.cpp:141->../zynqnet-master/_HLS_CODE/processing_element.cpp:129->../zynqnet-master/_HLS_CODE/processing_element.cpp:153) on array 'ImageCache_IBRAM' due to limited memory ports." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:56.570-0700" type="Warning"/>
+        <logs message="@W [SYN-103] Legalizing function name 'fpga_top_processInputChannel.0' to 'fpga_top_processInputChannel_0'." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:56.403-0700" type="Warning"/>
+        <logs message="@W [SYN-103] Legalizing function name 'fpga_top_reg&lt;float>' to 'fpga_top_reg_float_s'." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:50.856-0700" type="Warning"/>
+        <logs message="@W [ANALYSIS-52] Setting false inter dependency for variable 'GBRAM.15'." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:50.849-0700" type="Warning"/>
+        <logs message="@W [ANALYSIS-52] Setting false inter dependency for variable 'GBRAM.14'." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:45.217-0700" type="Warning"/>
+        <logs message="@W [ANALYSIS-52] Setting false inter dependency for variable 'GBRAM.13'." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:45.212-0700" type="Warning"/>
+        <logs message="@W [ANALYSIS-52] Setting false inter dependency for variable 'GBRAM.12'." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:45.207-0700" type="Warning"/>
+        <logs message="@W [ANALYSIS-52] Setting false inter dependency for variable 'GBRAM.11'." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:45.202-0700" type="Warning"/>
+        <logs message="@W [ANALYSIS-52] Setting false inter dependency for variable 'GBRAM.10'." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:45.197-0700" type="Warning"/>
+        <logs message="@W [ANALYSIS-52] Setting false inter dependency for variable 'GBRAM.9'." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:45.193-0700" type="Warning"/>
+        <logs message="@W [ANALYSIS-52] Setting false inter dependency for variable 'GBRAM.8'." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:45.188-0700" type="Warning"/>
+        <logs message="@W [ANALYSIS-52] Setting false inter dependency for variable 'GBRAM.7'." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:45.183-0700" type="Warning"/>
+        <logs message="@W [ANALYSIS-52] Setting false inter dependency for variable 'GBRAM.6'." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:45.177-0700" type="Warning"/>
+        <logs message="@W [ANALYSIS-52] Setting false inter dependency for variable 'GBRAM.5'." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:45.167-0700" type="Warning"/>
+        <logs message="@W [ANALYSIS-52] Setting false inter dependency for variable 'GBRAM.4'." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:45.160-0700" type="Warning"/>
+        <logs message="@W [ANALYSIS-52] Setting false inter dependency for variable 'GBRAM.3'." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:45.154-0700" type="Warning"/>
+        <logs message="@W [ANALYSIS-52] Setting false inter dependency for variable 'GBRAM.2'." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:45.150-0700" type="Warning"/>
+        <logs message="@W [ANALYSIS-52] Setting false inter dependency for variable 'GBRAM.1'." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:45.144-0700" type="Warning"/>
+        <logs message="@W [ANALYSIS-52] Setting false inter dependency for variable 'GBRAM.0'." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:45.128-0700" type="Warning"/>
+        <logs message="@W [XFORM-631] Renaming function 'ProcessingElement::preloadPixelsAndPrecalcCIoffset111' (../zynqnet-master/_HLS_CODE/weights_cache.cpp:38:1) into preloadPixelsAndPrecalcCIoffse." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:45.121-0700" type="Warning"/>
+        <logs message="@W [XFORM-631] Renaming function 'ProcessingElement::processAllCHout1' (../zynqnet-master/_HLS_CODE/processing_element.cpp:31:39) into processAllCHout1." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:21.854-0700" type="Warning"/>
+        <logs message="@W [XFORM-631] Renaming function 'ProcessingElement::processInputChannel.0' (../zynqnet-master/_HLS_CODE/processing_element.cpp:47:1) into processInputChannel.0." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:21.847-0700" type="Warning"/>
+        <logs message="@W [XFORM-542] Cannot flatten a loop nest 'L_X' (../zynqnet-master/_HLS_CODE/fpga_top.cpp:101:40) in function 'fpga_top' : &#xA;               more than one sub loop." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:18.959-0700" type="Warning"/>
+        <logs message="@W [XFORM-542] Cannot flatten a loop nest 'L_DRAM_PRELOADROW_X' (../zynqnet-master/_HLS_CODE/image_cache.cpp:90:68) in function 'fpga_top' : &#xA;               the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:18.955-0700" type="Warning"/>
+        <logs message="@W [XFORM-542] Cannot flatten a loop nest 'L_LOADWEIGHTS_CI' (../zynqnet-master/_HLS_CODE/weights_cache.cpp:86:49) in function 'fpga_top' : &#xA;               the outer loop is not a perfect loop." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:41:18.950-0700" type="Warning"/>
+        <logs message="@W [HLS-40] Skipped source file 'LICENSE-2_0.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:39:06.940-0700" type="Warning"/>
+        <logs message="@W [HLS-40] Skipped source file 'README.md'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:39:06.934-0700" type="Warning"/>
+        <logs message="@W [HLS-40] Skipped source file 'indata.bin'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:38:28.867-0700" type="Warning"/>
+        <logs message="@W [HLS-40] Skipped source file 'weights.bin'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." projectName="test_zynq" solutionName="solution1" date="2019-05-28T07:37:24.181-0700" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

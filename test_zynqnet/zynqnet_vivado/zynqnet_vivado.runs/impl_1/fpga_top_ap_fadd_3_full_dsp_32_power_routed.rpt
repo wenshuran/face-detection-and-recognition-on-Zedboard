@@ -1,0 +1,215 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date             : Wed May 29 02:15:30 2019
+| Host             : ubuntu running 64-bit Ubuntu 16.04.5 LTS
+| Command          : 
+| Design           : fpga_top_ap_fadd_3_full_dsp_32
+| Device           : xc7z020clg484-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+----------------------------------+
+| Total On-Chip Power (W)  | 22.039 (Junction temp exceeded!) |
+| Dynamic (W)              | 20.999                           |
+| Device Static (W)        | 1.040                            |
+| Effective TJA (C/W)      | 11.5                             |
+| Max Ambient (C)          | 0.0                              |
+| Junction Temperature (C) | 125.0                            |
+| Confidence Level         | Low                              |
+| Setting File             | ---                              |
+| Simulation Activity File | ---                              |
+| Design Nets Matched      | NA                               |
++--------------------------+----------------------------------+
+
+
+1.1 On-Chip Components
+----------------------
+
++----------------+-----------+----------+-----------+-----------------+
+| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
++----------------+-----------+----------+-----------+-----------------+
+| Slice Logic    |     1.043 |      456 |       --- |             --- |
+|   LUT as Logic |     0.954 |      230 |     53200 |            0.43 |
+|   Register     |     0.041 |      112 |    106400 |            0.11 |
+|   CARRY4       |     0.041 |       19 |     13300 |            0.14 |
+|   BUFG         |     0.006 |        1 |        32 |            3.13 |
+|   F7/F8 Muxes  |    <0.001 |        1 |     53200 |           <0.01 |
+|   Others       |     0.000 |       61 |       --- |             --- |
+| Signals        |     2.669 |      447 |       --- |             --- |
+| DSPs           |     0.946 |        2 |       220 |            0.91 |
+| I/O            |    16.342 |      101 |       200 |           50.50 |
+| Static Power   |     1.040 |          |           |                 |
+| Total          |    22.039 |          |           |                 |
++----------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     5.224 |       4.926 |      0.299 |
+| Vccaux    |       1.800 |     1.416 |       1.316 |      0.100 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     7.615 |       7.614 |      0.001 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.026 |       0.000 |      0.026 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccpint   |       1.000 |     0.473 |       0.000 |      0.473 |
+| Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |
+| Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |
+| Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco_mio0 |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco_mio1 |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+------------------------+
+| Ambient Temp (C)      | 25.0                   |
+| ThetaJA (C/W)         | 11.5                   |
+| Airflow (LFM)         | 250                    |
+| Heat Sink             | none                   |
+| ThetaSA (C/W)         | 0.0                    |
+| Board Selection       | medium (10"x10")       |
+| # of Board Layers     | 8to11 (8 to 11 Layers) |
+| Board Temperature (C) | 25.0                   |
++-----------------------+------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++------------------------------------------------------+-----------+
+| Name                                                 | Power (W) |
++------------------------------------------------------+-----------+
+| fpga_top_ap_fadd_3_full_dsp_32                       |    20.999 |
+|   U0                                                 |     4.095 |
+|     i_synth                                          |     4.095 |
+|       ADDSUB_OP.ADDSUB                               |     4.087 |
+|         SPEED_OP.DSP.OP                              |     4.087 |
+|           A_IP_DELAY                                 |     0.264 |
+|             i_pipe                                   |     0.264 |
+|           B_IP_DELAY                                 |     0.220 |
+|             i_pipe                                   |     0.220 |
+|           DSP48E1_BODY.ALIGN_ADD                     |     0.706 |
+|             DSP2                                     |     0.685 |
+|             ZERO_14_DET.CARRY_MUX                    |     0.012 |
+|             ZERO_14_DET.ZERO_DET                     |     0.000 |
+|               CARRY_ZERO_DET                         |     0.000 |
+|             Z_14_LZD_DELAY                           |     0.009 |
+|               i_pipe                                 |     0.009 |
+|           DSP48E1_BODY.EXP                           |     2.126 |
+|             A_EXP_DELAY                              |     0.007 |
+|               i_pipe                                 |     0.007 |
+|             A_SIGN_DELAY                             |     0.003 |
+|               i_pipe                                 |     0.003 |
+|             BMA_EXP_DELAY                            |     0.412 |
+|               i_pipe                                 |     0.412 |
+|             B_EXP_DELAY                              |     0.012 |
+|               i_pipe                                 |     0.012 |
+|             B_SIGN_DELAY                             |     0.003 |
+|               i_pipe                                 |     0.003 |
+|             CANCELLATION_DELAY                       |     0.000 |
+|               i_pipe                                 |     0.000 |
+|             COND_DET_A                               |     0.021 |
+|               EXP_DET_LUT.EXP_ALL_ONE_DEL            |     0.005 |
+|                 i_pipe                               |     0.005 |
+|               EXP_DET_LUT.EXP_ALL_ZERO_DEL           |     0.005 |
+|                 i_pipe                               |     0.005 |
+|               MANT_CARRY.MANT_ALL_ZERO_DET           |     0.011 |
+|                 CARRY_ZERO_DET                       |     0.011 |
+|             COND_DET_B                               |     0.032 |
+|               EXP_DET_LUT.EXP_ALL_ONE_DEL            |     0.010 |
+|                 i_pipe                               |     0.010 |
+|               EXP_DET_LUT.EXP_ALL_ZERO_DEL           |     0.009 |
+|                 i_pipe                               |     0.009 |
+|               MANT_CARRY.MANT_ALL_ZERO_DET           |     0.013 |
+|                 CARRY_ZERO_DET                       |     0.013 |
+|             DET_SIGN_DELAY                           |     0.008 |
+|               i_pipe                                 |     0.008 |
+|             EXP_OFF.LRG_EXP_DELAY                    |     0.074 |
+|               i_pipe                                 |     0.074 |
+|             EXP_OFF.STRUCT_ADD                       |     0.007 |
+|             NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY |     1.231 |
+|               i_pipe                                 |     1.231 |
+|             NUMB_CMP                                 |     0.147 |
+|               NOT_FAST.CMP                           |     0.147 |
+|                 C_CHAIN                              |     0.147 |
+|             STATE_DELAY                              |     0.054 |
+|               i_pipe                                 |     0.054 |
+|             SUB_DELAY                                |     0.022 |
+|               i_pipe                                 |     0.022 |
+|             merged_sub_mux.STRUCT_ADD                |     0.011 |
+|           DSP48E1_BODY.NORM_RND                      |     0.770 |
+|             FULL_USAGE_DSP.LOD                       |     0.056 |
+|             FULL_USAGE_DSP.MSBS_DELAY                |    <0.001 |
+|               i_pipe                                 |    <0.001 |
+|             FULL_USAGE_DSP.ROUND_BIT_DELAY           |    <0.001 |
+|               i_pipe                                 |    <0.001 |
+|             FULL_USAGE_DSP.SHIFT_RND                 |     0.709 |
+|       i_nd_to_rdy                                    |     0.007 |
++------------------------------------------------------+-----------+
+
+

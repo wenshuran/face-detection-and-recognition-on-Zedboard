@@ -1,0 +1,99 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="WeightsCache::precalcInputOffset" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="WeightsCache::precalcInputOffset" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="ci_times_ch_out"/>
+<option name="core" value="MulnS"/>
+<option name="latency" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="WeightsCache::getAddrForSingleWeight" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="WeightsCache::loadFromDRAM" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="WeightsCache::loadFromDRAM" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="MIN" value="3"/>
+<option name="MAX" value="1024"/>
+<option name="AVG" value="238"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="WeightsCache::loadFromDRAM" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="MIN" value="16"/>
+<option name="MAX" value="1024"/>
+<option name="AVG" value="258"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="WeightsCache::loadFromDRAM" label="">
+<pragma name="PIPELINE">
+<option name="II" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="WeightsCache::setLayerConfig" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="WeightsCache::getNineWeights" label="">
+<pragma name="FUNCTION_INSTANTIATE">
+<option name="variable" positionalBoolean="4" value="co"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="WeightsCache::getNineWeights" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="WeightsCache::getNineWeights" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="WeightsCache::getNineWeights" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="WBRAM"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="WeightsCache::getNineWeights" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="WBRAM"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="WeightsCache::getNineWeights" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="WBRAM"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="WeightsCache::getNineWeights" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="WBRAM"/>
+<option name="core" value="RAM_S2P_BRAM"/>
+<option name="latency" value="3"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="WeightsCache::getNineWeights" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="weights_temp"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="WeightsCache::getOneWeight" label="">
+<pragma name="FUNCTION_INSTANTIATE">
+<option name="variable" positionalBoolean="4" value="co"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="WeightsCache::getOneWeight" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="WeightsCache::getOneWeight" label="">
+<pragma name="INLINE"/>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

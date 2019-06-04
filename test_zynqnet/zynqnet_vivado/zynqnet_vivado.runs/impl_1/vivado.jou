@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed May 29 02:17:47 2019
+# Process ID: 42380
+# Current directory: /home/wenshuran/hdcourse/test_zynqnet/zynqnet_vivado/zynqnet_vivado.runs/impl_1
+# Command line: vivado -log fpga_top_ap_fadd_3_full_dsp_32.vdi -applog -messageDb vivado.pb -mode batch -source fpga_top_ap_fadd_3_full_dsp_32.tcl -notrace
+# Log file: /home/wenshuran/hdcourse/test_zynqnet/zynqnet_vivado/zynqnet_vivado.runs/impl_1/fpga_top_ap_fadd_3_full_dsp_32.vdi
+# Journal file: /home/wenshuran/hdcourse/test_zynqnet/zynqnet_vivado/zynqnet_vivado.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source fpga_top_ap_fadd_3_full_dsp_32.tcl -notrace

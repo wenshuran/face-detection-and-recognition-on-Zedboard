@@ -1,0 +1,282 @@
+
+
+================================================================
+== Vivado HLS Report for 'fpga_top_processInputChannel_0'
+================================================================
+* Date:           Tue May 28 07:42:18 2019
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        test_zynq
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.86|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |   78|  141|   65|  128| dataflow |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 16
+* Pipeline: 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 16, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 }
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+* FSM state operations: 
+
+ <State 1>: 8.22ns
+ST_1: ch_out_V_read [1/1] 0.00ns
+:0  %ch_out_V_read = call i10 @_ssdm_op_Read.ap_auto.i10(i10 %ch_out_V)
+
+ST_1: ci_in_V_read [1/1] 0.00ns
+:1  %ci_in_V_read = call i10 @_ssdm_op_Read.ap_auto.i10(i10 %ci_in_V)
+
+ST_1: x_V_read [1/1] 0.00ns
+:2  %x_V_read = call i9 @_ssdm_op_Read.ap_auto.i9(i9 %x_V)
+
+ST_1: y_V_read [1/1] 0.00ns
+:3  %y_V_read = call i9 @_ssdm_op_Read.ap_auto.i9(i9 %y_V)
+
+ST_1: ch_out_V_channel [1/1] 0.00ns
+:4  %ch_out_V_channel = alloca i10, align 2
+
+ST_1: ci_in_V_channel [1/1] 0.00ns
+:5  %ci_in_V_channel = alloca i10, align 2
+
+ST_1: call_ret [14/14] 8.22ns
+:11  %call_ret = call fastcc { i19, float, float, float, float, float, float, float, float, float } @fpga_top_preloadPixelsAndPrecalcCIoffse(i9 %y_V_read, i9 %x_V_read, i10 %ci_in_V_read, i10 %ch_out_V_read, i10* %ci_in_V_channel, i10* %ch_out_V_channel)
+
+
+ <State 2>: 0.00ns
+ST_2: call_ret [13/14] 0.00ns
+:11  %call_ret = call fastcc { i19, float, float, float, float, float, float, float, float, float } @fpga_top_preloadPixelsAndPrecalcCIoffse(i9 %y_V_read, i9 %x_V_read, i10 %ci_in_V_read, i10 %ch_out_V_read, i10* %ci_in_V_channel, i10* %ch_out_V_channel)
+
+
+ <State 3>: 0.00ns
+ST_3: call_ret [12/14] 0.00ns
+:11  %call_ret = call fastcc { i19, float, float, float, float, float, float, float, float, float } @fpga_top_preloadPixelsAndPrecalcCIoffse(i9 %y_V_read, i9 %x_V_read, i10 %ci_in_V_read, i10 %ch_out_V_read, i10* %ci_in_V_channel, i10* %ch_out_V_channel)
+
+
+ <State 4>: 0.00ns
+ST_4: call_ret [11/14] 0.00ns
+:11  %call_ret = call fastcc { i19, float, float, float, float, float, float, float, float, float } @fpga_top_preloadPixelsAndPrecalcCIoffse(i9 %y_V_read, i9 %x_V_read, i10 %ci_in_V_read, i10 %ch_out_V_read, i10* %ci_in_V_channel, i10* %ch_out_V_channel)
+
+
+ <State 5>: 0.00ns
+ST_5: call_ret [10/14] 0.00ns
+:11  %call_ret = call fastcc { i19, float, float, float, float, float, float, float, float, float } @fpga_top_preloadPixelsAndPrecalcCIoffse(i9 %y_V_read, i9 %x_V_read, i10 %ci_in_V_read, i10 %ch_out_V_read, i10* %ci_in_V_channel, i10* %ch_out_V_channel)
+
+
+ <State 6>: 0.00ns
+ST_6: call_ret [9/14] 0.00ns
+:11  %call_ret = call fastcc { i19, float, float, float, float, float, float, float, float, float } @fpga_top_preloadPixelsAndPrecalcCIoffse(i9 %y_V_read, i9 %x_V_read, i10 %ci_in_V_read, i10 %ch_out_V_read, i10* %ci_in_V_channel, i10* %ch_out_V_channel)
+
+
+ <State 7>: 0.00ns
+ST_7: call_ret [8/14] 0.00ns
+:11  %call_ret = call fastcc { i19, float, float, float, float, float, float, float, float, float } @fpga_top_preloadPixelsAndPrecalcCIoffse(i9 %y_V_read, i9 %x_V_read, i10 %ci_in_V_read, i10 %ch_out_V_read, i10* %ci_in_V_channel, i10* %ch_out_V_channel)
+
+
+ <State 8>: 0.00ns
+ST_8: call_ret [7/14] 0.00ns
+:11  %call_ret = call fastcc { i19, float, float, float, float, float, float, float, float, float } @fpga_top_preloadPixelsAndPrecalcCIoffse(i9 %y_V_read, i9 %x_V_read, i10 %ci_in_V_read, i10 %ch_out_V_read, i10* %ci_in_V_channel, i10* %ch_out_V_channel)
+
+
+ <State 9>: 0.00ns
+ST_9: call_ret [6/14] 0.00ns
+:11  %call_ret = call fastcc { i19, float, float, float, float, float, float, float, float, float } @fpga_top_preloadPixelsAndPrecalcCIoffse(i9 %y_V_read, i9 %x_V_read, i10 %ci_in_V_read, i10 %ch_out_V_read, i10* %ci_in_V_channel, i10* %ch_out_V_channel)
+
+
+ <State 10>: 0.00ns
+ST_10: call_ret [5/14] 0.00ns
+:11  %call_ret = call fastcc { i19, float, float, float, float, float, float, float, float, float } @fpga_top_preloadPixelsAndPrecalcCIoffse(i9 %y_V_read, i9 %x_V_read, i10 %ci_in_V_read, i10 %ch_out_V_read, i10* %ci_in_V_channel, i10* %ch_out_V_channel)
+
+
+ <State 11>: 0.00ns
+ST_11: call_ret [4/14] 0.00ns
+:11  %call_ret = call fastcc { i19, float, float, float, float, float, float, float, float, float } @fpga_top_preloadPixelsAndPrecalcCIoffse(i9 %y_V_read, i9 %x_V_read, i10 %ci_in_V_read, i10 %ch_out_V_read, i10* %ci_in_V_channel, i10* %ch_out_V_channel)
+
+
+ <State 12>: 0.00ns
+ST_12: call_ret [3/14] 0.00ns
+:11  %call_ret = call fastcc { i19, float, float, float, float, float, float, float, float, float } @fpga_top_preloadPixelsAndPrecalcCIoffse(i9 %y_V_read, i9 %x_V_read, i10 %ci_in_V_read, i10 %ch_out_V_read, i10* %ci_in_V_channel, i10* %ch_out_V_channel)
+
+
+ <State 13>: 0.00ns
+ST_13: call_ret [2/14] 0.00ns
+:11  %call_ret = call fastcc { i19, float, float, float, float, float, float, float, float, float } @fpga_top_preloadPixelsAndPrecalcCIoffse(i9 %y_V_read, i9 %x_V_read, i10 %ci_in_V_read, i10 %ch_out_V_read, i10* %ci_in_V_channel, i10* %ch_out_V_channel)
+
+
+ <State 14>: 0.00ns
+ST_14: call_ret [1/14] 0.00ns
+:11  %call_ret = call fastcc { i19, float, float, float, float, float, float, float, float, float } @fpga_top_preloadPixelsAndPrecalcCIoffse(i9 %y_V_read, i9 %x_V_read, i10 %ci_in_V_read, i10 %ch_out_V_read, i10* %ci_in_V_channel, i10* %ch_out_V_channel)
+
+ST_14: ci_offset_V [1/1] 0.00ns
+:12  %ci_offset_V = extractvalue { i19, float, float, float, float, float, float, float, float, float } %call_ret, 0
+
+ST_14: pixel_buffer_0 [1/1] 0.00ns
+:13  %pixel_buffer_0 = extractvalue { i19, float, float, float, float, float, float, float, float, float } %call_ret, 1
+
+ST_14: pixel_buffer_1 [1/1] 0.00ns
+:14  %pixel_buffer_1 = extractvalue { i19, float, float, float, float, float, float, float, float, float } %call_ret, 2
+
+ST_14: pixel_buffer_2 [1/1] 0.00ns
+:15  %pixel_buffer_2 = extractvalue { i19, float, float, float, float, float, float, float, float, float } %call_ret, 3
+
+ST_14: pixel_buffer_3 [1/1] 0.00ns
+:16  %pixel_buffer_3 = extractvalue { i19, float, float, float, float, float, float, float, float, float } %call_ret, 4
+
+ST_14: pixel_buffer_4 [1/1] 0.00ns
+:17  %pixel_buffer_4 = extractvalue { i19, float, float, float, float, float, float, float, float, float } %call_ret, 5
+
+ST_14: pixel_buffer_5 [1/1] 0.00ns
+:18  %pixel_buffer_5 = extractvalue { i19, float, float, float, float, float, float, float, float, float } %call_ret, 6
+
+ST_14: pixel_buffer_6 [1/1] 0.00ns
+:19  %pixel_buffer_6 = extractvalue { i19, float, float, float, float, float, float, float, float, float } %call_ret, 7
+
+ST_14: pixel_buffer_7 [1/1] 0.00ns
+:20  %pixel_buffer_7 = extractvalue { i19, float, float, float, float, float, float, float, float, float } %call_ret, 8
+
+ST_14: pixel_buffer_8 [1/1] 0.00ns
+:21  %pixel_buffer_8 = extractvalue { i19, float, float, float, float, float, float, float, float, float } %call_ret, 9
+
+
+ <State 15>: 0.00ns
+ST_15: stg_47 [2/2] 0.00ns
+:22  call fastcc void @fpga_top_processAllCHout1(i10* %ch_out_V_channel, i10* %ci_in_V_channel, i19 %ci_offset_V, float %pixel_buffer_0, float %pixel_buffer_1, float %pixel_buffer_2, float %pixel_buffer_3, float %pixel_buffer_4, float %pixel_buffer_5, float %pixel_buffer_6, float %pixel_buffer_7, float %pixel_buffer_8)
+
+
+ <State 16>: 0.00ns
+ST_16: stg_48 [1/1] 0.00ns
+:6  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str18053794) nounwind
+
+ST_16: empty [1/1] 0.00ns
+:7  %empty = call i32 (...)* @_ssdm_op_SpecChannel([16 x i8]* @ci_in_OC_V_channel_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1, i32 0, i10* %ci_in_V_channel, i10* %ci_in_V_channel)
+
+ST_16: stg_50 [1/1] 0.00ns
+:8  call void (...)* @_ssdm_op_SpecInterface(i10* %ci_in_V_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_16: empty_12 [1/1] 0.00ns
+:9  %empty_12 = call i32 (...)* @_ssdm_op_SpecChannel([17 x i8]* @ch_out_OC_V_channel_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1, i32 0, i10* %ch_out_V_channel, i10* %ch_out_V_channel)
+
+ST_16: stg_52 [1/1] 0.00ns
+:10  call void (...)* @_ssdm_op_SpecInterface(i10* %ch_out_V_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_16: stg_53 [1/2] 0.00ns
+:22  call fastcc void @fpga_top_processAllCHout1(i10* %ch_out_V_channel, i10* %ci_in_V_channel, i19 %ci_offset_V, float %pixel_buffer_0, float %pixel_buffer_1, float %pixel_buffer_2, float %pixel_buffer_3, float %pixel_buffer_4, float %pixel_buffer_5, float %pixel_buffer_6, float %pixel_buffer_7, float %pixel_buffer_8)
+
+ST_16: stg_54 [1/1] 0.00ns
+:23  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

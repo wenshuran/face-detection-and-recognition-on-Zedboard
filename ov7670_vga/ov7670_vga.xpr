@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="10" Path="/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.xpr">
+<Project Version="7" Minor="10" Path="/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="33c7cf4997514e4491599dac6e263f0b"/>
@@ -18,17 +18,17 @@
     <Option Name="BoardPart" Val="em.avnet.com:zed:part0:1.3"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/ov7670_no_input"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/ov7670_decode_v3"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/ov7670_decode_v2"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/ov7670_decode_stream"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/ov7670_controller"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/ov7670_debounce"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/stream_to_vga"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/ov7670_controller"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/ov7670_debounce"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/ov7670_decode_stream"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/stream_to_vga"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_no_input"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_decode_v3"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_decode_v2"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_decode_stream"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_controller"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_debounce"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../Desktop/ov7670_VDMA_VGA-master/ip_repo/stream_to_vga"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_controller"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_debounce"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_decode_stream"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../Desktop/ov7670_VDMA_VGA-master/ip_repo/stream_to_vga"/>
     <Option Name="EnableCoreContainer" Val="TRUE"/>
     <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
     <Option Name="IPUserFilesDir" Val="$PPRDIR/ov7670_vga.ip_user_files"/>
@@ -44,6 +44,36 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_stream_to_vga_0_0/system_stream_to_vga_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_xbar_0/system_xbar_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_periph_0/system_axi_periph_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_fifo_mm2s_0/system_fifo_mm2s_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_ila_0_1/system_ila_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_xlconcat_0_0/system_xlconcat_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="hdl/system.v"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_vdma_s2mm_intercon_0/system_vdma_s2mm_intercon_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_vdma_s2mm_0/system_vdma_s2mm_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_vdma_mm2s_intercon_0/system_vdma_mm2s_intercon_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_vdma_mm2s_0/system_vdma_mm2s_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_rst_vga_clk25_0/system_rst_vga_clk25_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_rst_ov7670_pclk_0/system_rst_ov7670_pclk_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_reset_0/system_reset_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_pwdn_0/system_pwdn_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_processing_system7_0_0/system_processing_system7_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_ov7670_decode_stream_0_0/system_ov7670_decode_stream_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_ov7670_debounce_0_0/system_ov7670_debounce_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_ov7670_controller_0_0/system_ov7670_controller_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_fifo_s2mm_0/system_fifo_s2mm_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_auto_pc_2/system_auto_pc_2.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_auto_pc_1/system_auto_pc_1.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_auto_us_0/system_auto_us_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_auto_cc_0/system_auto_cc_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_auto_pc_0/system_auto_pc_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="system_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="hw_handoff/system_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="hw_handoff/system.hwh"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="hdl/system.hwdef"/>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/hdl/system_wrapper.v">
         <FileInfo>
@@ -64,7 +94,7 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/xdc/zedboard_v1.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../src/xdc/zedboard_v1.xdc"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Desktop/ov7670_VDMA_VGA-master/src/xdc/zedboard_v1.xdc"/>
           <Attr Name="ImportTime" Val="1497993641"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

@@ -1,0 +1,17 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x11390) [0x7fc2ad541390]
+/opt/Xilinx1/Vivado_HLS/2015.4/lib/lnx64.o/libtcl8.5.so(+0xb933c) [0x7fc2a960133c]
+/opt/Xilinx1/Vivado_HLS/2015.4/lib/lnx64.o/libtcl8.5.so(Tcl_ResetResult+0x10) [0x7fc2a9601d70]
+/opt/Xilinx1/Vivado_HLS/2015.4/lib/lnx64.o/libtcl8.5.so(+0x34678) [0x7fc2a957c678]
+/opt/Xilinx1/Vivado_HLS/2015.4/lib/lnx64.o/libtcl8.5.so(Tcl_EvalEx+0x16) [0x7fc2a957d276]
+/opt/Xilinx1/Vivado_HLS/2015.4/lib/lnx64.o/libtcl8.5.so(Tcl_Eval+0x15) [0x7fc2a957d295]
+/opt/Xilinx1/Vivado_HLS/2015.4/lib/lnx64.o/libhls_support.so(+0x361a0) [0x7fc29e43f1a0]
+/opt/Xilinx1/Vivado_HLS/2015.4/lib/lnx64.o/libtcl8.5.so(Tcl_Finalize+0x45) [0x7fc2a95bc1d5]
+/opt/Xilinx1/Vivado_HLS/2015.4/lib/lnx64.o/libtcl8.5.so(Tcl_Exit+0x4a) [0x7fc2a95bc36a]
+/opt/Xilinx1/Vivado_HLS/2015.4/lib/lnx64.o/libtcl8.5.so(Tcl_Main+0x246) [0x7fc2a95e81e6]
+/opt/Xilinx1/Vivado_HLS/2015.4/lib/lnx64.o/librdi_common.so(+0x580749) [0x7fc2ae3ef749]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x76ba) [0x7fc2ad5376ba]
+/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7fc2ad26d41d]

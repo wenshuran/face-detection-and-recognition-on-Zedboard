@@ -1,0 +1,39 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="GPoolCache::accumulateChannel" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="GPoolCache::accumulateChannel" label="">
+<pragma name="FUNCTION_INSTANTIATE">
+<option name="variable" positionalBoolean="4" value="co"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GPoolCache::accumulateChannel" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="GBRAM"/>
+<option name="cyclic" positionalBoolean="type" value=""/>
+<option name="factor" value="N_PE"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GPoolCache::accumulateChannel" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="GBRAM"/>
+<option name="core" value="RAM_T2P_BRAM"/>
+<option name="latency" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GPoolCache::accumulateChannel" label="">
+<pragma name="DEPENDENCE">
+<option name="variable" value="GBRAM"/>
+<option name="inter" positionalBoolean="type" value=""/>
+<option name="false" positionalBoolean="dependent" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GPoolCache::getChannel" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="GPoolCache::setChannel" label="">
+<pragma name="INLINE"/>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

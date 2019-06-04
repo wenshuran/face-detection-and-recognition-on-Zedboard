@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed May 29 00:49:29 2019
+# Process ID: 35582
+# Current directory: /home/wenshuran/hdcourse/test_zynqnet/test_zynq/solution1/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/wenshuran/hdcourse/test_zynqnet/test_zynq/solution1/impl/ip/vivado.log
+# Journal file: /home/wenshuran/hdcourse/test_zynqnet/test_zynq/solution1/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx1/Vivado/2015.4/data/ip'.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fpga_top_ap_fmul_2_max_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fpga_top_ap_fmul_2_max_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fpga_top_ap_fcmp_0_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fpga_top_ap_fcmp_0_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fpga_top_ap_fadd_3_full_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fpga_top_ap_fadd_3_full_dsp_32'...
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source /home/wenshuran/hdcourse/test_zynqnet/test_zynq/solution1/impl/ip/tmp.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed May 29 00:49:49 2019...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx1/Vivado/2015.4/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Wed May 29 00:49:52 2019...

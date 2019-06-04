@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="LICENSE-2_0.txt" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/vivado_include/LICENSE-2_0.txt"/>
+    <originFiles name="README.md" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/README.md"/>
+    <originFiles name="ap_fixed.h" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/vivado_include/ap_fixed.h"/>
+    <originFiles name="ap_fixed_sim.h" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/vivado_include/etc/ap_fixed_sim.h"/>
+    <originFiles name="ap_int.h" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/vivado_include/ap_int.h"/>
+    <originFiles name="ap_int_sim.h" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/vivado_include/etc/ap_int_sim.h"/>
+    <originFiles name="ap_private.h" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/vivado_include/etc/ap_private.h"/>
+    <originFiles name="ap_shift_reg.h" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/vivado_include/ap_shift_reg.h"/>
+    <originFiles name="ap_utils.h" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/vivado_include/ap_utils.h"/>
+    <originFiles name="fpga_top.cpp" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/fpga_top.cpp"/>
+    <originFiles name="fpga_top.hpp" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/fpga_top.hpp"/>
+    <originFiles name="gpool_cache.cpp" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/gpool_cache.cpp"/>
+    <originFiles name="gpool_cache.hpp" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/gpool_cache.hpp"/>
+    <originFiles name="hls_stream.h" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/vivado_include/hls_stream.h"/>
+    <originFiles name="image_cache.cpp" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/image_cache.cpp"/>
+    <originFiles name="image_cache.hpp" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/image_cache.hpp"/>
+    <originFiles name="indata.bin" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/indata.bin"/>
+    <originFiles name="memory_controller.cpp" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/memory_controller.cpp"/>
+    <originFiles name="memory_controller.hpp" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/memory_controller.hpp"/>
+    <originFiles name="netconfig.cpp" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/netconfig.cpp"/>
+    <originFiles name="netconfig.hpp" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/netconfig.hpp"/>
+    <originFiles name="network.cpp" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/network.cpp"/>
+    <originFiles name="network.hpp" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/network.hpp"/>
+    <originFiles name="output_cache.cpp" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/output_cache.cpp"/>
+    <originFiles name="output_cache.hpp" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/output_cache.hpp"/>
+    <originFiles name="processing_element.cpp" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/processing_element.cpp"/>
+    <originFiles name="processing_element.hpp" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/processing_element.hpp"/>
+    <originFiles name="unittests.cpp" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/unittests.cpp"/>
+    <originFiles name="unittests.hpp" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/unittests.hpp"/>
+    <originFiles name="weights.bin" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/weights.bin"/>
+    <originFiles name="weights_cache.cpp" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/weights_cache.cpp"/>
+    <originFiles name="weights_cache.hpp" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/weights_cache.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="cpu_top.cpp" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/cpu_top.cpp"/>
+    <originFiles name="cpu_top.hpp" path="/home/wenshuran/hdcourse/zynqnet-master/_HLS_CODE/cpu_top.hpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

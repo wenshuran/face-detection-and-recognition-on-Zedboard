@@ -252,6 +252,7 @@ CONFIG.C_SLOT_0_AXI_PROTOCOL {AXI4S} \
   set_property -dict [ list \
 CONFIG.PCW_EN_CLK1_PORT {1} \
 CONFIG.PCW_EN_CLK2_PORT {1} \
+CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {99.999999} \
 CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {25} \
 CONFIG.PCW_FPGA2_PERIPHERAL_FREQMHZ {25} \
 CONFIG.PCW_IRQ_F2P_INTR {1} \
@@ -401,68 +402,68 @@ preplace portBus vga_r -pg 1 -y 590 -defaultsOSRD
 preplace portBus vga_g -pg 1 -y 610 -defaultsOSRD
 preplace portBus ov7670_data -pg 1 -y 350 -defaultsOSRD
 preplace inst pwdn -pg 1 -lvl 10 -y 500 -defaultsOSRD
-preplace inst fifo_mm2s -pg 1 -lvl 7 -y 600 -defaultsOSRD
+preplace inst fifo_mm2s -pg 1 -lvl 7 -y 670 -defaultsOSRD
 preplace inst rst_processing_system7_0_100M -pg 1 -lvl 1 -y 100 -defaultsOSRD
 preplace inst rst_ov7670_pclk -pg 1 -lvl 1 -y 270 -defaultsOSRD
 preplace inst ov7670_debounce_0 -pg 1 -lvl 9 -y 470 -defaultsOSRD
 preplace inst ov7670_controller_0 -pg 1 -lvl 10 -y 290 -defaultsOSRD
 preplace inst xlconcat_0 -pg 1 -lvl 7 -y -50 -defaultsOSRD
 preplace inst vdma_s2mm_intercon -pg 1 -lvl 7 -y 170 -defaultsOSRD
-preplace inst vdma_mm2s_intercon -pg 1 -lvl 7 -y 390 -defaultsOSRD
+preplace inst vdma_mm2s_intercon -pg 1 -lvl 7 -y 396 -defaultsOSRD
 preplace inst vdma_s2mm -pg 1 -lvl 5 -y 170 -defaultsOSRD
 preplace inst vdma_mm2s -pg 1 -lvl 5 -y 400 -defaultsOSRD
 preplace inst ila_0 -pg 1 -lvl 6 -y 600 -defaultsOSRD
 preplace inst fifo_s2mm -pg 1 -lvl 4 -y 260 -defaultsOSRD
 preplace inst axi_periph -pg 1 -lvl 2 -y 170 -defaultsOSRD
-preplace inst rst_vga_clk25 -pg 1 -lvl 7 -y 780 -defaultsOSRD
+preplace inst rst_vga_clk25 -pg 1 -lvl 7 -y 830 -defaultsOSRD
 preplace inst ov7670_decode_stream_0 -pg 1 -lvl 3 -y 230 -defaultsOSRD
 preplace inst reset -pg 1 -lvl 10 -y 410 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 8 -y 190 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 8 -y 180 -defaultsOSRD
 preplace inst stream_to_vga_0 -pg 1 -lvl 8 -y 460 -defaultsOSRD
-preplace netloc processing_system7_0_DDR 1 8 3 NJ 90 NJ 90 NJ
+preplace netloc processing_system7_0_DDR 1 8 6 NJ 80 NJ 80 NJ 80 NJ 80 NJ 80 NJ
 preplace netloc ov7670_decode_stream_0_axis_out 1 3 1 N
-preplace netloc fifo_mm2s_M_AXIS 1 7 1 2370
-preplace netloc reset_dout 1 10 1 NJ
-preplace netloc stream_to_vga_0_blue 1 8 3 NJ 580 NJ 580 NJ
-preplace netloc stream_to_vga_0_fsync 1 4 5 1180 530 NJ 520 NJ 520 NJ 590 2830
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 8 290 -110 NJ -110 NJ -110 NJ -110 NJ -110 NJ -110 NJ -110 2880
-preplace netloc axi_vdma_1_M_AXI_MM2S 1 5 2 1590 330 N
-preplace netloc microblaze_0_Clk 1 0 9 -130 -20 280 -20 NJ -20 880 150 1150 540 1580 530 1790 50 2380 340 2830
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 9 -120 -10 NJ -10 NJ -10 NJ -10 NJ -10 N -10 NJ 40 NJ 40 2840
-preplace netloc i_1 1 0 9 NJ 410 NJ 410 NJ 410 NJ 410 NJ 510 NJ 510 NJ 510 NJ 580 NJ
-preplace netloc href_1 1 0 3 NJ -40 NJ -40 NJ
-preplace netloc microblaze_0_axi_periph_M00_AXI 1 2 3 NJ 110 NJ 110 N
-preplace netloc fifo_generator_0_M_AXIS 1 4 1 1160
-preplace netloc axi_mem_intercon_M00_AXI 1 7 1 2370
-preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 1 6 250 370 NJ 370 NJ 370 1170 520 1560 500 1800
-preplace netloc ov7670_controller_0_config_finished 1 10 1 NJ
-preplace netloc axi_vdma_1_M_AXIS_MM2S 1 5 2 1590 540 1780
-preplace netloc xlconcat_0_dout 1 7 1 2390
-preplace netloc pwdn_dout 1 10 1 NJ
-preplace netloc ov7670_controller_0_xclk 1 10 1 NJ
-preplace netloc stream_to_vga_0_vsync 1 8 3 NJ 410 NJ 570 NJ
-preplace netloc processing_system7_0_FIXED_IO 1 8 3 NJ 110 NJ 110 NJ
+preplace netloc fifo_mm2s_M_AXIS 1 7 1 2420
+preplace netloc reset_dout 1 10 4 NJ 410 NJ 410 NJ 410 3540
+preplace netloc stream_to_vga_0_blue 1 8 6 NJ 400 NJ 630 NJ 630 NJ 630 NJ 630 NJ
+preplace netloc stream_to_vga_0_fsync 1 4 5 1390 530 NJ 530 NJ 530 NJ 600 2880
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 8 460 -110 NJ -110 NJ -110 NJ -110 NJ -110 NJ -110 NJ -110 2920
+preplace netloc axi_vdma_1_M_AXI_MM2S 1 5 2 1800 330 NJ
+preplace netloc microblaze_0_Clk 1 0 9 50 10 440 370 NJ 370 1060 180 1360 540 1780 490 2020 50 2430 330 2900
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 9 40 -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ 30 NJ 30 2910
+preplace netloc i_1 1 0 9 NJ 410 NJ 410 NJ 410 NJ 410 NJ 510 NJ 510 NJ 520 NJ 580 NJ
+preplace netloc href_1 1 0 3 NJ 370 NJ 360 NJ
+preplace netloc microblaze_0_axi_periph_M00_AXI 1 2 3 NJ 340 NJ 340 NJ
+preplace netloc fifo_generator_0_M_AXIS 1 4 1 1350
+preplace netloc axi_mem_intercon_M00_AXI 1 7 1 2400
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 1 6 410 390 NJ 390 NJ 390 1380 520 1810 500 2030
+preplace netloc ov7670_controller_0_config_finished 1 10 4 NJ 260 NJ 260 NJ 260 NJ
+preplace netloc axi_vdma_1_M_AXIS_MM2S 1 5 2 1800 540 NJ
+preplace netloc xlconcat_0_dout 1 7 1 2440
+preplace netloc pwdn_dout 1 10 4 NJ 500 NJ 500 NJ 500 N
+preplace netloc ov7670_controller_0_xclk 1 10 4 NJ 320 NJ 320 NJ 320 NJ
+preplace netloc stream_to_vga_0_vsync 1 8 6 NJ 410 NJ 570 NJ 570 NJ 570 NJ 570 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 8 6 NJ 100 NJ 100 NJ 100 NJ 100 NJ 100 NJ
 preplace netloc microblaze_0_axi_periph_M01_AXI 1 2 1 N
-preplace netloc vdma_s2mm_s2mm_introut 1 5 2 1560 -60 N
-preplace netloc ov7670_debounce_0_o 1 9 1 3110
-preplace netloc pclk_1 1 0 4 -140 10 260 340 610 360 NJ
-preplace netloc d_1 1 0 3 NJ 360 NJ 350 NJ
-preplace netloc microblaze_0_axi_periph_M02_AXI 1 2 3 NJ 340 NJ 340 N
-preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 6 270 10 NJ 10 NJ 10 NJ 10 N 10 1780
-preplace netloc rst_ov7670_pclk1_peripheral_aresetn 1 7 1 2390
-preplace netloc stream_to_vga_0_red 1 8 3 NJ 400 NJ 590 NJ
-preplace netloc Net 1 10 1 NJ
-preplace netloc axi_vdma_0_M_AXI_S2MM 1 5 2 1570 110 N
-preplace netloc vdma_mm2s_mm2s_introut 1 5 2 1580 -40 N
-preplace netloc processing_system7_0_FCLK_CLK1 1 8 2 2880 280 N
-preplace netloc ov7670_controller_0_sioc 1 10 1 NJ
-preplace netloc stream_to_vga_0_hsync 1 8 3 NJ 390 NJ 550 NJ
-preplace netloc stream_to_vga_0_green 1 8 3 NJ 380 NJ 610 NJ
-preplace netloc axi_mem_intercon_M00_AXI1 1 7 1 2370
-preplace netloc vsync_1 1 0 3 NJ 370 NJ 360 NJ
-preplace netloc processing_system7_0_FCLK_CLK2 1 6 3 1810 680 2380 600 2850
-preplace netloc M01_ARESETN_1 1 1 3 290 330 630 350 NJ
-levelinfo -pg 1 -170 60 440 760 1020 1370 1680 2180 2610 2980 3220 3370 -top -120 -bot 870
+preplace netloc vdma_s2mm_s2mm_introut 1 5 2 1770 -60 NJ
+preplace netloc ov7670_debounce_0_o 1 9 1 3150
+preplace netloc pclk_1 1 0 4 30 380 390 350 780 380 NJ
+preplace netloc d_1 1 0 3 NJ 360 NJ 340 NJ
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 2 3 NJ 350 NJ 350 NJ
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 6 450 10 NJ 10 NJ 10 NJ 10 NJ 10 2050
+preplace netloc rst_ov7670_pclk1_peripheral_aresetn 1 7 1 2440
+preplace netloc stream_to_vga_0_red 1 8 6 NJ 590 NJ 590 NJ 590 NJ 590 NJ 590 NJ
+preplace netloc Net 1 10 4 NJ 300 NJ 300 NJ 300 NJ
+preplace netloc axi_vdma_0_M_AXI_S2MM 1 5 2 1780 110 NJ
+preplace netloc processing_system7_0_FCLK_CLK1 1 8 2 NJ 280 NJ
+preplace netloc vdma_mm2s_mm2s_introut 1 5 2 1790 -40 NJ
+preplace netloc ov7670_controller_0_sioc 1 10 4 NJ 280 NJ 280 NJ 280 NJ
+preplace netloc stream_to_vga_0_hsync 1 8 6 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ
+preplace netloc stream_to_vga_0_green 1 8 6 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ
+preplace netloc axi_mem_intercon_M00_AXI1 1 7 1 2420
+preplace netloc processing_system7_0_FCLK_CLK2 1 6 3 2050 590 2430 590 2890
+preplace netloc vsync_1 1 0 3 NJ 390 NJ 380 NJ
+preplace netloc M01_ARESETN_1 1 1 3 460 330 820 360 NJ
+levelinfo -pg 1 0 220 610 940 1210 1580 1900 2230 2660 3030 3260 3420 3470 3520 3600 -top -120 -bot 920
 ",
 }
 

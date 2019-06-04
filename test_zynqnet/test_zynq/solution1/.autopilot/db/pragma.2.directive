@@ -1,0 +1,88 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="ProcessingElement::processInputChannel" label="">
+<pragma name="INLINE">
+<option name="off" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ProcessingElement::processInputChannel" label="">
+<pragma name="FUNCTION_INSTANTIATE">
+<option name="variable" positionalBoolean="4" value="ci_in"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ProcessingElement::processInputChannel" label="">
+<pragma name="DATAFLOW"/>
+</directive>
+<directive functionLabel="" functionName="ProcessingElement::processInputChannel" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="pixel_buffer"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ProcessingElement::processAllCHout" label="">
+<pragma name="INLINE">
+<option name="off" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ProcessingElement::processAllCHout" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="16"/>
+<option name="max" value="1024"/>
+<option name="avg" value="258"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ProcessingElement::processAllCHout" label="">
+<pragma name="UNROLL">
+<option name="factor" value="N_PE"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ProcessingElement::processAllCHout" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ProcessingElement::processAllCHout" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="weights_local"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ProcessingElement::preloadPixels" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="ProcessingElement::preloadPixels" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="ProcessingElement::preloadPixelsAndPrecalcCIoffset" label="">
+<pragma name="INLINE">
+<option name="off" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ProcessingElement::preloadPixelsAndPrecalcCIoffset" label="">
+<pragma name="PIPELINE">
+<option name="II" value="7"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ProcessingElement::macc2d" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="ProcessingElement::macc2d" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="multresult"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ProcessingElement::macc2d" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="ProcessingElement::macc2d" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="ProcessingElement::postprocess" label="">
+<pragma name="INLINE"/>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

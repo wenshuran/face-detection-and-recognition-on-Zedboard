@@ -395,6 +395,7 @@
         <spirit:componentRef spirit:library="ip" spirit:name="processing_system7" spirit:vendor="xilinx.com" spirit:version="5.5"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_processing_system7_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_FPGA0_PERIPHERAL_FREQMHZ">99.999999</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_FPGA1_PERIPHERAL_FREQMHZ">25</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_FPGA2_PERIPHERAL_FREQMHZ">25</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_USE_M_AXI_GP0">1</spirit:configurableElementValue>
@@ -644,6 +645,7 @@
         <spirit:internalPortReference spirit:componentRef="vdma_s2mm" spirit:portRef="m_axi_s2mm_aclk"/>
         <spirit:internalPortReference spirit:componentRef="vdma_s2mm" spirit:portRef="s_axi_lite_aclk"/>
         <spirit:internalPortReference spirit:componentRef="vdma_s2mm" spirit:portRef="s_axis_s2mm_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="ila_0" spirit:portRef="clk"/>
         <spirit:internalPortReference spirit:componentRef="axi_periph" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_periph" spirit:portRef="M00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_periph" spirit:portRef="M02_ACLK"/>
@@ -654,7 +656,6 @@
         <spirit:internalPortReference spirit:componentRef="vdma_s2mm_intercon" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="vdma_s2mm_intercon" spirit:portRef="M00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="vdma_s2mm_intercon" spirit:portRef="S00_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="ila_0" spirit:portRef="clk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>ov7670_controller_0_config_finished</spirit:name>
@@ -684,19 +685,6 @@
         <spirit:internalPortReference spirit:componentRef="ov7670_decode_stream_0" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="rst_ov7670_pclk" spirit:portRef="slowest_sync_clk"/>
         <spirit:internalPortReference spirit:componentRef="axi_periph" spirit:portRef="M01_ACLK"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>processing_system7_0_FCLK_CLK1</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="FCLK_CLK1"/>
-        <spirit:internalPortReference spirit:componentRef="ov7670_controller_0" spirit:portRef="clk"/>
-        <spirit:internalPortReference spirit:componentRef="ov7670_debounce_0" spirit:portRef="clk"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>processing_system7_0_FCLK_CLK2</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="FCLK_CLK2"/>
-        <spirit:internalPortReference spirit:componentRef="stream_to_vga_0" spirit:portRef="clk25"/>
-        <spirit:internalPortReference spirit:componentRef="fifo_mm2s" spirit:portRef="m_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="rst_vga_clk25" spirit:portRef="slowest_sync_clk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>processing_system7_0_FCLK_RESET0_N</spirit:name>
@@ -760,6 +748,19 @@
         <spirit:name>xlconcat_0_dout</spirit:name>
         <spirit:internalPortReference spirit:componentRef="xlconcat_0" spirit:portRef="dout"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="IRQ_F2P"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>processing_system7_0_FCLK_CLK1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="FCLK_CLK1"/>
+        <spirit:internalPortReference spirit:componentRef="ov7670_controller_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="ov7670_debounce_0" spirit:portRef="clk"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>processing_system7_0_FCLK_CLK2</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="FCLK_CLK2"/>
+        <spirit:internalPortReference spirit:componentRef="stream_to_vga_0" spirit:portRef="clk25"/>
+        <spirit:internalPortReference spirit:componentRef="fifo_mm2s" spirit:portRef="m_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="rst_vga_clk25" spirit:portRef="slowest_sync_clk"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>

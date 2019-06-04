@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="fpga_top" xd:componentRef="fpga_top" xd:initiationInterval="x" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_axilite" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="*(SHARED_DRAM)" xd:originalName="SHARED_DRAM" xd:direction="inout" xd:interfaceRef="m_axi_memorybus" xd:busTypeRef="aximm" xd:arraySize="5932576" xd:dataWidth="32" xd:bufferDirection="inout"/>
+  <xd:arg xd:name="layer.name[]" xd:originalName="layer" xd:direction="in" xd:interfaceRef="s_axi_axilite" xd:busTypeRef="axilite" xd:offset="0x10" xd:arraySize="7" xd:dataWidth="8"/>
+  <xd:arg xd:name="layer.width" xd:originalName="layer" xd:direction="in" xd:interfaceRef="s_axi_axilite" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_none" xd:dataWidth="9"/>
+  <xd:arg xd:name="layer.height" xd:originalName="layer" xd:direction="in" xd:interfaceRef="s_axi_axilite" xd:busTypeRef="axilite" xd:offset="0x20" xd:handshakeRef="ap_none" xd:dataWidth="9"/>
+  <xd:arg xd:name="layer.channels_in" xd:originalName="layer" xd:direction="in" xd:interfaceRef="s_axi_axilite" xd:busTypeRef="axilite" xd:offset="0x28" xd:handshakeRef="ap_none" xd:dataWidth="10"/>
+  <xd:arg xd:name="layer.channels_out" xd:originalName="layer" xd:direction="in" xd:interfaceRef="s_axi_axilite" xd:busTypeRef="axilite" xd:offset="0x30" xd:handshakeRef="ap_none" xd:dataWidth="10"/>
+  <xd:arg xd:name="layer.kernel" xd:originalName="layer" xd:direction="in" xd:interfaceRef="s_axi_axilite" xd:busTypeRef="axilite" xd:offset="0x38" xd:handshakeRef="ap_none" xd:dataWidth="2"/>
+  <xd:arg xd:name="layer.stride" xd:originalName="layer" xd:direction="in" xd:interfaceRef="s_axi_axilite" xd:busTypeRef="axilite" xd:offset="0x40" xd:handshakeRef="ap_none" xd:dataWidth="2"/>
+  <xd:arg xd:name="layer.pad" xd:originalName="layer" xd:direction="in" xd:interfaceRef="s_axi_axilite" xd:busTypeRef="axilite" xd:offset="0x48" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="layer.relu" xd:originalName="layer" xd:direction="in" xd:interfaceRef="s_axi_axilite" xd:busTypeRef="axilite" xd:offset="0x50" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="layer.is_first_split_layer" xd:originalName="layer" xd:direction="in" xd:interfaceRef="s_axi_axilite" xd:busTypeRef="axilite" xd:offset="0x58" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="layer.is_second_split_layer" xd:originalName="layer" xd:direction="in" xd:interfaceRef="s_axi_axilite" xd:busTypeRef="axilite" xd:offset="0x60" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="layer.global_pool" xd:originalName="layer" xd:direction="in" xd:interfaceRef="s_axi_axilite" xd:busTypeRef="axilite" xd:offset="0x68" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="layer.mem_addr_input" xd:originalName="layer" xd:direction="in" xd:interfaceRef="s_axi_axilite" xd:busTypeRef="axilite" xd:offset="0x70" xd:handshakeRef="ap_none" xd:dataWidth="23"/>
+  <xd:arg xd:name="layer.mem_addr_output" xd:originalName="layer" xd:direction="in" xd:interfaceRef="s_axi_axilite" xd:busTypeRef="axilite" xd:offset="0x78" xd:handshakeRef="ap_none" xd:dataWidth="23"/>
+  <xd:arg xd:name="layer.mem_addr_weights" xd:originalName="layer" xd:direction="in" xd:interfaceRef="s_axi_axilite" xd:busTypeRef="axilite" xd:offset="0x80" xd:handshakeRef="ap_none" xd:dataWidth="23"/>
+  <xd:arg xd:name="SHARED_DRAM" xd:originalName="SHARED_DRAM" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_memorybus" xd:dataWidth="32" xd:offset="0x10" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="weights_offset" xd:originalName="weights_offset" xd:direction="in" xd:interfaceRef="s_axi_axilite" xd:busTypeRef="axilite" xd:dataWidth="32" xd:offset="0x88" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="num_weights" xd:originalName="num_weights" xd:direction="in" xd:interfaceRef="s_axi_axilite" xd:busTypeRef="axilite" xd:dataWidth="19" xd:offset="0x90" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="input_offset" xd:originalName="input_offset" xd:direction="in" xd:interfaceRef="s_axi_axilite" xd:busTypeRef="axilite" xd:dataWidth="32" xd:offset="0x98" xd:handshakeRef="ap_none"/>
+  <xd:latencyEstimates xd:best-case="353" xd:worst-case="9735653403" xd:average-case="23711309"/>
+  <xd:resourceEstimates xd:LUT="156139" xd:FF="116025" xd:BRAM="994" xd:DSP="771"/>
+</xd:acceleratorMap>

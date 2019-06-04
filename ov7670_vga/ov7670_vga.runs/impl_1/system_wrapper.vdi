@@ -2,12 +2,12 @@
 # Vivado v2015.4 (64-bit)
 # SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
 # IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Thu Apr 25 19:07:24 2019
-# Process ID: 99749
-# Current directory: /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.runs/impl_1
+# Start of session at: Fri May 31 09:11:52 2019
+# Process ID: 29781
+# Current directory: /home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.runs/impl_1
 # Command line: vivado -log system_wrapper.vdi -applog -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
-# Log file: /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.runs/impl_1/system_wrapper.vdi
-# Journal file: /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.runs/impl_1/vivado.jou
+# Log file: /home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.runs/impl_1/system_wrapper.vdi
+# Journal file: /home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.runs/impl_1/vivado.jou
 #-----------------------------------------------------------
 source system_wrapper.tcl -notrace
 Design is defaulting to srcset: sources_1
@@ -17,56 +17,56 @@ INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2015.4
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_mm2s_0/system_fifo_mm2s_0/system_fifo_mm2s_0.xdc] for cell 'system_i/fifo_mm2s/U0'
-Finished Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_mm2s_0/system_fifo_mm2s_0/system_fifo_mm2s_0.xdc] for cell 'system_i/fifo_mm2s/U0'
-Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_s2mm_0/system_fifo_s2mm_0/system_fifo_s2mm_0.xdc] for cell 'system_i/fifo_s2mm/U0'
-Finished Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_s2mm_0/system_fifo_s2mm_0/system_fifo_s2mm_0.xdc] for cell 'system_i/fifo_s2mm/U0'
-Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
-Finished Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
-Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_ov7670_pclk_0/system_rst_ov7670_pclk_0_board.xdc] for cell 'system_i/rst_ov7670_pclk'
-Finished Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_ov7670_pclk_0/system_rst_ov7670_pclk_0_board.xdc] for cell 'system_i/rst_ov7670_pclk'
-Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_ov7670_pclk_0/system_rst_ov7670_pclk_0.xdc] for cell 'system_i/rst_ov7670_pclk'
-Finished Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_ov7670_pclk_0/system_rst_ov7670_pclk_0.xdc] for cell 'system_i/rst_ov7670_pclk'
-Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0_board.xdc] for cell 'system_i/rst_processing_system7_0_100M'
-Finished Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0_board.xdc] for cell 'system_i/rst_processing_system7_0_100M'
-Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0.xdc] for cell 'system_i/rst_processing_system7_0_100M'
-Finished Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0.xdc] for cell 'system_i/rst_processing_system7_0_100M'
-Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_vga_clk25_0/system_rst_vga_clk25_0_board.xdc] for cell 'system_i/rst_vga_clk25'
-Finished Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_vga_clk25_0/system_rst_vga_clk25_0_board.xdc] for cell 'system_i/rst_vga_clk25'
-Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_vga_clk25_0/system_rst_vga_clk25_0.xdc] for cell 'system_i/rst_vga_clk25'
-Finished Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_vga_clk25_0/system_rst_vga_clk25_0.xdc] for cell 'system_i/rst_vga_clk25'
-Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_vdma_mm2s_0/system_vdma_mm2s_0.xdc] for cell 'system_i/vdma_mm2s/U0'
-Finished Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_vdma_mm2s_0/system_vdma_mm2s_0.xdc] for cell 'system_i/vdma_mm2s/U0'
-Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_vdma_s2mm_0/system_vdma_s2mm_0.xdc] for cell 'system_i/vdma_s2mm/U0'
-Finished Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_vdma_s2mm_0/system_vdma_s2mm_0.xdc] for cell 'system_i/vdma_s2mm/U0'
-Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_ila_0_1/ila_v6_0/constraints/ila.xdc] for cell 'system_i/ila_0'
-Finished Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_ila_0_1/ila_v6_0/constraints/ila.xdc] for cell 'system_i/ila_0'
-Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/constrs_1/imports/xdc/zedboard_v1.xdc]
-Finished Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/constrs_1/imports/xdc/zedboard_v1.xdc]
-Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_mm2s_0/system_fifo_mm2s_0/system_fifo_mm2s_0_clocks.xdc] for cell 'system_i/fifo_mm2s/U0'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_mm2s_0/system_fifo_mm2s_0/system_fifo_mm2s_0_clocks.xdc:52]
-get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1741.953 ; gain = 477.516 ; free physical = 2457 ; free virtual = 12078
-Finished Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_mm2s_0/system_fifo_mm2s_0/system_fifo_mm2s_0_clocks.xdc] for cell 'system_i/fifo_mm2s/U0'
-Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_s2mm_0/system_fifo_s2mm_0/system_fifo_s2mm_0_clocks.xdc] for cell 'system_i/fifo_s2mm/U0'
-WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance s_aclk]'. [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_s2mm_0/system_fifo_s2mm_0/system_fifo_s2mm_0_clocks.xdc:52]
+Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_mm2s_0/system_fifo_mm2s_0/system_fifo_mm2s_0.xdc] for cell 'system_i/fifo_mm2s/U0'
+Finished Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_mm2s_0/system_fifo_mm2s_0/system_fifo_mm2s_0.xdc] for cell 'system_i/fifo_mm2s/U0'
+Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_s2mm_0/system_fifo_s2mm_0/system_fifo_s2mm_0.xdc] for cell 'system_i/fifo_s2mm/U0'
+Finished Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_s2mm_0/system_fifo_s2mm_0/system_fifo_s2mm_0.xdc] for cell 'system_i/fifo_s2mm/U0'
+Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_ov7670_pclk_0/system_rst_ov7670_pclk_0_board.xdc] for cell 'system_i/rst_ov7670_pclk'
+Finished Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_ov7670_pclk_0/system_rst_ov7670_pclk_0_board.xdc] for cell 'system_i/rst_ov7670_pclk'
+Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_ov7670_pclk_0/system_rst_ov7670_pclk_0.xdc] for cell 'system_i/rst_ov7670_pclk'
+Finished Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_ov7670_pclk_0/system_rst_ov7670_pclk_0.xdc] for cell 'system_i/rst_ov7670_pclk'
+Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0_board.xdc] for cell 'system_i/rst_processing_system7_0_100M'
+Finished Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0_board.xdc] for cell 'system_i/rst_processing_system7_0_100M'
+Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0.xdc] for cell 'system_i/rst_processing_system7_0_100M'
+Finished Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0.xdc] for cell 'system_i/rst_processing_system7_0_100M'
+Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_vga_clk25_0/system_rst_vga_clk25_0_board.xdc] for cell 'system_i/rst_vga_clk25'
+Finished Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_vga_clk25_0/system_rst_vga_clk25_0_board.xdc] for cell 'system_i/rst_vga_clk25'
+Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_vga_clk25_0/system_rst_vga_clk25_0.xdc] for cell 'system_i/rst_vga_clk25'
+Finished Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_rst_vga_clk25_0/system_rst_vga_clk25_0.xdc] for cell 'system_i/rst_vga_clk25'
+Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_vdma_mm2s_0/system_vdma_mm2s_0.xdc] for cell 'system_i/vdma_mm2s/U0'
+Finished Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_vdma_mm2s_0/system_vdma_mm2s_0.xdc] for cell 'system_i/vdma_mm2s/U0'
+Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_vdma_s2mm_0/system_vdma_s2mm_0.xdc] for cell 'system_i/vdma_s2mm/U0'
+Finished Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_vdma_s2mm_0/system_vdma_s2mm_0.xdc] for cell 'system_i/vdma_s2mm/U0'
+Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_ila_0_1/ila_v6_0/constraints/ila.xdc] for cell 'system_i/ila_0'
+Finished Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_ila_0_1/ila_v6_0/constraints/ila.xdc] for cell 'system_i/ila_0'
+Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/constrs_1/imports/xdc/zedboard_v1.xdc]
+Finished Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/constrs_1/imports/xdc/zedboard_v1.xdc]
+Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_mm2s_0/system_fifo_mm2s_0/system_fifo_mm2s_0_clocks.xdc] for cell 'system_i/fifo_mm2s/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_mm2s_0/system_fifo_mm2s_0/system_fifo_mm2s_0_clocks.xdc:52]
+get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1741.957 ; gain = 477.516 ; free physical = 3093 ; free virtual = 12400
+Finished Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_mm2s_0/system_fifo_mm2s_0/system_fifo_mm2s_0_clocks.xdc] for cell 'system_i/fifo_mm2s/U0'
+Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_s2mm_0/system_fifo_s2mm_0/system_fifo_s2mm_0_clocks.xdc] for cell 'system_i/fifo_s2mm/U0'
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance s_aclk]'. [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_s2mm_0/system_fifo_s2mm_0/system_fifo_s2mm_0_clocks.xdc:52]
 Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_s2mm_0/system_fifo_s2mm_0/system_fifo_s2mm_0_clocks.xdc:52]
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_s2mm_0/system_fifo_s2mm_0/system_fifo_s2mm_0_clocks.xdc:61]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_s2mm_0/system_fifo_s2mm_0/system_fifo_s2mm_0_clocks.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_s2mm_0/system_fifo_s2mm_0/system_fifo_s2mm_0_clocks.xdc:61]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_s2mm_0/system_fifo_s2mm_0/system_fifo_s2mm_0_clocks.xdc] for cell 'system_i/fifo_s2mm/U0'
-Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_vdma_mm2s_0/system_vdma_mm2s_0_clocks.xdc] for cell 'system_i/vdma_mm2s/U0'
-Finished Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_vdma_mm2s_0/system_vdma_mm2s_0_clocks.xdc] for cell 'system_i/vdma_mm2s/U0'
-Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_vdma_s2mm_0/system_vdma_s2mm_0_clocks.xdc] for cell 'system_i/vdma_s2mm/U0'
-Finished Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_vdma_s2mm_0/system_vdma_s2mm_0_clocks.xdc] for cell 'system_i/vdma_s2mm/U0'
-Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_clocks.xdc] for cell 'system_i/axi_periph/m01_couplers/auto_cc/inst'
-WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance m_axi_aclk]'. [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_clocks.xdc:17]
+Finished Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_fifo_s2mm_0/system_fifo_s2mm_0/system_fifo_s2mm_0_clocks.xdc] for cell 'system_i/fifo_s2mm/U0'
+Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_vdma_mm2s_0/system_vdma_mm2s_0_clocks.xdc] for cell 'system_i/vdma_mm2s/U0'
+Finished Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_vdma_mm2s_0/system_vdma_mm2s_0_clocks.xdc] for cell 'system_i/vdma_mm2s/U0'
+Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_vdma_s2mm_0/system_vdma_s2mm_0_clocks.xdc] for cell 'system_i/vdma_s2mm/U0'
+Finished Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_vdma_s2mm_0/system_vdma_s2mm_0_clocks.xdc] for cell 'system_i/vdma_s2mm/U0'
+Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_clocks.xdc] for cell 'system_i/axi_periph/m01_couplers/auto_cc/inst'
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance m_axi_aclk]'. [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_clocks.xdc:17]
 Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_clocks.xdc:17]
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_clocks.xdc:20]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_clocks.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_clocks.xdc:20]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_clocks.xdc] for cell 'system_i/axi_periph/m01_couplers/auto_cc/inst'
-Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_clocks.xdc] for cell 'system_i/vdma_s2mm_intercon/s00_couplers/auto_us/inst'
-Finished Parsing XDC File [/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_clocks.xdc] for cell 'system_i/vdma_s2mm_intercon/s00_couplers/auto_us/inst'
+Finished Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_clocks.xdc] for cell 'system_i/axi_periph/m01_couplers/auto_cc/inst'
+Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_clocks.xdc] for cell 'system_i/vdma_s2mm_intercon/s00_couplers/auto_us/inst'
+Finished Parsing XDC File [/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_clocks.xdc] for cell 'system_i/vdma_s2mm_intercon/s00_couplers/auto_us/inst'
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 105 instances were transformed.
@@ -76,7 +76,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 29 instances
   RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
 
-link_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1741.953 ; gain = 823.535 ; free physical = 2485 ; free virtual = 12077
+link_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1741.957 ; gain = 823.535 ; free physical = 3121 ; free virtual = 12400
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -87,14 +87,14 @@ INFO: [DRC 23-27] Running DRC with 6 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1797.980 ; gain = 48.023 ; free physical = 2484 ; free virtual = 12076
+Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.20 . Memory (MB): peak = 1797.984 ; gain = 48.023 ; free physical = 3121 ; free virtual = 12400
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Starting Logic Optimization Task
 
 Phase 1 Generate And Synthesize Debug Cores
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.cache/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.cache/ip'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_no_input'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_decode_v3'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_decode_v2'.
@@ -110,14 +110,14 @@ WARNING: [IP_Flow 19-2207] Repository '/home/wenshuran/Desktop/ov7670_VDMA_VGA-m
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_decode_stream'.
 WARNING: [IP_Flow 19-2207] Repository '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/stream_to_vga' already exists; ignoring attempt to add it again.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/stream_to_vga'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.4/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx1/Vivado/2015.4/data/ip'.
 CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:ov7670_stream_v1_0:1.0'. The one found in IP location '/home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_decode_v3' will take precedence over the same IP in location /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ip_repo/ov7670_decode_v2
 INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:1.1 for cell dbg_hub_CV.
 INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:1.1", from Vivado IP cache entry "9d188510f4d3a08a".
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1797.980 ; gain = 0.000 ; free physical = 2443 ; free virtual = 12053
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1797.984 ; gain = 0.000 ; free physical = 3082 ; free virtual = 12380
 Phase 1 Generate And Synthesize Debug Cores | Checksum: 16327bdc7
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1797.980 ; gain = 0.000 ; free physical = 2443 ; free virtual = 12053
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1797.984 ; gain = 0.000 ; free physical = 3082 ; free virtual = 12380
 Implement Debug Cores | Checksum: 17065b838
 
 Phase 2 Retarget
@@ -125,28 +125,28 @@ INFO: [Opt 31-138] Pushed 4 inverter(s) to 9 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
 Phase 2 Retarget | Checksum: 1c7947dc0
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1797.980 ; gain = 0.000 ; free physical = 2441 ; free virtual = 12052
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1797.984 ; gain = 0.000 ; free physical = 3081 ; free virtual = 12379
 
 Phase 3 Constant Propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-10] Eliminated 137 cells.
 Phase 3 Constant Propagation | Checksum: 1a0c269a4
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1797.980 ; gain = 0.000 ; free physical = 2439 ; free virtual = 12051
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1797.984 ; gain = 0.000 ; free physical = 3079 ; free virtual = 12378
 
 Phase 4 Sweep
 INFO: [Opt 31-12] Eliminated 1092 unconnected nets.
 INFO: [Opt 31-11] Eliminated 492 unconnected cells.
 Phase 4 Sweep | Checksum: 16d9f6633
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1797.980 ; gain = 0.000 ; free physical = 2439 ; free virtual = 12051
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1797.984 ; gain = 0.000 ; free physical = 3079 ; free virtual = 12378
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1797.980 ; gain = 0.000 ; free physical = 2439 ; free virtual = 12051
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1797.984 ; gain = 0.000 ; free physical = 3079 ; free virtual = 12378
 Ending Logic Optimization Task | Checksum: 16d9f6633
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1797.980 ; gain = 0.000 ; free physical = 2439 ; free virtual = 12051
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1797.984 ; gain = 0.000 ; free physical = 3079 ; free virtual = 12378
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
@@ -166,21 +166,21 @@ Number of Flops added for Enable Generation: 2
 
 Ending PowerOpt Patch Enables Task | Checksum: 1fb21f3cb
 
-Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2028.098 ; gain = 0.000 ; free physical = 2279 ; free virtual = 11895
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2029.098 ; gain = 0.000 ; free physical = 2914 ; free virtual = 12218
 Ending Power Optimization Task | Checksum: 1fb21f3cb
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2028.098 ; gain = 230.117 ; free physical = 2279 ; free virtual = 11895
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2029.098 ; gain = 231.113 ; free physical = 2914 ; free virtual = 12218
 INFO: [Common 17-83] Releasing license: Implementation
 47 Infos, 6 Warnings, 3 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2028.098 ; gain = 286.145 ; free physical = 2279 ; free virtual = 11895
+opt_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2029.098 ; gain = 287.141 ; free physical = 2914 ; free virtual = 12218
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2028.098 ; gain = 0.000 ; free physical = 2276 ; free virtual = 11895
+Write XDEF Complete: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2029.098 ; gain = 0.000 ; free physical = 2910 ; free virtual = 12218
 INFO: [DRC 23-27] Running DRC with 6 threads
-INFO: [Coretcl 2-168] The results of DRC are in file /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.runs/impl_1/system_wrapper_drc_opted.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file /home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.runs/impl_1/system_wrapper_drc_opted.rpt.
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -236,17 +236,17 @@ Starting Placer Task
 INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 6 CPUs
 
 Phase 1 Placer Initialization
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2028.098 ; gain = 0.000 ; free physical = 2267 ; free virtual = 11888
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2029.098 ; gain = 0.000 ; free physical = 2905 ; free virtual = 12218
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2028.098 ; gain = 0.000 ; free physical = 2267 ; free virtual = 11888
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2029.098 ; gain = 0.000 ; free physical = 2904 ; free virtual = 12217
 
 Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
 
 Phase 1.1.1 Pre-Place Cells
 Phase 1.1.1 Pre-Place Cells | Checksum: e7156977
 
-Time (s): cpu = 00:00:00.92 ; elapsed = 00:00:00.74 . Memory (MB): peak = 2028.098 ; gain = 0.000 ; free physical = 2267 ; free virtual = 11888
+Time (s): cpu = 00:00:00.94 ; elapsed = 00:00:00.77 . Memory (MB): peak = 2029.098 ; gain = 0.000 ; free physical = 2904 ; free virtual = 12218
 WARNING: [Place 30-12] An IO Bus FIXED_IO_mio with more than one IO standard is found. Components associated with this bus are: 
 	FIXED_IO_mio[53] of IOStandard LVCMOS18
 	FIXED_IO_mio[52] of IOStandard LVCMOS18
@@ -312,20 +312,20 @@ WARNING: [Place 30-574] Poor placement for routing between an IO pin and BUFG. T
 Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
 Phase 1.1.2 IO and Clk Clean Up | Checksum: e7156977
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2028.098 ; gain = 0.000 ; free physical = 2263 ; free virtual = 11888
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2029.098 ; gain = 0.000 ; free physical = 2899 ; free virtual = 12217
 
 Phase 1.1.3 Implementation Feasibility check On IDelay
 Phase 1.1.3 Implementation Feasibility check On IDelay | Checksum: e7156977
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2028.098 ; gain = 0.000 ; free physical = 2263 ; free virtual = 11888
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2029.098 ; gain = 0.000 ; free physical = 2899 ; free virtual = 12217
 
 Phase 1.1.4 Commit IO Placement
 Phase 1.1.4 Commit IO Placement | Checksum: 48470166
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2028.098 ; gain = 0.000 ; free physical = 2263 ; free virtual = 11888
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2029.098 ; gain = 0.000 ; free physical = 2899 ; free virtual = 12217
 Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 6c8f8eb4
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2028.098 ; gain = 0.000 ; free physical = 2263 ; free virtual = 11888
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2029.098 ; gain = 0.000 ; free physical = 2899 ; free virtual = 12217
 
 Phase 1.2 Build Placer Netlist Model
 
@@ -334,63 +334,63 @@ Phase 1.2.1 Place Init Design
 Phase 1.2.1.1 Init Lut Pin Assignment
 Phase 1.2.1.1 Init Lut Pin Assignment | Checksum: 12559528d
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2028.098 ; gain = 0.000 ; free physical = 2260 ; free virtual = 11887
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2029.098 ; gain = 0.000 ; free physical = 2897 ; free virtual = 12217
 Phase 1.2.1 Place Init Design | Checksum: 149e1ca1c
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2028.098 ; gain = 0.000 ; free physical = 2257 ; free virtual = 11885
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2029.098 ; gain = 0.000 ; free physical = 2890 ; free virtual = 12211
 Phase 1.2 Build Placer Netlist Model | Checksum: 149e1ca1c
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2028.098 ; gain = 0.000 ; free physical = 2257 ; free virtual = 11885
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2029.098 ; gain = 0.000 ; free physical = 2890 ; free virtual = 12211
 
 Phase 1.3 Constrain Clocks/Macros
 
 Phase 1.3.1 Constrain Global/Regional Clocks
 Phase 1.3.1 Constrain Global/Regional Clocks | Checksum: 149e1ca1c
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2028.098 ; gain = 0.000 ; free physical = 2256 ; free virtual = 11885
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2029.098 ; gain = 0.000 ; free physical = 2889 ; free virtual = 12211
 Phase 1.3 Constrain Clocks/Macros | Checksum: 149e1ca1c
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2028.098 ; gain = 0.000 ; free physical = 2256 ; free virtual = 11885
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2029.098 ; gain = 0.000 ; free physical = 2889 ; free virtual = 12211
 Phase 1 Placer Initialization | Checksum: 149e1ca1c
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2028.098 ; gain = 0.000 ; free physical = 2256 ; free virtual = 11885
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2029.098 ; gain = 0.000 ; free physical = 2889 ; free virtual = 12211
 
 Phase 2 Global Placement
 Phase 2 Global Placement | Checksum: 1612b8626
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2252 ; free virtual = 11881
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2879 ; free virtual = 12201
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
 Phase 3.1 Commit Multi Column Macros | Checksum: 1612b8626
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2252 ; free virtual = 11881
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2879 ; free virtual = 12201
 
 Phase 3.2 Commit Most Macros & LUTRAMs
 Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 14d6c598f
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2252 ; free virtual = 11881
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2879 ; free virtual = 12201
 
 Phase 3.3 Area Swap Optimization
 Phase 3.3 Area Swap Optimization | Checksum: 16d38868c
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2252 ; free virtual = 11881
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2879 ; free virtual = 12201
 
 Phase 3.4 updateClock Trees: DP
 Phase 3.4 updateClock Trees: DP | Checksum: 16d38868c
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2252 ; free virtual = 11881
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2879 ; free virtual = 12201
 
 Phase 3.5 Timing Path Optimizer
 Phase 3.5 Timing Path Optimizer | Checksum: 98d64389
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2252 ; free virtual = 11881
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2878 ; free virtual = 12201
 
 Phase 3.6 Fast Optimization
 Phase 3.6 Fast Optimization | Checksum: 98d64389
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2252 ; free virtual = 11881
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2878 ; free virtual = 12201
 
 Phase 3.7 Small Shape Detail Placement
 
@@ -399,31 +399,31 @@ Phase 3.7.1 Commit Small Macros and Core Logic
 Phase 3.7.1.1 Commit Slice Clusters
 Phase 3.7.1.1 Commit Slice Clusters | Checksum: c22eaffd
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2247 ; free virtual = 11877
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2875 ; free virtual = 12198
 Phase 3.7.1 Commit Small Macros and Core Logic | Checksum: c22eaffd
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2247 ; free virtual = 11877
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2875 ; free virtual = 12198
 
 Phase 3.7.2 Clock Restriction Legalization for Leaf Columns
 Phase 3.7.2 Clock Restriction Legalization for Leaf Columns | Checksum: c22eaffd
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2246 ; free virtual = 11876
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2874 ; free virtual = 12197
 
 Phase 3.7.3 Clock Restriction Legalization for Non-Clock Pins
 Phase 3.7.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: c22eaffd
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2246 ; free virtual = 11876
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2874 ; free virtual = 12197
 Phase 3.7 Small Shape Detail Placement | Checksum: c22eaffd
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2246 ; free virtual = 11876
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2874 ; free virtual = 12197
 
 Phase 3.8 Re-assign LUT pins
 Phase 3.8 Re-assign LUT pins | Checksum: 19ab63ae0
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2246 ; free virtual = 11876
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2874 ; free virtual = 12197
 Phase 3 Detail Placement | Checksum: 19ab63ae0
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2246 ; free virtual = 11876
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2874 ; free virtual = 12197
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -432,12 +432,12 @@ Phase 4.1 Post Commit Optimization
 Phase 4.1.1 callUpdateTimingBeforePCO
 Phase 4.1.1 callUpdateTimingBeforePCO | Checksum: 124bca6e2
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2246 ; free virtual = 11876
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2874 ; free virtual = 12197
 
 Phase 4.1.2 updateClock Trees: PCOPT
 Phase 4.1.2 updateClock Trees: PCOPT | Checksum: 124bca6e2
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2246 ; free virtual = 11876
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2874 ; free virtual = 12197
 
 Phase 4.1.3 Post Placement Optimization
 
@@ -446,75 +446,75 @@ Phase 4.1.3.1 PCOPT Shape updates
 Phase 4.1.3.1.1 removeOptionalFFsFromShapes
 Phase 4.1.3.1.1 removeOptionalFFsFromShapes | Checksum: 124bca6e2
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2246 ; free virtual = 11876
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2874 ; free virtual = 12197
 
 Phase 4.1.3.1.2 deleteLutnmShapes
 
 Phase 4.1.3.1.2.1 deleteShapes
 Phase 4.1.3.1.2.1 deleteShapes | Checksum: 1833a77a8
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2246 ; free virtual = 11876
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2874 ; free virtual = 12197
 Phase 4.1.3.1.2 deleteLutnmShapes | Checksum: 1833a77a8
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2246 ; free virtual = 11876
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2874 ; free virtual = 12197
 Phase 4.1.3.1 PCOPT Shape updates | Checksum: 1833a77a8
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2246 ; free virtual = 11876
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2874 ; free virtual = 12197
 
 Phase 4.1.3.2 Post Placement Timing Optimization
 INFO: [Place 30-746] Post Placement Timing Summary WNS=2.005. For the most accurate timing information please run report_timing.
 Phase 4.1.3.2 Post Placement Timing Optimization | Checksum: 1ed23ede5
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2246 ; free virtual = 11876
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2874 ; free virtual = 12197
 Phase 4.1.3 Post Placement Optimization | Checksum: 1ed23ede5
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2246 ; free virtual = 11876
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2874 ; free virtual = 12197
 Phase 4.1 Post Commit Optimization | Checksum: 1ed23ede5
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2246 ; free virtual = 11876
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2874 ; free virtual = 12197
 
 Phase 4.2 Sweep Clock Roots: Post-Placement
 Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: 1ed23ede5
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2246 ; free virtual = 11876
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:20 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2874 ; free virtual = 12197
 
 Phase 4.3 Post Placement Cleanup
 Phase 4.3 Post Placement Cleanup | Checksum: 1ed23ede5
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2246 ; free virtual = 11876
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:20 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2874 ; free virtual = 12197
 
 Phase 4.4 Placer Reporting
 
 Phase 4.4.1 Restore STA
 Phase 4.4.1 Restore STA | Checksum: 1ed23ede5
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2246 ; free virtual = 11876
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:20 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2874 ; free virtual = 12197
 Phase 4.4 Placer Reporting | Checksum: 1ed23ede5
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2246 ; free virtual = 11876
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2874 ; free virtual = 12197
 
 Phase 4.5 Final Placement Cleanup
 Phase 4.5 Final Placement Cleanup | Checksum: 224ad9ff3
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2246 ; free virtual = 11876
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2874 ; free virtual = 12197
 Phase 4 Post Placement Optimization and Clean-Up | Checksum: 224ad9ff3
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2246 ; free virtual = 11876
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2874 ; free virtual = 12197
 Ending Placer Task | Checksum: 151288fb7
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2246 ; free virtual = 11876
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2874 ; free virtual = 12197
 INFO: [Common 17-83] Releasing license: Implementation
 62 Infos, 48 Warnings, 3 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 2037.113 ; gain = 9.016 ; free physical = 2246 ; free virtual = 11876
+place_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 2037.117 ; gain = 8.020 ; free physical = 2874 ; free virtual = 12197
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.50 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2228 ; free virtual = 11875
-report_io: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2239 ; free virtual = 11874
-report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2238 ; free virtual = 11873
-report_control_sets: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2238 ; free virtual = 11873
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.53 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2856 ; free virtual = 12196
+report_io: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2868 ; free virtual = 12196
+report_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2868 ; free virtual = 12196
+report_control_sets: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2868 ; free virtual = 12196
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -539,35 +539,35 @@ Checksum: PlaceDB: fb2407d6 ConstDB: 0 ShapeSum: 560487e1 RouteDB: 0
 Phase 1 Build RT Design
 Phase 1 Build RT Design | Checksum: 10951a854
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2213 ; free virtual = 11850
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2840 ; free virtual = 12171
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
 Phase 2.1 Create Timer | Checksum: 10951a854
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2210 ; free virtual = 11848
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2838 ; free virtual = 12169
 
 Phase 2.2 Pre Route Cleanup
 Phase 2.2 Pre Route Cleanup | Checksum: 10951a854
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2187 ; free virtual = 11827
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2815 ; free virtual = 12147
  Number of Nodes with overlaps = 0
 
 Phase 2.3 Update Timing
 Phase 2.3 Update Timing | Checksum: 20cbb079f
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2158 ; free virtual = 11798
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2786 ; free virtual = 12119
 INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.081  | TNS=0.000  | WHS=-0.476 | THS=-224.014|
 
 Phase 2 Router Initialization | Checksum: 1d41c459f
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2158 ; free virtual = 11798
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2786 ; free virtual = 12119
 
 Phase 3 Initial Routing
 Phase 3 Initial Routing | Checksum: 2669f09ed
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2158 ; free virtual = 11798
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:16 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2786 ; free virtual = 12119
 
 Phase 4 Rip-up And Reroute
 
@@ -580,12 +580,12 @@ Phase 4.1 Global Iteration 0
 Phase 4.1.1 Update Timing
 Phase 4.1.1 Update Timing | Checksum: bbb36a68
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:17 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2158 ; free virtual = 11798
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2786 ; free virtual = 12119
 INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.030  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
 Phase 4.1 Global Iteration 0 | Checksum: 1703b71ab
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:17 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2158 ; free virtual = 11798
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2786 ; free virtual = 12119
 
 Phase 4.2 Global Iteration 1
  Number of Nodes with overlaps = 1
@@ -594,15 +594,15 @@ Phase 4.2 Global Iteration 1
 Phase 4.2.1 Update Timing
 Phase 4.2.1 Update Timing | Checksum: 294a7ab91
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:17 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2158 ; free virtual = 11798
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2786 ; free virtual = 12119
 INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.030  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
 Phase 4.2 Global Iteration 1 | Checksum: 1ffec0705
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:17 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2158 ; free virtual = 11798
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2786 ; free virtual = 12119
 Phase 4 Rip-up And Reroute | Checksum: 1ffec0705
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:17 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2158 ; free virtual = 11798
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2786 ; free virtual = 12119
 
 Phase 5 Delay and Skew Optimization
 
@@ -611,32 +611,32 @@ Phase 5.1 Delay CleanUp
 Phase 5.1.1 Update Timing
 Phase 5.1.1 Update Timing | Checksum: 1f87be3a5
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2158 ; free virtual = 11798
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2786 ; free virtual = 12119
 INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.145  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
 Phase 5.1 Delay CleanUp | Checksum: 1f87be3a5
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2158 ; free virtual = 11798
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2786 ; free virtual = 12119
 
 Phase 5.2 Clock Skew Optimization
 Phase 5.2 Clock Skew Optimization | Checksum: 1f87be3a5
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2158 ; free virtual = 11798
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2786 ; free virtual = 12119
 Phase 5 Delay and Skew Optimization | Checksum: 1f87be3a5
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2158 ; free virtual = 11798
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2786 ; free virtual = 12119
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Update Timing
 Phase 6.1 Update Timing | Checksum: 223cfd691
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2158 ; free virtual = 11798
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2786 ; free virtual = 12119
 INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.145  | TNS=0.000  | WHS=0.031  | THS=0.000  |
 
 Phase 6 Post Hold Fix | Checksum: 24df1f5e2
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2158 ; free virtual = 11798
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2786 ; free virtual = 12119
 
 Phase 7 Route finalize
 
@@ -653,19 +653,19 @@ Router Utilization Summary
 
 Phase 7 Route finalize | Checksum: 2b0c6b97b
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2158 ; free virtual = 11798
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2786 ; free virtual = 12119
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
 Phase 8 Verifying routed nets | Checksum: 2b0c6b97b
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:18 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2158 ; free virtual = 11798
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2786 ; free virtual = 12119
 
 Phase 9 Depositing Routes
 Phase 9 Depositing Routes | Checksum: 2cfe546fa
 
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2158 ; free virtual = 11798
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2786 ; free virtual = 12119
 
 Phase 10 Post Router Timing
 INFO: [Route 35-57] Estimated Timing Summary | WNS=2.145  | TNS=0.000  | WHS=0.031  | THS=0.000  |
@@ -673,23 +673,23 @@ INFO: [Route 35-57] Estimated Timing Summary | WNS=2.145  | TNS=0.000  | WHS=0.0
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
 Phase 10 Post Router Timing | Checksum: 2cfe546fa
 
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2158 ; free virtual = 11798
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2786 ; free virtual = 12119
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2158 ; free virtual = 11798
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2786 ; free virtual = 12119
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
 76 Infos, 50 Warnings, 3 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:20 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2156 ; free virtual = 11796
+route_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:20 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2783 ; free virtual = 12116
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.54 . Memory (MB): peak = 2037.113 ; gain = 0.000 ; free physical = 2137 ; free virtual = 11797
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.56 . Memory (MB): peak = 2037.117 ; gain = 0.000 ; free physical = 2763 ; free virtual = 12117
 INFO: [DRC 23-27] Running DRC with 6 threads
-INFO: [Coretcl 2-168] The results of DRC are in file /home/wenshuran/Desktop/ov7670_VDMA_VGA-master/ov7670_vga/ov7670_vga.runs/impl_1/system_wrapper_drc_routed.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file /home/wenshuran/hdcourse/ov7670_vga/ov7670_vga.runs/impl_1/system_wrapper_drc_routed.rpt.
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 6 CPUs
 Running Vector-less Activity Propagation...
@@ -750,5 +750,5 @@ Creating bitstream...
 Writing bitstream ./system_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Common 17-83] Releasing license: Implementation
-write_bitstream: Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 2336.273 ; gain = 270.078 ; free physical = 1817 ; free virtual = 11469
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 25 19:09:19 2019...
+write_bitstream: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2338.277 ; gain = 271.078 ; free physical = 2436 ; free virtual = 11787
+INFO: [Common 17-206] Exiting Vivado at Fri May 31 09:13:52 2019...

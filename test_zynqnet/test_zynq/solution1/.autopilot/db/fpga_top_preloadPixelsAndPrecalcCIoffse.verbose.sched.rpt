@@ -1,0 +1,824 @@
+
+
+================================================================
+== Vivado HLS Report for 'fpga_top_preloadPixelsAndPrecalcCIoffse'
+================================================================
+* Date:           Tue May 28 07:41:56 2019
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        test_zynq
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.86|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |   13|   13|    9|    9| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 9, depth = 14
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 14
+* Pipeline: 1
+  Pipeline-0: II = 9, D = 14, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+* FSM state operations: 
+
+ <State 1>: 8.22ns
+ST_1: x_V_3_read [1/1] 0.00ns
+entry_ifconv:3  %x_V_3_read = call i9 @_ssdm_op_Read.ap_auto.i9(i9 %x_V_3)
+
+ST_1: y_V_2_read [1/1] 0.00ns
+entry_ifconv:4  %y_V_2_read = call i9 @_ssdm_op_Read.ap_auto.i9(i9 %y_V_2)
+
+ST_1: y_V_2_cast1 [1/1] 0.00ns
+entry_ifconv:10  %y_V_2_cast1 = zext i9 %y_V_2_read to i10
+
+ST_1: y_V_i_i [1/1] 1.84ns
+entry_ifconv:11  %y_V_i_i = add i10 -1, %y_V_2_cast1
+
+ST_1: tmp_1 [1/1] 0.00ns
+entry_ifconv:12  %tmp_1 = trunc i10 %y_V_i_i to i2
+
+ST_1: tmp_173_i_i [1/1] 0.00ns
+entry_ifconv:13  %tmp_173_i_i = zext i2 %tmp_1 to i16
+
+ST_1: line_width_load [1/1] 0.00ns
+entry_ifconv:14  %line_width_load = load i16* @line_width, align 2
+
+ST_1: addr_line_offset_V_0_i_i [3/3] 6.08ns
+entry_ifconv:15  %addr_line_offset_V_0_i_i = mul i16 %line_width_load, %tmp_173_i_i
+
+ST_1: x_V_3_cast [1/1] 0.00ns
+entry_ifconv:18  %x_V_3_cast = zext i9 %x_V_3_read to i10
+
+ST_1: x_V_0_i_i [1/1] 1.84ns
+entry_ifconv:19  %x_V_0_i_i = add i10 -1, %x_V_3_cast
+
+ST_1: tmp_181_0_i_i [1/1] 0.00ns
+entry_ifconv:21  %tmp_181_0_i_i = sext i10 %x_V_0_i_i to i16
+
+ST_1: ImageCache_ch_in_V_load [1/1] 0.00ns
+entry_ifconv:22  %ImageCache_ch_in_V_load = load i10* @ImageCache_ch_in_V, align 2
+
+ST_1: tmp_182_0_i_i [1/1] 0.00ns
+entry_ifconv:23  %tmp_182_0_i_i = zext i10 %ImageCache_ch_in_V_load to i16
+
+ST_1: addr_pixel_offset_V_0_i_i [1/1] 6.38ns
+entry_ifconv:24  %addr_pixel_offset_V_0_i_i = mul i16 %tmp_181_0_i_i, %tmp_182_0_i_i
+
+ST_1: ImageCache_width_in_V_load [1/1] 0.00ns
+entry_ifconv:28  %ImageCache_width_in_V_load = load i9* @ImageCache_width_in_V, align 2
+
+ST_1: tmp_187_0_cast_i_i_cast [1/1] 0.00ns
+entry_ifconv:29  %tmp_187_0_cast_i_i_cast = zext i9 %ImageCache_width_in_V_load to i10
+
+ST_1: slt [1/1] 2.07ns
+entry_ifconv:30  %slt = icmp slt i10 %x_V_0_i_i, %tmp_187_0_cast_i_i_cast
+
+ST_1: ImageCache_height_in_V_load [1/1] 0.00ns
+entry_ifconv:32  %ImageCache_height_in_V_load = load i9* @ImageCache_height_in_V, align 2
+
+ST_1: tmp_192_0_cast_i_i_cast [1/1] 0.00ns
+entry_ifconv:33  %tmp_192_0_cast_i_i_cast = zext i9 %ImageCache_height_in_V_load to i10
+
+ST_1: slt1 [1/1] 2.07ns
+entry_ifconv:34  %slt1 = icmp slt i10 %y_V_i_i, %tmp_192_0_cast_i_i_cast
+
+ST_1: p_lobit_i_i2_0_i_i [1/1] 1.37ns
+entry_ifconv:36  %p_lobit_i_i2_0_i_i = or i10 %x_V_0_i_i, %y_V_i_i
+
+ST_1: tmp_2 [1/1] 0.00ns
+entry_ifconv:37  %tmp_2 = call i1 @_ssdm_op_BitSelect.i1.i10.i32(i10 %p_lobit_i_i2_0_i_i, i32 9)
+
+ST_1: ult [1/1] 2.03ns
+entry_ifconv:53  %ult = icmp ult i9 %x_V_3_read, %ImageCache_width_in_V_load
+
+ST_1: tmp_3 [1/1] 0.00ns
+entry_ifconv:55  %tmp_3 = call i1 @_ssdm_op_BitSelect.i1.i10.i32(i10 %y_V_i_i, i32 9)
+
+ST_1: x_V_0_2_i_i [1/1] 1.84ns
+entry_ifconv:67  %x_V_0_2_i_i = add i10 1, %x_V_3_cast
+
+ST_1: ult1 [1/1] 2.07ns
+entry_ifconv:72  %ult1 = icmp ult i10 %x_V_0_2_i_i, %tmp_187_0_cast_i_i_cast
+
+ST_1: tmp_6 [1/1] 0.00ns
+entry_ifconv:86  %tmp_6 = trunc i9 %y_V_2_read to i2
+
+ST_1: ult2 [1/1] 2.03ns
+entry_ifconv:94  %ult2 = icmp ult i9 %y_V_2_read, %ImageCache_height_in_V_load
+
+ST_1: tmp_7 [1/1] 0.00ns
+entry_ifconv:96  %tmp_7 = call i1 @_ssdm_op_BitSelect.i1.i10.i32(i10 %x_V_0_i_i, i32 9)
+
+ST_1: y_V_i_i_43 [1/1] 1.84ns
+entry_ifconv:133  %y_V_i_i_43 = add i10 1, %y_V_2_cast1
+
+ST_1: tmp_9 [1/1] 0.00ns
+entry_ifconv:134  %tmp_9 = trunc i10 %y_V_i_i_43 to i2
+
+ST_1: ult3 [1/1] 2.07ns
+entry_ifconv:142  %ult3 = icmp ult i10 %y_V_i_i_43, %tmp_192_0_cast_i_i_cast
+
+
+ <State 2>: 6.38ns
+ST_2: addr_line_offset_V_0_i_i [2/3] 6.08ns
+entry_ifconv:15  %addr_line_offset_V_0_i_i = mul i16 %line_width_load, %tmp_173_i_i
+
+ST_2: tmp_181_0_1_i_i [1/1] 0.00ns
+entry_ifconv:50  %tmp_181_0_1_i_i = zext i9 %x_V_3_read to i16
+
+ST_2: addr_pixel_offset_V_0_1_i_i [1/1] 6.38ns
+entry_ifconv:51  %addr_pixel_offset_V_0_1_i_i = mul i16 %tmp_181_0_1_i_i, %tmp_182_0_i_i
+
+ST_2: tmp_173_1_i_i [1/1] 0.00ns
+entry_ifconv:87  %tmp_173_1_i_i = zext i2 %tmp_6 to i16
+
+ST_2: addr_line_offset_V_0_1_i_i [3/3] 6.08ns
+entry_ifconv:88  %addr_line_offset_V_0_1_i_i = mul i16 %line_width_load, %tmp_173_1_i_i
+
+
+ <State 3>: 6.38ns
+ST_3: addr_line_offset_V_0_i_i [1/3] 6.08ns
+entry_ifconv:15  %addr_line_offset_V_0_i_i = mul i16 %line_width_load, %tmp_173_i_i
+
+ST_3: tmp_181_0_2_i_i [1/1] 0.00ns
+entry_ifconv:69  %tmp_181_0_2_i_i = zext i10 %x_V_0_2_i_i to i16
+
+ST_3: addr_pixel_offset_V_0_2_i_i [1/1] 6.38ns
+entry_ifconv:70  %addr_pixel_offset_V_0_2_i_i = mul i16 %tmp_181_0_2_i_i, %tmp_182_0_i_i
+
+ST_3: addr_line_offset_V_0_1_i_i [2/3] 6.08ns
+entry_ifconv:88  %addr_line_offset_V_0_1_i_i = mul i16 %line_width_load, %tmp_173_1_i_i
+
+ST_3: tmp_173_2_i_i [1/1] 0.00ns
+entry_ifconv:135  %tmp_173_2_i_i = zext i2 %tmp_9 to i16
+
+ST_3: addr_line_offset_V_0_2_i_i [3/3] 6.08ns
+entry_ifconv:136  %addr_line_offset_V_0_2_i_i = mul i16 %line_width_load, %tmp_173_2_i_i
+
+
+ <State 4>: 6.63ns
+ST_4: ch_out_V_read [1/1] 0.00ns
+entry_ifconv:1  %ch_out_V_read = call i10 @_ssdm_op_Read.ap_auto.i10(i10 %ch_out_V)
+
+ST_4: ci_V_read [1/1] 0.00ns
+entry_ifconv:2  %ci_V_read = call i10 @_ssdm_op_Read.ap_auto.i10(i10 %ci_V)
+
+ST_4: stg_60 [1/1] 4.38ns
+entry_ifconv:5  call void @_ssdm_op_Write.ap_fifo.i10P(i10* %ci_V_out, i10 %ci_V_read)
+
+ST_4: stg_61 [1/1] 4.38ns
+entry_ifconv:7  call void @_ssdm_op_Write.ap_fifo.i10P(i10* %ch_out_V_out, i10 %ch_out_V_read)
+
+ST_4: stg_62 [1/1] 0.00ns
+entry_ifconv:16  call void (...)* @_ssdm_op_SpecFUCore(i16 %addr_line_offset_V_0_i_i, [1 x i8]* @p_str18119629, [6 x i8]* @p_str18169634, [1 x i8]* @p_str18119629, i32 2, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629)
+
+ST_4: tmp_183_0_i_i [1/1] 0.00ns
+entry_ifconv:25  %tmp_183_0_i_i = zext i10 %ci_V_read to i16
+
+ST_4: tmp_184_0_i_i [1/1] 1.96ns
+entry_ifconv:26  %tmp_184_0_i_i = add i16 %addr_line_offset_V_0_i_i, %tmp_183_0_i_i
+
+ST_4: addr_V_0_i_i [1/1] 1.96ns
+entry_ifconv:27  %addr_V_0_i_i = add i16 %tmp_184_0_i_i, %addr_pixel_offset_V_0_i_i
+
+ST_4: tmp_198_0_i_i [1/1] 0.00ns
+entry_ifconv:42  %tmp_198_0_i_i = zext i16 %addr_V_0_i_i to i64
+
+ST_4: ImageCache_IBRAM_addr [1/1] 0.00ns
+entry_ifconv:43  %ImageCache_IBRAM_addr = getelementptr inbounds [32768 x float]* @ImageCache_IBRAM, i64 0, i64 %tmp_198_0_i_i
+
+ST_4: ImageCache_IBRAM_load [2/2] 2.71ns
+entry_ifconv:44  %ImageCache_IBRAM_load = load float* %ImageCache_IBRAM_addr, align 4
+
+ST_4: addr_line_offset_V_0_1_i_i [1/3] 6.08ns
+entry_ifconv:88  %addr_line_offset_V_0_1_i_i = mul i16 %line_width_load, %tmp_173_1_i_i
+
+ST_4: addr_line_offset_V_0_2_i_i [2/3] 6.08ns
+entry_ifconv:136  %addr_line_offset_V_0_2_i_i = mul i16 %line_width_load, %tmp_173_2_i_i
+
+ST_4: WeightsCache_ch_out_V_load [1/1] 0.00ns
+entry_ifconv:179  %WeightsCache_ch_out_V_load = load i10* @WeightsCache_ch_out_V, align 2
+
+ST_4: tmp_i_i_48 [1/1] 0.00ns
+entry_ifconv:180  %tmp_i_i_48 = zext i10 %ci_V_read to i19
+
+ST_4: tmp_128_i_i [1/1] 0.00ns
+entry_ifconv:181  %tmp_128_i_i = zext i10 %WeightsCache_ch_out_V_load to i19
+
+ST_4: ci_times_ch_out_V [3/3] 6.08ns
+entry_ifconv:182  %ci_times_ch_out_V = mul i19 %tmp_128_i_i, %tmp_i_i_48
+
+
+ <State 5>: 8.86ns
+ST_5: rev [1/1] 1.37ns
+entry_ifconv:31  %rev = xor i1 %slt, true
+
+ST_5: rev1 [1/1] 1.37ns
+entry_ifconv:35  %rev1 = xor i1 %slt1, true
+
+ST_5: tmp [1/1] 1.37ns
+entry_ifconv:38  %tmp = or i1 %rev, %rev1
+
+ST_5: tmp_748_i_i [1/1] 1.37ns
+entry_ifconv:39  %tmp_748_i_i = or i1 %tmp, %tmp_2
+
+ST_5: tmp_749_i_i [1/1] 0.00ns
+entry_ifconv:40  %tmp_749_i_i = call i11 @_ssdm_op_BitConcatenate.i11.i10.i1(i10 0, i1 %tmp_748_i_i)
+
+ST_5: is_padding_pixel_0_i_i [1/1] 2.11ns
+entry_ifconv:41  %is_padding_pixel_0_i_i = icmp eq i11 %tmp_749_i_i, 0
+
+ST_5: ImageCache_IBRAM_load [1/2] 2.71ns
+entry_ifconv:44  %ImageCache_IBRAM_load = load float* %ImageCache_IBRAM_addr, align 4
+
+ST_5: px_0_i_i [1/1] 1.37ns
+entry_ifconv:45  %px_0_i_i = select i1 %is_padding_pixel_0_i_i, float %ImageCache_IBRAM_load, float 0.000000e+00
+
+ST_5: buffer_0_write_assign [2/2] 1.28ns
+entry_ifconv:46  %buffer_0_write_assign = call fastcc float @"fpga_top_reg<float>"(float %px_0_i_i) nounwind
+
+ST_5: addr_V_0_1_i_i [1/1] 1.96ns
+entry_ifconv:52  %addr_V_0_1_i_i = add i16 %addr_pixel_offset_V_0_1_i_i, %tmp_184_0_i_i
+
+ST_5: tmp_198_0_1_i_i [1/1] 0.00ns
+entry_ifconv:60  %tmp_198_0_1_i_i = zext i16 %addr_V_0_1_i_i to i64
+
+ST_5: ImageCache_IBRAM_addr_1 [1/1] 0.00ns
+entry_ifconv:61  %ImageCache_IBRAM_addr_1 = getelementptr inbounds [32768 x float]* @ImageCache_IBRAM, i64 0, i64 %tmp_198_0_1_i_i
+
+ST_5: ImageCache_IBRAM_load_1 [2/2] 2.71ns
+entry_ifconv:62  %ImageCache_IBRAM_load_1 = load float* %ImageCache_IBRAM_addr_1, align 4
+
+ST_5: stg_88 [1/1] 0.00ns
+entry_ifconv:89  call void (...)* @_ssdm_op_SpecFUCore(i16 %addr_line_offset_V_0_1_i_i, [1 x i8]* @p_str18119629, [6 x i8]* @p_str18169634, [1 x i8]* @p_str18119629, i32 2, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629)
+
+ST_5: tmp_184_1_i_i [1/1] 1.96ns
+entry_ifconv:92  %tmp_184_1_i_i = add i16 %addr_line_offset_V_0_1_i_i, %tmp_183_0_i_i
+
+ST_5: addr_line_offset_V_0_2_i_i [1/3] 6.08ns
+entry_ifconv:136  %addr_line_offset_V_0_2_i_i = mul i16 %line_width_load, %tmp_173_2_i_i
+
+ST_5: stg_91 [1/1] 0.00ns
+entry_ifconv:137  call void (...)* @_ssdm_op_SpecFUCore(i16 %addr_line_offset_V_0_2_i_i, [1 x i8]* @p_str18119629, [6 x i8]* @p_str18169634, [1 x i8]* @p_str18119629, i32 2, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629)
+
+ST_5: tmp_184_2_i_i [1/1] 1.96ns
+entry_ifconv:140  %tmp_184_2_i_i = add i16 %addr_line_offset_V_0_2_i_i, %tmp_183_0_i_i
+
+ST_5: ci_times_ch_out_V [2/3] 6.08ns
+entry_ifconv:182  %ci_times_ch_out_V = mul i19 %tmp_128_i_i, %tmp_i_i_48
+
+
+ <State 6>: 8.86ns
+ST_6: buffer_0_write_assign [1/2] 0.00ns
+entry_ifconv:46  %buffer_0_write_assign = call fastcc float @"fpga_top_reg<float>"(float %px_0_i_i) nounwind
+
+ST_6: rev2 [1/1] 1.37ns
+entry_ifconv:54  %rev2 = xor i1 %ult, true
+
+ST_6: tmp4 [1/1] 1.37ns
+entry_ifconv:56  %tmp4 = or i1 %rev2, %rev1
+
+ST_6: tmp_753_i_i [1/1] 1.37ns
+entry_ifconv:57  %tmp_753_i_i = or i1 %tmp4, %tmp_3
+
+ST_6: tmp_754_i_i [1/1] 0.00ns
+entry_ifconv:58  %tmp_754_i_i = call i11 @_ssdm_op_BitConcatenate.i11.i10.i1(i10 0, i1 %tmp_753_i_i)
+
+ST_6: is_padding_pixel_0_1_i_i [1/1] 2.11ns
+entry_ifconv:59  %is_padding_pixel_0_1_i_i = icmp eq i11 %tmp_754_i_i, 0
+
+ST_6: ImageCache_IBRAM_load_1 [1/2] 2.71ns
+entry_ifconv:62  %ImageCache_IBRAM_load_1 = load float* %ImageCache_IBRAM_addr_1, align 4
+
+ST_6: px_0_1_i_i [1/1] 1.37ns
+entry_ifconv:63  %px_0_1_i_i = select i1 %is_padding_pixel_0_1_i_i, float %ImageCache_IBRAM_load_1, float 0.000000e+00
+
+ST_6: buffer_1_write_assign [2/2] 1.28ns
+entry_ifconv:64  %buffer_1_write_assign = call fastcc float @"fpga_top_reg<float>"(float %px_0_1_i_i) nounwind
+
+ST_6: addr_V_0_2_i_i [1/1] 1.96ns
+entry_ifconv:71  %addr_V_0_2_i_i = add i16 %addr_pixel_offset_V_0_2_i_i, %tmp_184_0_i_i
+
+ST_6: rev3 [1/1] 1.37ns
+entry_ifconv:73  %rev3 = xor i1 %ult1, true
+
+ST_6: tmp5 [1/1] 1.37ns
+entry_ifconv:74  %tmp5 = or i1 %rev3, %rev1
+
+ST_6: tmp_758_i_i [1/1] 1.37ns
+entry_ifconv:75  %tmp_758_i_i = or i1 %tmp5, %tmp_3
+
+ST_6: tmp_198_0_2_i_i [1/1] 0.00ns
+entry_ifconv:78  %tmp_198_0_2_i_i = zext i16 %addr_V_0_2_i_i to i64
+
+ST_6: ImageCache_IBRAM_addr_2 [1/1] 0.00ns
+entry_ifconv:79  %ImageCache_IBRAM_addr_2 = getelementptr inbounds [32768 x float]* @ImageCache_IBRAM, i64 0, i64 %tmp_198_0_2_i_i
+
+ST_6: ImageCache_IBRAM_load_2 [2/2] 2.71ns
+entry_ifconv:80  %ImageCache_IBRAM_load_2 = load float* %ImageCache_IBRAM_addr_2, align 4
+
+ST_6: ci_times_ch_out_V [1/3] 6.08ns
+entry_ifconv:182  %ci_times_ch_out_V = mul i19 %tmp_128_i_i, %tmp_i_i_48
+
+
+ <State 7>: 5.36ns
+ST_7: buffer_1_write_assign [1/2] 0.00ns
+entry_ifconv:64  %buffer_1_write_assign = call fastcc float @"fpga_top_reg<float>"(float %px_0_1_i_i) nounwind
+
+ST_7: tmp_759_i_i [1/1] 0.00ns
+entry_ifconv:76  %tmp_759_i_i = call i11 @_ssdm_op_BitConcatenate.i11.i10.i1(i10 0, i1 %tmp_758_i_i)
+
+ST_7: is_padding_pixel_0_2_i_i [1/1] 2.11ns
+entry_ifconv:77  %is_padding_pixel_0_2_i_i = icmp eq i11 %tmp_759_i_i, 0
+
+ST_7: ImageCache_IBRAM_load_2 [1/2] 2.71ns
+entry_ifconv:80  %ImageCache_IBRAM_load_2 = load float* %ImageCache_IBRAM_addr_2, align 4
+
+ST_7: px_0_2_i_i [1/1] 1.37ns
+entry_ifconv:81  %px_0_2_i_i = select i1 %is_padding_pixel_0_2_i_i, float %ImageCache_IBRAM_load_2, float 0.000000e+00
+
+ST_7: buffer_2_write_assign [2/2] 1.28ns
+entry_ifconv:82  %buffer_2_write_assign = call fastcc float @"fpga_top_reg<float>"(float %px_0_2_i_i) nounwind
+
+ST_7: addr_V_1_i_i [1/1] 1.96ns
+entry_ifconv:93  %addr_V_1_i_i = add i16 %tmp_184_1_i_i, %addr_pixel_offset_V_0_i_i
+
+ST_7: tmp_198_1_i_i [1/1] 0.00ns
+entry_ifconv:101  %tmp_198_1_i_i = zext i16 %addr_V_1_i_i to i64
+
+ST_7: ImageCache_IBRAM_addr_3 [1/1] 0.00ns
+entry_ifconv:102  %ImageCache_IBRAM_addr_3 = getelementptr inbounds [32768 x float]* @ImageCache_IBRAM, i64 0, i64 %tmp_198_1_i_i
+
+ST_7: ImageCache_IBRAM_load_3 [2/2] 2.71ns
+entry_ifconv:103  %ImageCache_IBRAM_load_3 = load float* %ImageCache_IBRAM_addr_3, align 4
+
+
+ <State 8>: 8.86ns
+ST_8: buffer_2_write_assign [1/2] 0.00ns
+entry_ifconv:82  %buffer_2_write_assign = call fastcc float @"fpga_top_reg<float>"(float %px_0_2_i_i) nounwind
+
+ST_8: rev4 [1/1] 1.37ns
+entry_ifconv:95  %rev4 = xor i1 %ult2, true
+
+ST_8: tmp8 [1/1] 1.37ns
+entry_ifconv:97  %tmp8 = or i1 %rev, %rev4
+
+ST_8: tmp_764_i_i [1/1] 1.37ns
+entry_ifconv:98  %tmp_764_i_i = or i1 %tmp8, %tmp_7
+
+ST_8: tmp_765_i_i [1/1] 0.00ns
+entry_ifconv:99  %tmp_765_i_i = call i11 @_ssdm_op_BitConcatenate.i11.i10.i1(i10 0, i1 %tmp_764_i_i)
+
+ST_8: is_padding_pixel_1_i_i [1/1] 2.11ns
+entry_ifconv:100  %is_padding_pixel_1_i_i = icmp eq i11 %tmp_765_i_i, 0
+
+ST_8: ImageCache_IBRAM_load_3 [1/2] 2.71ns
+entry_ifconv:103  %ImageCache_IBRAM_load_3 = load float* %ImageCache_IBRAM_addr_3, align 4
+
+ST_8: px_1_i_i [1/1] 1.37ns
+entry_ifconv:104  %px_1_i_i = select i1 %is_padding_pixel_1_i_i, float %ImageCache_IBRAM_load_3, float 0.000000e+00
+
+ST_8: buffer_3_write_assign [2/2] 1.28ns
+entry_ifconv:105  %buffer_3_write_assign = call fastcc float @"fpga_top_reg<float>"(float %px_1_i_i) nounwind
+
+ST_8: addr_V_1_1_i_i [1/1] 1.96ns
+entry_ifconv:109  %addr_V_1_1_i_i = add i16 %tmp_184_1_i_i, %addr_pixel_offset_V_0_1_i_i
+
+ST_8: tmp_198_1_1_i_i [1/1] 0.00ns
+entry_ifconv:113  %tmp_198_1_1_i_i = zext i16 %addr_V_1_1_i_i to i64
+
+ST_8: ImageCache_IBRAM_addr_4 [1/1] 0.00ns
+entry_ifconv:114  %ImageCache_IBRAM_addr_4 = getelementptr inbounds [32768 x float]* @ImageCache_IBRAM, i64 0, i64 %tmp_198_1_1_i_i
+
+ST_8: ImageCache_IBRAM_load_4 [2/2] 2.71ns
+entry_ifconv:115  %ImageCache_IBRAM_load_4 = load float* %ImageCache_IBRAM_addr_4, align 4
+
+ST_8: addr_V_1_2_i_i [1/1] 1.96ns
+entry_ifconv:121  %addr_V_1_2_i_i = add i16 %tmp_184_1_i_i, %addr_pixel_offset_V_0_2_i_i
+
+ST_8: addr_V_2_i_i [1/1] 1.96ns
+entry_ifconv:141  %addr_V_2_i_i = add i16 %tmp_184_2_i_i, %addr_pixel_offset_V_0_i_i
+
+ST_8: rev5 [1/1] 1.37ns
+entry_ifconv:143  %rev5 = xor i1 %ult3, true
+
+ST_8: tmp10 [1/1] 1.37ns
+entry_ifconv:144  %tmp10 = or i1 %rev, %rev5
+
+ST_8: tmp_780_i_i [1/1] 1.37ns
+entry_ifconv:145  %tmp_780_i_i = or i1 %tmp10, %tmp_7
+
+ST_8: addr_V_2_1_i_i [1/1] 1.96ns
+entry_ifconv:156  %addr_V_2_1_i_i = add i16 %tmp_184_2_i_i, %addr_pixel_offset_V_0_1_i_i
+
+ST_8: addr_V_2_2_i_i [1/1] 1.96ns
+entry_ifconv:168  %addr_V_2_2_i_i = add i16 %tmp_184_2_i_i, %addr_pixel_offset_V_0_2_i_i
+
+
+ <State 9>: 6.12ns
+ST_9: buffer_3_write_assign [1/2] 0.00ns
+entry_ifconv:105  %buffer_3_write_assign = call fastcc float @"fpga_top_reg<float>"(float %px_1_i_i) nounwind
+
+ST_9: tmp_769_i_i [1/1] 1.37ns
+entry_ifconv:110  %tmp_769_i_i = or i1 %rev2, %rev4
+
+ST_9: tmp_770_i_i [1/1] 0.00ns
+entry_ifconv:111  %tmp_770_i_i = call i11 @_ssdm_op_BitConcatenate.i11.i10.i1(i10 0, i1 %tmp_769_i_i)
+
+ST_9: is_padding_pixel_1_1_i_i [1/1] 2.11ns
+entry_ifconv:112  %is_padding_pixel_1_1_i_i = icmp eq i11 %tmp_770_i_i, 0
+
+ST_9: ImageCache_IBRAM_load_4 [1/2] 2.71ns
+entry_ifconv:115  %ImageCache_IBRAM_load_4 = load float* %ImageCache_IBRAM_addr_4, align 4
+
+ST_9: px_1_1_i_i [1/1] 1.37ns
+entry_ifconv:116  %px_1_1_i_i = select i1 %is_padding_pixel_1_1_i_i, float %ImageCache_IBRAM_load_4, float 0.000000e+00
+
+ST_9: buffer_4_write_assign [2/2] 1.28ns
+entry_ifconv:117  %buffer_4_write_assign = call fastcc float @"fpga_top_reg<float>"(float %px_1_1_i_i) nounwind
+
+ST_9: tmp_774_i_i [1/1] 1.37ns
+entry_ifconv:122  %tmp_774_i_i = or i1 %rev3, %rev4
+
+ST_9: tmp_198_1_2_i_i [1/1] 0.00ns
+entry_ifconv:125  %tmp_198_1_2_i_i = zext i16 %addr_V_1_2_i_i to i64
+
+ST_9: ImageCache_IBRAM_addr_5 [1/1] 0.00ns
+entry_ifconv:126  %ImageCache_IBRAM_addr_5 = getelementptr inbounds [32768 x float]* @ImageCache_IBRAM, i64 0, i64 %tmp_198_1_2_i_i
+
+ST_9: ImageCache_IBRAM_load_5 [2/2] 2.71ns
+entry_ifconv:127  %ImageCache_IBRAM_load_5 = load float* %ImageCache_IBRAM_addr_5, align 4
+
+ST_9: tmp_785_i_i [1/1] 1.37ns
+entry_ifconv:157  %tmp_785_i_i = or i1 %rev2, %rev5
+
+ST_9: tmp_790_i_i [1/1] 1.37ns
+entry_ifconv:169  %tmp_790_i_i = or i1 %rev3, %rev5
+
+
+ <State 10>: 5.36ns
+ST_10: buffer_4_write_assign [1/2] 0.00ns
+entry_ifconv:117  %buffer_4_write_assign = call fastcc float @"fpga_top_reg<float>"(float %px_1_1_i_i) nounwind
+
+ST_10: tmp_775_i_i [1/1] 0.00ns
+entry_ifconv:123  %tmp_775_i_i = call i11 @_ssdm_op_BitConcatenate.i11.i10.i1(i10 0, i1 %tmp_774_i_i)
+
+ST_10: is_padding_pixel_1_2_i_i [1/1] 2.11ns
+entry_ifconv:124  %is_padding_pixel_1_2_i_i = icmp eq i11 %tmp_775_i_i, 0
+
+ST_10: ImageCache_IBRAM_load_5 [1/2] 2.71ns
+entry_ifconv:127  %ImageCache_IBRAM_load_5 = load float* %ImageCache_IBRAM_addr_5, align 4
+
+ST_10: px_1_2_i_i [1/1] 1.37ns
+entry_ifconv:128  %px_1_2_i_i = select i1 %is_padding_pixel_1_2_i_i, float %ImageCache_IBRAM_load_5, float 0.000000e+00
+
+ST_10: buffer_5_write_assign [2/2] 1.28ns
+entry_ifconv:129  %buffer_5_write_assign = call fastcc float @"fpga_top_reg<float>"(float %px_1_2_i_i) nounwind
+
+ST_10: tmp_198_2_i_i [1/1] 0.00ns
+entry_ifconv:148  %tmp_198_2_i_i = zext i16 %addr_V_2_i_i to i64
+
+ST_10: ImageCache_IBRAM_addr_6 [1/1] 0.00ns
+entry_ifconv:149  %ImageCache_IBRAM_addr_6 = getelementptr inbounds [32768 x float]* @ImageCache_IBRAM, i64 0, i64 %tmp_198_2_i_i
+
+ST_10: ImageCache_IBRAM_load_6 [2/2] 2.71ns
+entry_ifconv:150  %ImageCache_IBRAM_load_6 = load float* %ImageCache_IBRAM_addr_6, align 4
+
+
+ <State 11>: 5.36ns
+ST_11: buffer_5_write_assign [1/2] 0.00ns
+entry_ifconv:129  %buffer_5_write_assign = call fastcc float @"fpga_top_reg<float>"(float %px_1_2_i_i) nounwind
+
+ST_11: tmp_781_i_i [1/1] 0.00ns
+entry_ifconv:146  %tmp_781_i_i = call i11 @_ssdm_op_BitConcatenate.i11.i10.i1(i10 0, i1 %tmp_780_i_i)
+
+ST_11: is_padding_pixel_2_i_i [1/1] 2.11ns
+entry_ifconv:147  %is_padding_pixel_2_i_i = icmp eq i11 %tmp_781_i_i, 0
+
+ST_11: ImageCache_IBRAM_load_6 [1/2] 2.71ns
+entry_ifconv:150  %ImageCache_IBRAM_load_6 = load float* %ImageCache_IBRAM_addr_6, align 4
+
+ST_11: px_2_i_i [1/1] 1.37ns
+entry_ifconv:151  %px_2_i_i = select i1 %is_padding_pixel_2_i_i, float %ImageCache_IBRAM_load_6, float 0.000000e+00
+
+ST_11: buffer_6_write_assign [2/2] 1.28ns
+entry_ifconv:152  %buffer_6_write_assign = call fastcc float @"fpga_top_reg<float>"(float %px_2_i_i) nounwind
+
+ST_11: tmp_198_2_1_i_i [1/1] 0.00ns
+entry_ifconv:160  %tmp_198_2_1_i_i = zext i16 %addr_V_2_1_i_i to i64
+
+ST_11: ImageCache_IBRAM_addr_7 [1/1] 0.00ns
+entry_ifconv:161  %ImageCache_IBRAM_addr_7 = getelementptr inbounds [32768 x float]* @ImageCache_IBRAM, i64 0, i64 %tmp_198_2_1_i_i
+
+ST_11: ImageCache_IBRAM_load_7 [2/2] 2.71ns
+entry_ifconv:162  %ImageCache_IBRAM_load_7 = load float* %ImageCache_IBRAM_addr_7, align 4
+
+
+ <State 12>: 5.36ns
+ST_12: buffer_6_write_assign [1/2] 0.00ns
+entry_ifconv:152  %buffer_6_write_assign = call fastcc float @"fpga_top_reg<float>"(float %px_2_i_i) nounwind
+
+ST_12: tmp_786_i_i [1/1] 0.00ns
+entry_ifconv:158  %tmp_786_i_i = call i11 @_ssdm_op_BitConcatenate.i11.i10.i1(i10 0, i1 %tmp_785_i_i)
+
+ST_12: is_padding_pixel_2_1_i_i [1/1] 2.11ns
+entry_ifconv:159  %is_padding_pixel_2_1_i_i = icmp eq i11 %tmp_786_i_i, 0
+
+ST_12: ImageCache_IBRAM_load_7 [1/2] 2.71ns
+entry_ifconv:162  %ImageCache_IBRAM_load_7 = load float* %ImageCache_IBRAM_addr_7, align 4
+
+ST_12: px_2_1_i_i [1/1] 1.37ns
+entry_ifconv:163  %px_2_1_i_i = select i1 %is_padding_pixel_2_1_i_i, float %ImageCache_IBRAM_load_7, float 0.000000e+00
+
+ST_12: buffer_7_write_assign [2/2] 1.28ns
+entry_ifconv:164  %buffer_7_write_assign = call fastcc float @"fpga_top_reg<float>"(float %px_2_1_i_i) nounwind
+
+ST_12: tmp_198_2_2_i_i [1/1] 0.00ns
+entry_ifconv:172  %tmp_198_2_2_i_i = zext i16 %addr_V_2_2_i_i to i64
+
+ST_12: ImageCache_IBRAM_addr_8 [1/1] 0.00ns
+entry_ifconv:173  %ImageCache_IBRAM_addr_8 = getelementptr inbounds [32768 x float]* @ImageCache_IBRAM, i64 0, i64 %tmp_198_2_2_i_i
+
+ST_12: ImageCache_IBRAM_load_8 [2/2] 2.71ns
+entry_ifconv:174  %ImageCache_IBRAM_load_8 = load float* %ImageCache_IBRAM_addr_8, align 4
+
+
+ <State 13>: 5.36ns
+ST_13: buffer_7_write_assign [1/2] 0.00ns
+entry_ifconv:164  %buffer_7_write_assign = call fastcc float @"fpga_top_reg<float>"(float %px_2_1_i_i) nounwind
+
+ST_13: tmp_791_i_i [1/1] 0.00ns
+entry_ifconv:170  %tmp_791_i_i = call i11 @_ssdm_op_BitConcatenate.i11.i10.i1(i10 0, i1 %tmp_790_i_i)
+
+ST_13: is_padding_pixel_2_2_i_i [1/1] 2.11ns
+entry_ifconv:171  %is_padding_pixel_2_2_i_i = icmp eq i11 %tmp_791_i_i, 0
+
+ST_13: ImageCache_IBRAM_load_8 [1/2] 2.71ns
+entry_ifconv:174  %ImageCache_IBRAM_load_8 = load float* %ImageCache_IBRAM_addr_8, align 4
+
+ST_13: px_2_2_i_i [1/1] 1.37ns
+entry_ifconv:175  %px_2_2_i_i = select i1 %is_padding_pixel_2_2_i_i, float %ImageCache_IBRAM_load_8, float 0.000000e+00
+
+ST_13: buffer_8_write_assign [2/2] 1.28ns
+entry_ifconv:176  %buffer_8_write_assign = call fastcc float @"fpga_top_reg<float>"(float %px_2_2_i_i) nounwind
+
+
+ <State 14>: 0.00ns
+ST_14: stg_187 [1/1] 0.00ns
+entry_ifconv:0  call void (...)* @_ssdm_op_SpecInterface(i10* %ci_V_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: stg_188 [1/1] 0.00ns
+entry_ifconv:6  call void (...)* @_ssdm_op_SpecInterface(i10* %ch_out_V_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: stg_189 [1/1] 0.00ns
+entry_ifconv:8  call void (...)* @_ssdm_op_SpecPipeline(i32 7, i32 1, i32 1, i32 0, [1 x i8]* @p_str18053794) nounwind
+
+ST_14: tmp_i_i [1/1] 0.00ns
+entry_ifconv:9  %tmp_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str1808)
+
+ST_14: tmp_745_i_i [1/1] 0.00ns
+entry_ifconv:17  %tmp_745_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str1809)
+
+ST_14: stg_192 [1/1] 0.00ns
+entry_ifconv:20  call void (...)* @_ssdm_op_SpecMemCore([32768 x float]* @ImageCache_IBRAM, [1 x i8]* @p_str18119629, [13 x i8]* @p_str18179635, [1 x i8]* @p_str18119629, i32 -1, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629)
+
+ST_14: empty [1/1] 0.00ns
+entry_ifconv:47  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str1809, i32 %tmp_745_i_i)
+
+ST_14: tmp_750_i_i [1/1] 0.00ns
+entry_ifconv:48  %tmp_750_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str1809)
+
+ST_14: stg_195 [1/1] 0.00ns
+entry_ifconv:49  call void (...)* @_ssdm_op_SpecMemCore([32768 x float]* @ImageCache_IBRAM, [1 x i8]* @p_str18119629, [13 x i8]* @p_str18179635, [1 x i8]* @p_str18119629, i32 -1, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629)
+
+ST_14: empty_36 [1/1] 0.00ns
+entry_ifconv:65  %empty_36 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str1809, i32 %tmp_750_i_i)
+
+ST_14: tmp_755_i_i [1/1] 0.00ns
+entry_ifconv:66  %tmp_755_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str1809)
+
+ST_14: stg_198 [1/1] 0.00ns
+entry_ifconv:68  call void (...)* @_ssdm_op_SpecMemCore([32768 x float]* @ImageCache_IBRAM, [1 x i8]* @p_str18119629, [13 x i8]* @p_str18179635, [1 x i8]* @p_str18119629, i32 -1, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629)
+
+ST_14: empty_37 [1/1] 0.00ns
+entry_ifconv:83  %empty_37 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str1809, i32 %tmp_755_i_i)
+
+ST_14: empty_38 [1/1] 0.00ns
+entry_ifconv:84  %empty_38 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str1808, i32 %tmp_i_i)
+
+ST_14: tmp_760_i_i [1/1] 0.00ns
+entry_ifconv:85  %tmp_760_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str1808)
+
+ST_14: tmp_761_i_i [1/1] 0.00ns
+entry_ifconv:90  %tmp_761_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str1809)
+
+ST_14: stg_203 [1/1] 0.00ns
+entry_ifconv:91  call void (...)* @_ssdm_op_SpecMemCore([32768 x float]* @ImageCache_IBRAM, [1 x i8]* @p_str18119629, [13 x i8]* @p_str18179635, [1 x i8]* @p_str18119629, i32 -1, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629)
+
+ST_14: empty_39 [1/1] 0.00ns
+entry_ifconv:106  %empty_39 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str1809, i32 %tmp_761_i_i)
+
+ST_14: tmp_766_i_i [1/1] 0.00ns
+entry_ifconv:107  %tmp_766_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str1809)
+
+ST_14: stg_206 [1/1] 0.00ns
+entry_ifconv:108  call void (...)* @_ssdm_op_SpecMemCore([32768 x float]* @ImageCache_IBRAM, [1 x i8]* @p_str18119629, [13 x i8]* @p_str18179635, [1 x i8]* @p_str18119629, i32 -1, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629)
+
+ST_14: empty_40 [1/1] 0.00ns
+entry_ifconv:118  %empty_40 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str1809, i32 %tmp_766_i_i)
+
+ST_14: tmp_771_i_i [1/1] 0.00ns
+entry_ifconv:119  %tmp_771_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str1809)
+
+ST_14: stg_209 [1/1] 0.00ns
+entry_ifconv:120  call void (...)* @_ssdm_op_SpecMemCore([32768 x float]* @ImageCache_IBRAM, [1 x i8]* @p_str18119629, [13 x i8]* @p_str18179635, [1 x i8]* @p_str18119629, i32 -1, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629)
+
+ST_14: empty_41 [1/1] 0.00ns
+entry_ifconv:130  %empty_41 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str1809, i32 %tmp_771_i_i)
+
+ST_14: empty_42 [1/1] 0.00ns
+entry_ifconv:131  %empty_42 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str1808, i32 %tmp_760_i_i)
+
+ST_14: tmp_776_i_i [1/1] 0.00ns
+entry_ifconv:132  %tmp_776_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str1808)
+
+ST_14: tmp_777_i_i [1/1] 0.00ns
+entry_ifconv:138  %tmp_777_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str1809)
+
+ST_14: stg_214 [1/1] 0.00ns
+entry_ifconv:139  call void (...)* @_ssdm_op_SpecMemCore([32768 x float]* @ImageCache_IBRAM, [1 x i8]* @p_str18119629, [13 x i8]* @p_str18179635, [1 x i8]* @p_str18119629, i32 -1, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629)
+
+ST_14: empty_44 [1/1] 0.00ns
+entry_ifconv:153  %empty_44 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str1809, i32 %tmp_777_i_i)
+
+ST_14: tmp_782_i_i [1/1] 0.00ns
+entry_ifconv:154  %tmp_782_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str1809)
+
+ST_14: stg_217 [1/1] 0.00ns
+entry_ifconv:155  call void (...)* @_ssdm_op_SpecMemCore([32768 x float]* @ImageCache_IBRAM, [1 x i8]* @p_str18119629, [13 x i8]* @p_str18179635, [1 x i8]* @p_str18119629, i32 -1, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629)
+
+ST_14: empty_45 [1/1] 0.00ns
+entry_ifconv:165  %empty_45 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str1809, i32 %tmp_782_i_i)
+
+ST_14: tmp_787_i_i [1/1] 0.00ns
+entry_ifconv:166  %tmp_787_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str1809)
+
+ST_14: stg_220 [1/1] 0.00ns
+entry_ifconv:167  call void (...)* @_ssdm_op_SpecMemCore([32768 x float]* @ImageCache_IBRAM, [1 x i8]* @p_str18119629, [13 x i8]* @p_str18179635, [1 x i8]* @p_str18119629, i32 -1, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629, [1 x i8]* @p_str18119629)
+
+ST_14: buffer_8_write_assign [1/2] 0.00ns
+entry_ifconv:176  %buffer_8_write_assign = call fastcc float @"fpga_top_reg<float>"(float %px_2_2_i_i) nounwind
+
+ST_14: empty_46 [1/1] 0.00ns
+entry_ifconv:177  %empty_46 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str1809, i32 %tmp_787_i_i)
+
+ST_14: empty_47 [1/1] 0.00ns
+entry_ifconv:178  %empty_47 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str1808, i32 %tmp_776_i_i)
+
+ST_14: stg_224 [1/1] 0.00ns
+entry_ifconv:183  call void (...)* @_ssdm_op_SpecFUCore(i19 %ci_times_ch_out_V, [1 x i8]* @p_str1811, [6 x i8]* @p_str1814, [1 x i8]* @p_str1811, i32 2, [1 x i8]* @p_str1811, [1 x i8]* @p_str1811, [1 x i8]* @p_str1811)
+
+ST_14: mrv [1/1] 0.00ns
+entry_ifconv:184  %mrv = insertvalue { i19, float, float, float, float, float, float, float, float, float } undef, i19 %ci_times_ch_out_V, 0
+
+ST_14: mrv_1 [1/1] 0.00ns
+entry_ifconv:185  %mrv_1 = insertvalue { i19, float, float, float, float, float, float, float, float, float } %mrv, float %buffer_0_write_assign, 1
+
+ST_14: mrv_2 [1/1] 0.00ns
+entry_ifconv:186  %mrv_2 = insertvalue { i19, float, float, float, float, float, float, float, float, float } %mrv_1, float %buffer_1_write_assign, 2
+
+ST_14: mrv_3 [1/1] 0.00ns
+entry_ifconv:187  %mrv_3 = insertvalue { i19, float, float, float, float, float, float, float, float, float } %mrv_2, float %buffer_2_write_assign, 3
+
+ST_14: mrv_4 [1/1] 0.00ns
+entry_ifconv:188  %mrv_4 = insertvalue { i19, float, float, float, float, float, float, float, float, float } %mrv_3, float %buffer_3_write_assign, 4
+
+ST_14: mrv_5 [1/1] 0.00ns
+entry_ifconv:189  %mrv_5 = insertvalue { i19, float, float, float, float, float, float, float, float, float } %mrv_4, float %buffer_4_write_assign, 5
+
+ST_14: mrv_6 [1/1] 0.00ns
+entry_ifconv:190  %mrv_6 = insertvalue { i19, float, float, float, float, float, float, float, float, float } %mrv_5, float %buffer_5_write_assign, 6
+
+ST_14: mrv_7 [1/1] 0.00ns
+entry_ifconv:191  %mrv_7 = insertvalue { i19, float, float, float, float, float, float, float, float, float } %mrv_6, float %buffer_6_write_assign, 7
+
+ST_14: mrv_8 [1/1] 0.00ns
+entry_ifconv:192  %mrv_8 = insertvalue { i19, float, float, float, float, float, float, float, float, float } %mrv_7, float %buffer_7_write_assign, 8
+
+ST_14: mrv_9 [1/1] 0.00ns
+entry_ifconv:193  %mrv_9 = insertvalue { i19, float, float, float, float, float, float, float, float, float } %mrv_8, float %buffer_8_write_assign, 9
+
+ST_14: stg_235 [1/1] 0.00ns
+entry_ifconv:194  ret { i19, float, float, float, float, float, float, float, float, float } %mrv_9
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

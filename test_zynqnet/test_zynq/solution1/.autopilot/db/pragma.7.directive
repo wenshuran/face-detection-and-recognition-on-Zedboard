@@ -1,0 +1,66 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="ImageCache::reset" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="ImageCache::preloadPixelFromDRAM" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="ImageCache::preloadPixelFromDRAM" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="3"/>
+<option name="max" value="1024"/>
+<option name="avg" value="237"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ImageCache::preloadPixelFromDRAM" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ImageCache::preloadPixelFromDRAM" label="">
+<pragma name="LATENCY">
+<option name="min" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ImageCache::preloadRowFromDRAM" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="ImageCache::preloadRowFromDRAM" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="8"/>
+<option name="max" value="256"/>
+<option name="avg" value="45"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ImageCache::setLayerConfig" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="ImageCache::setLayerConfig" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="loads_left"/>
+<option name="core" value="MulnS"/>
+<option name="latency" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ImageCache::precalcYOffset" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="ImageCache::precalcYOffset" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="addr_line_offset"/>
+<option name="core" value="MulnS"/>
+<option name="latency" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ImageCache::getPixel" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="ImageCache::getPixel" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="IBRAM"/>
+<option name="core" value="RAM_S2P_BRAM"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

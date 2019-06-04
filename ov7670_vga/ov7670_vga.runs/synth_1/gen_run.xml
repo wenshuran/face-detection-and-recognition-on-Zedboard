@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1556243777">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1559318444">
   <File Type="VDS-TIMING-PB" Name="system_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="system_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="system_wrapper.dcp"/>
@@ -39,7 +39,7 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/xdc/zedboard_v1.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../src/xdc/zedboard_v1.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Desktop/ov7670_VDMA_VGA-master/src/xdc/zedboard_v1.xdc"/>
         <Attr Name="ImportTime" Val="1497993641"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
